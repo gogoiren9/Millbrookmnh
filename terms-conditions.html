@@ -1,0 +1,1819 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Terms &amp; Conditions | Millbrook Manor Nursing Home</title>
+
+<meta name="description" content="Terms and Conditions for the Millbrook Manor Nursing Home website, including website use, enquiries, content, intellectual property and important information about our services.">
+
+<style>
+
+/* =========================================================
+   MILLBROOK MANOR
+   TERMS & CONDITIONS PAGE
+   COMPLETE READY-TO-PASTE VERSION
+   ========================================================= */
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  padding:0;
+
+  font-family:Arial, Helvetica, sans-serif;
+
+  background:#f5f8f9;
+
+  color:#26343a;
+
+  line-height:1.7;
+
+  overflow-x:hidden;
+}
+
+a{
+  color:#1f6b7a;
+  text-decoration:none;
+}
+
+a:hover{
+  color:#1f4e5f;
+}
+
+
+/* =========================================================
+   STICKY HEADER
+   ========================================================= */
+
+.millbrook-header{
+  width:100%;
+
+  background:#1f4e5f;
+
+  position:sticky;
+  position:-webkit-sticky;
+
+  top:0;
+
+  z-index:99999;
+
+  padding:14px 20px;
+
+  box-shadow:0 3px 15px rgba(0,0,0,.12);
+}
+
+.header-container{
+  width:100%;
+  max-width:1200px;
+
+  margin:auto;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:20px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+
+  flex-shrink:0;
+}
+
+.logo img{
+  display:block;
+
+  width:60px;
+  height:auto;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+   ========================================================= */
+
+.millbrook-nav{
+  flex:1;
+}
+
+.millbrook-nav ul{
+  list-style:none;
+
+  margin:0;
+  padding:0;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:22px;
+}
+
+.millbrook-nav li{
+  margin:0;
+  padding:0;
+}
+
+.millbrook-nav a{
+  color:#d9e8ed;
+
+  font-size:15px;
+  font-weight:600;
+
+  white-space:nowrap;
+
+  transition:color .25s ease;
+}
+
+.millbrook-nav a:hover{
+  color:#8fd3c1;
+}
+
+
+/* =========================================================
+   HEADER BUTTON
+   ========================================================= */
+
+.header-btn{
+  display:inline-block;
+
+  background:#8fd3c1;
+
+  color:#1f4e5f;
+
+  padding:11px 17px;
+
+  border-radius:7px;
+
+  font-size:14px;
+  font-weight:700;
+
+  white-space:nowrap;
+
+  transition:all .25s ease;
+}
+
+.header-btn:hover{
+  background:#fff;
+  color:#1f4e5f;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+   ========================================================= */
+
+.mobile-menu-toggle{
+  display:none;
+
+  align-items:center;
+  justify-content:center;
+
+  gap:7px;
+
+  background:transparent;
+
+  border:1px solid rgba(255,255,255,.4);
+
+  color:#fff;
+
+  padding:9px 12px;
+
+  border-radius:6px;
+
+  font-size:14px;
+  font-weight:700;
+
+  cursor:pointer;
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
+
+@media(max-width:768px){
+
+  .millbrook-header{
+    padding:10px 15px;
+  }
+
+  .header-container{
+    gap:9px;
+  }
+
+  .logo img{
+    width:50px;
+  }
+
+  .mobile-menu-toggle{
+    display:flex;
+  }
+
+  .millbrook-nav{
+    flex:0;
+  }
+
+  .millbrook-nav ul{
+
+    position:absolute;
+
+    top:100%;
+    right:10px;
+
+    width:230px;
+
+    display:none;
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+    gap:0;
+
+    background:#1f4e5f;
+
+    padding:10px;
+
+    border-radius:0 0 10px 10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    z-index:100000;
+  }
+
+  .millbrook-header.active .millbrook-nav ul{
+    display:flex;
+  }
+
+  .millbrook-nav li{
+    width:100%;
+  }
+
+  .millbrook-nav a{
+    display:block;
+
+    padding:13px 12px;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+
+  .millbrook-nav li:last-child a{
+    border-bottom:none;
+  }
+
+  .header-btn{
+    padding:9px 11px;
+
+    font-size:12px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media(max-width:480px){
+
+  .logo img{
+    width:45px;
+  }
+
+  .header-btn{
+    padding:8px 9px;
+
+    font-size:11px;
+  }
+
+  .mobile-menu-toggle{
+    padding:8px 9px;
+
+    font-size:13px;
+  }
+
+  .millbrook-nav ul{
+    right:5px;
+
+    width:calc(100vw - 20px);
+
+    max-width:230px;
+  }
+
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.terms-hero{
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(31,78,95,.98),
+      rgba(31,78,95,.88)
+    );
+
+  color:#fff;
+
+  text-align:center;
+
+  padding:75px 20px;
+}
+
+.terms-hero-inner{
+  max-width:900px;
+
+  margin:auto;
+}
+
+.terms-hero h1{
+  margin:0 0 15px;
+
+  font-size:clamp(36px,6vw,58px);
+
+  line-height:1.1;
+
+  font-weight:800;
+}
+
+.terms-hero p{
+  margin:0 auto;
+
+  max-width:760px;
+
+  color:#d9e8ed;
+
+  font-size:17px;
+
+  line-height:1.8;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.terms-wrapper{
+
+  max-width:1050px;
+
+  margin:0 auto;
+
+  padding:60px 20px 80px;
+}
+
+
+/* =========================================================
+   UPDATED BOX
+   ========================================================= */
+
+.terms-updated{
+
+  background:#e9f4f2;
+
+  border-left:4px solid #8fd3c1;
+
+  padding:15px 18px;
+
+  margin-bottom:35px;
+
+  border-radius:0 8px 8px 0;
+
+  color:#455b62;
+
+  font-size:14px;
+}
+
+
+/* =========================================================
+   TERMS CARD
+   ========================================================= */
+
+.terms-card{
+
+  background:#fff;
+
+  padding:38px 40px;
+
+  margin-bottom:22px;
+
+  border:1px solid #e1e9ec;
+
+  border-radius:12px;
+
+  box-shadow:0 5px 20px rgba(31,78,95,.06);
+}
+
+.terms-card h2{
+
+  color:#1f4e5f;
+
+  font-size:25px;
+
+  margin:0 0 16px;
+
+  line-height:1.3;
+}
+
+.terms-card h3{
+
+  color:#1f4e5f;
+
+  font-size:19px;
+
+  margin:25px 0 10px;
+}
+
+.terms-card p{
+
+  margin:0 0 15px;
+
+  color:#53646a;
+
+  font-size:15.5px;
+}
+
+.terms-card p:last-child{
+  margin-bottom:0;
+}
+
+.terms-card ul{
+
+  margin:10px 0 15px;
+
+  padding-left:23px;
+}
+
+.terms-card li{
+
+  color:#53646a;
+
+  font-size:15.5px;
+
+  margin-bottom:8px;
+}
+
+
+/* =========================================================
+   NOTICE BOX
+   ========================================================= */
+
+.terms-notice{
+
+  background:#f2f7f8;
+
+  border:1px solid #dce8eb;
+
+  border-left:4px solid #1f4e5f;
+
+  padding:20px;
+
+  margin:20px 0;
+
+  border-radius:0 8px 8px 0;
+}
+
+.terms-notice p{
+  margin:0;
+}
+
+
+/* =========================================================
+   CONTACT BOX
+   ========================================================= */
+
+.terms-contact{
+
+  background:#e9f4f2;
+
+  border-radius:12px;
+
+  padding:28px;
+
+  margin-top:20px;
+}
+
+.terms-contact strong{
+  color:#1f4e5f;
+}
+
+.terms-contact p{
+  margin:6px 0;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.terms-cta{
+
+  background:#e9f4f2;
+
+  padding:50px 20px;
+
+  text-align:center;
+
+  margin-top:15px;
+
+  border-radius:12px;
+}
+
+.terms-cta h2{
+
+  color:#1f4e5f;
+
+  margin:0 0 12px;
+
+  font-size:28px;
+}
+
+.terms-cta p{
+
+  max-width:700px;
+
+  margin:0 auto 22px;
+
+  color:#53646a;
+}
+
+.terms-button{
+
+  display:inline-block;
+
+  background:#1f4e5f;
+
+  color:#fff;
+
+  padding:12px 22px;
+
+  border-radius:7px;
+
+  font-weight:700;
+
+  transition:all .25s ease;
+}
+
+.terms-button:hover{
+
+  background:#8fd3c1;
+
+  color:#1f4e5f;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.millbrook-footer{
+
+  background:#1f4e5f;
+
+  color:#fff;
+
+  padding:60px 20px 0;
+}
+
+.footer-container{
+
+  max-width:1200px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,minmax(0,1fr));
+
+  gap:40px;
+}
+
+.footer-logo{
+
+  width:120px;
+
+  height:auto;
+
+  margin-bottom:18px;
+}
+
+.millbrook-footer h3,
+.millbrook-footer h4{
+
+  color:#fff;
+
+  margin:0 0 15px;
+}
+
+.millbrook-footer h3{
+  font-size:19px;
+}
+
+.millbrook-footer h4{
+  font-size:17px;
+}
+
+.millbrook-footer p,
+.millbrook-footer li{
+
+  color:#d9e8ed;
+
+  line-height:1.75;
+}
+
+.footer-about p{
+  font-size:14px;
+}
+
+.millbrook-footer ul{
+
+  list-style:none;
+
+  margin:0;
+
+  padding:0;
+}
+
+.millbrook-footer li{
+  margin-bottom:7px;
+}
+
+.millbrook-footer a{
+
+  color:#d9e8ed;
+
+  text-decoration:none;
+
+  transition:color .25s ease;
+}
+
+.millbrook-footer a:hover{
+  color:#8fd3c1;
+}
+
+.footer-contact p{
+  white-space:pre-line;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+   ========================================================= */
+
+.footer-bottom{
+
+  max-width:1200px;
+
+  margin:40px auto 0;
+
+  padding:25px 10px;
+
+  text-align:center;
+
+  border-top:1px solid rgba(255,255,255,.15);
+}
+
+.footer-legal{
+  margin-bottom:13px;
+}
+
+.footer-legal a{
+
+  display:inline-block;
+
+  margin:3px 7px;
+
+  font-size:13px;
+}
+
+.footer-legal span{
+  color:rgba(255,255,255,.35);
+}
+
+.footer-compliance{
+
+  color:#b9d4db;
+
+  font-size:13px;
+
+  margin-bottom:10px;
+
+  line-height:1.6;
+}
+
+.footer-bottom p{
+
+  margin:0;
+
+  color:#d9e8ed;
+
+  font-size:13px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media(max-width:1000px){
+
+  .footer-container{
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:650px){
+
+  .terms-hero{
+    padding:55px 18px;
+  }
+
+  .terms-hero h1{
+    font-size:38px;
+  }
+
+  .terms-hero p{
+    font-size:15px;
+  }
+
+  .terms-wrapper{
+    padding:40px 15px 55px;
+  }
+
+  .terms-card{
+    padding:25px 20px;
+  }
+
+  .terms-card h2{
+    font-size:22px;
+  }
+
+  .terms-card p,
+  .terms-card li{
+    font-size:15px;
+  }
+
+  .terms-contact{
+    padding:22px;
+  }
+
+  .terms-cta{
+    padding:40px 18px;
+  }
+
+  .footer-container{
+    grid-template-columns:1fr;
+
+    gap:30px;
+  }
+
+  .millbrook-footer{
+    padding:45px 20px 0;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.millbrook-nav a:focus,
+.header-btn:focus,
+.mobile-menu-toggle:focus,
+.terms-button:focus,
+.terms-card a:focus,
+.footer-legal a:focus{
+
+  outline:3px solid rgba(143,211,193,.7);
+
+  outline-offset:3px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+     ======================================================= -->
+
+<header class="millbrook-header" id="millbrookHeader">
+
+  <div class="header-container">
+
+
+    <!-- LOGO -->
+
+    <a
+      class="logo"
+      href="/"
+      aria-label="Millbrook Manor Nursing Home Home"
+    >
+
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+        alt="Millbrook Manor Nursing Home"
+      >
+
+    </a>
+
+
+    <!-- MOBILE MENU -->
+
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="millbrookNavigation"
+    >
+      ☰ <span>Menu</span>
+    </button>
+
+
+    <!-- NAVIGATION -->
+
+    <nav
+      class="millbrook-nav"
+      id="millbrookNavigation"
+      aria-label="Main Navigation"
+    >
+
+      <ul>
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/admissions.html">
+            Admissions
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/contact.html">
+            Contact
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/meet-the-team.html">
+            The Team
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/care-pals-hepa-health-enhancing-physical-activities.html">
+            Activities
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+
+    <!-- CTA -->
+
+    <a
+      class="header-btn"
+      href="https://millbrookmanor.eu/enquire-now.html"
+    >
+      Book a Visit
+    </a>
+
+  </div>
+
+</header>
+
+
+
+<!-- =======================================================
+     HERO
+     ======================================================= -->
+
+<section class="terms-hero">
+
+  <div class="terms-hero-inner">
+
+    <h1>Terms &amp; Conditions</h1>
+
+    <p>
+      Please read these terms carefully before using the
+      Millbrook Manor Nursing Home website.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     TERMS CONTENT
+     ======================================================= -->
+
+<main class="terms-wrapper">
+
+
+  <div class="terms-updated">
+
+    <strong>Last Updated:</strong>
+    27 September 2026
+
+  </div>
+
+
+  <!-- 1 -->
+
+  <section class="terms-card">
+
+    <h2>1. Introduction</h2>
+
+    <p>
+      These Terms &amp; Conditions govern your use of the
+      Millbrook Manor Nursing Home website and the information
+      and services made available through it.
+    </p>
+
+    <p>
+      By accessing or using this website, you acknowledge that
+      you have read and understood these Terms &amp; Conditions
+      and agree to use the website in accordance with them and
+      applicable law.
+    </p>
+
+    <div class="terms-notice">
+
+      <p>
+        <strong>Important:</strong>
+        These website terms do not replace any separate agreement,
+        admission documentation, contract of care, employment
+        agreement or other formal document that may apply to a
+        particular service or relationship with Millbrook Manor
+        Nursing Home.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 2 -->
+
+  <section class="terms-card">
+
+    <h2>2. About Millbrook Manor Nursing Home</h2>
+
+    <p>
+      Millbrook Manor Nursing Home is located at:
+    </p>
+
+    <div class="terms-contact">
+
+      <p>
+        <strong>Millbrook Manor Nursing Home</strong>
+      </p>
+
+      <p>
+        Slade Road, Coolmines, Saggart,<br>
+        D24 A9RY, Dublin, Ireland
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:care@millbrookmanor.ie">
+          care@millbrookmanor.ie
+        </a>
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 3 -->
+
+  <section class="terms-card">
+
+    <h2>3. Use of This Website</h2>
+
+    <p>
+      You may use this website for lawful purposes and in a manner
+      consistent with these Terms &amp; Conditions.
+    </p>
+
+    <p>
+      You must not use the website:
+    </p>
+
+    <ul>
+
+      <li>
+        For any unlawful, fraudulent or malicious purpose.
+      </li>
+
+      <li>
+        To attempt to gain unauthorised access to the website,
+        servers or systems.
+      </li>
+
+      <li>
+        To interfere with the operation or security of the website.
+      </li>
+
+      <li>
+        To introduce viruses, malware or other harmful material.
+      </li>
+
+      <li>
+        To collect or misuse personal information belonging to
+        other users.
+      </li>
+
+      <li>
+        In any manner that could damage, disable, overburden or
+        impair the website.
+      </li>
+
+    </ul>
+
+  </section>
+
+
+
+  <!-- 4 -->
+
+  <section class="terms-card">
+
+    <h2>4. Website Information</h2>
+
+    <p>
+      We aim to provide information on this website that is useful,
+      accurate and up to date. However, information may change and
+      we do not guarantee that every piece of information will
+      always be complete, current or free from error.
+    </p>
+
+    <p>
+      Website information should therefore be treated as general
+      information and should not be relied upon as a substitute
+      for professional advice or a direct discussion with
+      Millbrook Manor Nursing Home.
+    </p>
+
+    <p>
+      If you require specific information about admissions,
+      availability, care arrangements, fees, services or any
+      other matter, please contact us directly.
+    </p>
+
+  </section>
+
+
+
+  <!-- 5 -->
+
+  <section class="terms-card">
+
+    <h2>5. Admissions and Availability</h2>
+
+    <p>
+      Information provided on this website about accommodation,
+      care services and admissions does not constitute a guarantee
+      that a room, place, service or particular care arrangement
+      will be available.
+    </p>
+
+    <p>
+      Admissions are subject to assessment, suitability,
+      availability, required documentation and any applicable
+      contractual or legal requirements.
+    </p>
+
+    <p>
+      Any specific admission arrangement will be confirmed directly
+      with the relevant person, family member, representative or
+      other authorised party.
+    </p>
+
+  </section>
+
+
+
+  <!-- 6 -->
+
+  <section class="terms-card">
+
+    <h2>6. Enquiries and Website Forms</h2>
+
+    <p>
+      Website forms and enquiry facilities are provided to make
+      communication with us easier.
+    </p>
+
+    <p>
+      Submitting an enquiry does not by itself create a contract,
+      reserve accommodation or guarantee admission.
+    </p>
+
+    <p>
+      We may contact you using the details provided in your enquiry
+      to respond to your request or provide relevant information.
+    </p>
+
+    <div class="terms-notice">
+
+      <p>
+        <strong>Please note:</strong>
+        Do not submit unnecessary confidential, medical or other
+        sensitive information through a general website form.
+        Where detailed information is required, we will advise you
+        of an appropriate method for providing it.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 7 -->
+
+  <section class="terms-card">
+
+    <h2>7. Fees and Financial Information</h2>
+
+    <p>
+      Any fees, charges or financial information displayed or
+      discussed through the website are subject to confirmation.
+    </p>
+
+    <p>
+      Where applicable, fees may depend on the resident's individual
+      circumstances, care requirements, accommodation arrangements,
+      funding arrangements and other relevant factors.
+    </p>
+
+    <p>
+      A formal quotation, agreement or contract should be relied
+      upon for confirmed financial terms.
+    </p>
+
+  </section>
+
+
+
+  <!-- 8 -->
+
+  <section class="terms-card">
+
+    <h2>8. Healthcare and Care Information</h2>
+
+    <p>
+      Information on this website relating to care, activities,
+      wellbeing or healthcare is provided for general informational
+      purposes.
+    </p>
+
+    <p>
+      It is not intended to constitute medical advice, diagnosis
+      or treatment.
+    </p>
+
+    <p>
+      Individual care decisions should be discussed with the
+      appropriate healthcare professional or care team.
+    </p>
+
+  </section>
+
+
+
+  <!-- 9 -->
+
+  <section class="terms-card">
+
+    <h2>9. Intellectual Property</h2>
+
+    <p>
+      Unless otherwise stated, content appearing on this website,
+      including text, graphics, logos, photographs, design elements
+      and other materials, may be protected by intellectual property
+      rights.
+    </p>
+
+    <p>
+      You may view and access website content for your personal,
+      non-commercial use.
+    </p>
+
+    <p>
+      You must not reproduce, modify, distribute, republish,
+      commercially exploit or otherwise use protected website
+      content without appropriate permission, except where
+      permitted by law.
+    </p>
+
+  </section>
+
+
+
+  <!-- 10 -->
+
+  <section class="terms-card">
+
+    <h2>10. Millbrook Manor Name and Logo</h2>
+
+    <p>
+      The Millbrook Manor Nursing Home name, logo and associated
+      branding may not be copied, reproduced or used in a manner
+      that suggests an unauthorised association, endorsement or
+      partnership.
+    </p>
+
+  </section>
+
+
+
+  <!-- 11 -->
+
+  <section class="terms-card">
+
+    <h2>11. Third-Party Websites and Services</h2>
+
+    <p>
+      Our website may contain links to websites, platforms or
+      services operated by third parties.
+    </p>
+
+    <p>
+      These links may be provided for convenience or informational
+      purposes. We are not responsible for the content, availability,
+      security, privacy practices or terms of third-party websites.
+    </p>
+
+    <p>
+      You should review the applicable terms and privacy policies
+      of third-party websites before using them.
+    </p>
+
+  </section>
+
+
+
+  <!-- 12 -->
+
+  <section class="terms-card">
+
+    <h2>12. Website Availability</h2>
+
+    <p>
+      We aim to keep the website available and functioning properly,
+      but we do not guarantee uninterrupted or error-free access.
+    </p>
+
+    <p>
+      The website may occasionally be unavailable due to
+      maintenance, technical issues, updates, security measures,
+      hosting problems or circumstances outside our reasonable
+      control.
+    </p>
+
+  </section>
+
+
+
+  <!-- 13 -->
+
+  <section class="terms-card">
+
+    <h2>13. Security</h2>
+
+    <p>
+      You are responsible for taking reasonable precautions when
+      accessing websites and communicating information online.
+    </p>
+
+    <p>
+      While we take reasonable measures to protect our website and
+      systems, no online service can be guaranteed to be completely
+      secure.
+    </p>
+
+  </section>
+
+
+
+  <!-- 14 -->
+
+  <section class="terms-card">
+
+    <h2>14. Privacy</h2>
+
+    <p>
+      Our handling of personal information is described in our
+      <a href="https://millbrookmanor.eu/privacy-policy.html">
+        Privacy Policy
+      </a>.
+    </p>
+
+    <p>
+      By using the website, you should familiarise yourself with
+      the Privacy Policy and any applicable Cookie Policy.
+    </p>
+
+  </section>
+
+
+
+  <!-- 15 -->
+
+  <section class="terms-card">
+
+    <h2>15. Cookies</h2>
+
+    <p>
+      Our website may use cookies and similar technologies for
+      functionality, security, analytics or other purposes.
+    </p>
+
+    <p>
+      Further information about cookies and how they may be used
+      is available in our
+      <a href="https://millbrookmanor.eu/cookie-policy.html">
+        Cookie Policy
+      </a>.
+    </p>
+
+  </section>
+
+
+
+  <!-- 16 -->
+
+  <section class="terms-card">
+
+    <h2>16. Limitation of Liability</h2>
+
+    <p>
+      To the extent permitted by applicable law, Millbrook Manor
+      Nursing Home will not be responsible for losses arising
+      solely from reliance on general website information where
+      the information was not intended to form a contractual or
+      professional commitment.
+    </p>
+
+    <p>
+      Nothing in these Terms &amp; Conditions is intended to exclude
+      or limit liability where doing so would be unlawful, including
+      any liability that cannot legally be excluded or limited.
+    </p>
+
+  </section>
+
+
+
+  <!-- 17 -->
+
+  <section class="terms-card">
+
+    <h2>17. Indemnity</h2>
+
+    <p>
+      To the extent permitted by law, you agree to use the website
+      responsibly and not to misuse it or cause damage to the
+      website, its systems or other users.
+    </p>
+
+    <p>
+      You may be responsible for losses or costs arising from your
+      unlawful or unauthorised use of the website where applicable
+      law permits such recovery.
+    </p>
+
+  </section>
+
+
+
+  <!-- 18 -->
+
+  <section class="terms-card">
+
+    <h2>18. Changes to These Terms</h2>
+
+    <p>
+      We may update these Terms &amp; Conditions from time to time
+      to reflect changes to our website, services, business
+      practices or applicable legal requirements.
+    </p>
+
+    <p>
+      The updated version will be published on this page and the
+      "Last Updated" date will be amended where appropriate.
+    </p>
+
+  </section>
+
+
+
+  <!-- 19 -->
+
+  <section class="terms-card">
+
+    <h2>19. Governing Law</h2>
+
+    <p>
+      These Terms &amp; Conditions are intended to be governed by
+      the laws applicable in Ireland, subject to any mandatory
+      rights or protections that may apply to you under applicable
+      law.
+    </p>
+
+    <p>
+      Any disputes concerning these Terms &amp; Conditions will be
+      subject to the jurisdiction of the appropriate courts, subject
+      to applicable legal requirements.
+    </p>
+
+  </section>
+
+
+
+  <!-- 20 -->
+
+  <section class="terms-card">
+
+    <h2>20. Contact Us</h2>
+
+    <p>
+      If you have questions about these Terms &amp; Conditions,
+      please contact Millbrook Manor Nursing Home.
+    </p>
+
+    <div class="terms-contact">
+
+      <p>
+        <strong>Millbrook Manor Nursing Home</strong>
+      </p>
+
+      <p>
+        Slade Road, Coolmines, Saggart,<br>
+        D24 A9RY, Dublin, Ireland
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:care@millbrookmanor.ie">
+          care@millbrookmanor.ie
+        </a>
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- CTA -->
+
+  <section class="terms-cta">
+
+    <h2>Questions About Our Services?</h2>
+
+    <p>
+      If you need more information about Millbrook Manor Nursing
+      Home, our care services, admissions or arranging a visit,
+      please get in touch with us.
+    </p>
+
+    <a
+      class="terms-button"
+      href="https://millbrookmanor.eu/contact.html"
+    >
+      Contact Us
+    </a>
+
+  </section>
+
+
+</main>
+
+
+
+<!-- =======================================================
+     FOOTER
+     ======================================================= -->
+
+<footer class="millbrook-footer">
+
+  <div class="footer-container">
+
+
+    <!-- ABOUT -->
+
+    <div class="footer-about">
+
+      <a href="/">
+
+        <img
+          class="footer-logo"
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+          alt="Millbrook Manor Nursing Home"
+        >
+
+      </a>
+
+      <h3>Millbrook Manor Nursing Home</h3>
+
+      <p>
+        Providing compassionate, professional nursing care in a
+        safe, comfortable and welcoming environment where every
+        resident is treated with dignity, respect and kindness.
+      </p>
+
+    </div>
+
+
+    <!-- QUICK LINKS -->
+
+    <div class="footer-links">
+
+      <h4>Quick Links</h4>
+
+      <ul>
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/admissions.html">
+            Admissions
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/careers.html">
+            Careers
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/enquire-now.html">
+            Request a Quote
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/gallery.html">
+            Gallery
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/care-pals-hepa-health-enhancing-physical-activities.html">
+            Activities
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/contact.html">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- SERVICES -->
+
+    <div class="footer-services">
+
+      <h4>Our Services</h4>
+
+      <ul>
+
+        <li>Long-Term Care</li>
+
+        <li>Residential Nursing Care</li>
+
+        <li>Adult Services (18+)</li>
+
+        <li>Palliative Care</li>
+
+        <li>Fair Deal Scheme Support</li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- CONTACT -->
+
+    <div class="footer-contact">
+
+      <h4>Contact Us</h4>
+
+      <p>
+📍 Millbrook Manor Nursing Home
+Slade Road, Coolmines, Saggart, D24 A9RY
+Dublin, Ireland
+      </p>
+
+      <p>
+✉ care@millbrookmanor.ie
+      </p>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- FOOTER BOTTOM -->
+
+  <div class="footer-bottom">
+
+    <div class="footer-legal">
+
+      <a href="https://millbrookmanor.eu/privacy-policy.html">
+        Privacy Policy
+      </a>
+
+      <span>|</span>
+
+      <a href="https://millbrookmanor.eu/terms-conditions.html">
+        Terms &amp; Conditions
+      </a>
+
+      <span>|</span>
+
+      <a href="https://millbrookmanor.eu/cookie-policy.html">
+        Cookie Policy
+      </a>
+
+    </div>
+
+
+    <div class="footer-compliance">
+      Registered Nursing Home • Professional &amp; Compassionate Care
+    </div>
+
+
+    <p>
+      © 2009 - 2026 Millbrook Manor Nursing Home.
+      All Rights Reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- =======================================================
+     MOBILE MENU JAVASCRIPT
+     ======================================================= -->
+
+<script>
+
+(function(){
+
+  const header =
+    document.getElementById("millbrookHeader");
+
+  const toggle =
+    document.getElementById("mobileMenuToggle");
+
+  const navigation =
+    document.getElementById("millbrookNavigation");
+
+
+  if(!header || !toggle || !navigation){
+    return;
+  }
+
+
+  /* OPEN / CLOSE MENU */
+
+  toggle.addEventListener("click",function(){
+
+    const isOpen =
+      header.classList.toggle("active");
+
+    toggle.setAttribute(
+      "aria-expanded",
+      isOpen ? "true" : "false"
+    );
+
+  });
+
+
+  /* CLOSE AFTER LINK CLICK */
+
+  navigation.querySelectorAll("a").forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+      header.classList.remove("active");
+
+      toggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    });
+
+  });
+
+
+  /* CLOSE WHEN CLICKING OUTSIDE */
+
+  document.addEventListener("click",function(event){
+
+    if(!header.contains(event.target)){
+
+      header.classList.remove("active");
+
+      toggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    }
+
+  });
+
+
+  /* RESET ON DESKTOP */
+
+  window.addEventListener("resize",function(){
+
+    if(window.innerWidth > 768){
+
+      header.classList.remove("active");
+
+      toggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    }
+
+  });
+
+})();
+
+</script>
+
+
+</body>
+</html>
+

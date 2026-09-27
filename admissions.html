@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admissions - Millbrook Manor Nursing Home</title>
+
+<meta name="description" content="At Millbrook Manor Nursing Home, we aim to make the admissions process clear, supportive and as stress-free as possible for residents and their families.">
+
+<style>
+
+/* =========================================================
+   MILLBROOK MANOR NURSING HOME
+   COMPLETE ADMISSIONS PAGE
+   ========================================================= */
+
+:root{
+  --millbrook-blue:#1f4e5f;
+  --millbrook-blue-dark:#173c49;
+  --millbrook-green:#8fd3c1;
+  --millbrook-light:#d9e8ed;
+  --millbrook-pale:#f4f8f9;
+  --millbrook-white:#ffffff;
+  --millbrook-text:#263840;
+  --millbrook-muted:#60737b;
+  --millbrook-border:#dce7ea;
+  --millbrook-shadow:0 10px 30px rgba(31,78,95,.10);
+  --millbrook-radius:14px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+  overflow-x:hidden;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background:#fff;
+  color:var(--millbrook-text);
+  font-family:DMSans, Arial, Helvetica, sans-serif;
+  font-size:16px;
+  line-height:1.75;
+  overflow-x:hidden;
+}
+
+a{
+  color:inherit;
+}
+
+img{
+  max-width:100%;
+}
+
+
+/* =========================================================
+   STICKY HEADER
+   ========================================================= */
+
+.millbrook-header{
+  width:100%;
+  background:var(--millbrook-blue);
+  position:sticky;
+  top:0;
+  z-index:99999;
+  padding:14px 20px;
+  isolation:isolate;
+  box-shadow:0 3px 15px rgba(0,0,0,.12);
+}
+
+.header-container{
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+  text-decoration:none;
+}
+
+.logo img{
+  display:block;
+  width:62px;
+  height:62px;
+  object-fit:contain;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+   ========================================================= */
+
+.millbrook-nav{
+  flex:1;
+}
+
+.millbrook-nav ul{
+  list-style:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:25px;
+  margin:0;
+  padding:0;
+}
+
+.millbrook-nav li{
+  margin:0;
+  padding:0;
+}
+
+.millbrook-nav a{
+  display:block;
+  color:var(--millbrook-light);
+  text-decoration:none;
+  font-size:15px;
+  font-weight:600;
+  white-space:nowrap;
+  padding:8px 4px;
+  transition:color .25s ease;
+}
+
+.millbrook-nav a:hover,
+.millbrook-nav a:focus{
+  color:var(--millbrook-green);
+}
+
+
+/* =========================================================
+   HEADER CTA
+   ========================================================= */
+
+.header-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--millbrook-green);
+  color:var(--millbrook-blue);
+  padding:11px 18px;
+  border-radius:7px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:700;
+  white-space:nowrap;
+  transition:all .25s ease;
+}
+
+.header-btn:hover,
+.header-btn:focus{
+  background:#fff;
+  color:var(--millbrook-blue);
+  transform:translateY(-1px);
+}
+
+
+/* =========================================================
+   MOBILE HEADER
+   ========================================================= */
+
+@media(max-width:768px){
+
+  .millbrook-header{
+    padding:10px 14px;
+  }
+
+  .header-container{
+    gap:10px;
+  }
+
+  .logo img{
+    width:50px;
+    height:50px;
+  }
+
+  .millbrook-nav{
+    position:static;
+  }
+
+  .millbrook-nav ul{
+    position:absolute;
+    top:100%;
+    right:10px;
+    width:235px;
+    display:none;
+    flex-direction:column;
+    align-items:stretch;
+    justify-content:flex-start;
+    gap:0;
+    background:var(--millbrook-blue);
+    padding:8px;
+    margin:0;
+    border-radius:0 0 10px 10px;
+    box-shadow:0 12px 28px rgba(0,0,0,.25);
+  }
+
+  .millbrook-header.menu-open .millbrook-nav ul{
+    display:flex;
+  }
+
+  .millbrook-nav li{
+    width:100%;
+  }
+
+  .millbrook-nav a{
+    width:100%;
+    padding:12px 12px;
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+
+  .millbrook-nav li:last-child a{
+    border-bottom:none;
+  }
+
+  .header-btn{
+    padding:9px 12px;
+    font-size:12px;
+  }
+}
+
+@media(max-width:480px){
+
+  .header-container{
+    gap:7px;
+  }
+
+  .logo img{
+    width:46px;
+    height:46px;
+  }
+
+  .header-btn{
+    padding:8px 10px;
+    font-size:11px;
+  }
+
+  .millbrook-nav ul{
+    right:5px;
+    width:calc(100vw - 20px);
+    max-width:230px;
+  }
+}
+
+
+/* =========================================================
+   PAGE HERO
+   ========================================================= */
+
+.admissions-hero{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(31,78,95,.98),
+      rgba(31,78,95,.90)
+    );
+  color:#fff;
+  padding:75px 20px;
+  text-align:center;
+}
+
+.admissions-hero-inner{
+  max-width:900px;
+  margin:0 auto;
+}
+
+.admissions-label{
+  display:inline-block;
+  color:var(--millbrook-green);
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:1.8px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+.admissions-hero h1{
+  margin:0 0 18px;
+  font-size:clamp(34px,5vw,56px);
+  line-height:1.12;
+  color:#fff;
+  font-weight:800;
+}
+
+.admissions-hero p{
+  max-width:760px;
+  margin:0 auto;
+  color:var(--millbrook-light);
+  font-size:18px;
+  line-height:1.8;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.admissions-intro{
+  max-width:850px;
+  margin:0 auto;
+  padding:55px 20px 20px;
+}
+
+.admissions-intro p{
+  margin:0;
+  font-size:17px;
+  color:var(--millbrook-text);
+}
+
+
+/* =========================================================
+   CONTENT WRAPPER
+   ========================================================= */
+
+.admissions-content{
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  padding:20px 20px 70px;
+}
+
+.admission-section{
+  position:relative;
+  margin:0 0 28px;
+  padding:35px;
+  background:#fff;
+  border:1px solid var(--millbrook-border);
+  border-radius:var(--millbrook-radius);
+  box-shadow:var(--millbrook-shadow);
+}
+
+.admission-section:last-child{
+  margin-bottom:0;
+}
+
+.admission-number{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:48px;
+  height:48px;
+  margin-bottom:15px;
+  border-radius:50%;
+  background:var(--millbrook-blue);
+  color:#fff;
+  font-size:18px;
+  font-weight:800;
+}
+
+.admission-section h2{
+  margin:0 0 16px;
+  color:var(--millbrook-blue);
+  font-size:25px;
+  line-height:1.3;
+}
+
+.admission-section p{
+  margin:0 0 18px;
+  color:var(--millbrook-text);
+}
+
+.admission-section p:last-child{
+  margin-bottom:0;
+}
+
+.admission-section ul{
+  margin:12px 0 20px;
+  padding:0;
+  list-style:none;
+}
+
+.admission-section li{
+  position:relative;
+  margin:10px 0;
+  padding-left:30px;
+  color:var(--millbrook-text);
+}
+
+.admission-section li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:1px;
+  width:21px;
+  height:21px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:var(--millbrook-green);
+  color:var(--millbrook-blue);
+  font-size:12px;
+  font-weight:900;
+}
+
+.admission-section strong{
+  color:var(--millbrook-blue);
+}
+
+
+/* =========================================================
+   EMAIL LINKS
+   ========================================================= */
+
+.email-link{
+  display:inline-block;
+  color:var(--millbrook-blue);
+  font-weight:700;
+  text-decoration:none;
+  border-bottom:2px solid var(--millbrook-green);
+  transition:all .2s ease;
+}
+
+.email-link:hover{
+  color:#102f3a;
+  border-bottom-color:var(--millbrook-blue);
+}
+
+
+/* =========================================================
+   GET STARTED CTA
+   ========================================================= */
+
+.admissions-cta{
+  max-width:900px;
+  margin:0 auto 70px;
+  padding:0 20px;
+}
+
+.admissions-cta-box{
+  background:var(--millbrook-blue);
+  color:#fff;
+  border-radius:16px;
+  padding:45px 35px;
+  text-align:center;
+  box-shadow:0 14px 35px rgba(31,78,95,.18);
+}
+
+.admissions-cta-box h2{
+  margin:0 0 12px;
+  color:#fff;
+  font-size:30px;
+  line-height:1.3;
+}
+
+.admissions-cta-box p{
+  max-width:700px;
+  margin:0 auto 25px;
+  color:var(--millbrook-light);
+}
+
+.cta-email{
+  display:inline-block;
+  background:var(--millbrook-green);
+  color:var(--millbrook-blue);
+  padding:12px 22px;
+  border-radius:7px;
+  font-weight:800;
+  text-decoration:none;
+  transition:all .25s ease;
+}
+
+.cta-email:hover{
+  background:#fff;
+  transform:translateY(-1px);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.millbrook-footer{
+  background:var(--millbrook-blue);
+  color:#fff;
+  padding:60px 20px 0;
+}
+
+.footer-container{
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1.2fr;
+  gap:45px;
+}
+
+.footer-about,
+.footer-links,
+.footer-services,
+.footer-contact{
+  min-width:0;
+}
+
+.footer-logo{
+  width:120px;
+  height:auto;
+  display:block;
+  margin-bottom:20px;
+}
+
+.millbrook-footer h3,
+.millbrook-footer h4{
+  color:#fff;
+  margin:0 0 15px;
+  line-height:1.3;
+}
+
+.millbrook-footer h3{
+  font-size:20px;
+}
+
+.millbrook-footer h4{
+  font-size:17px;
+}
+
+.millbrook-footer p,
+.millbrook-footer li{
+  color:var(--millbrook-light);
+  line-height:1.8;
+}
+
+.footer-about p{
+  margin:0;
+}
+
+.millbrook-footer ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.millbrook-footer li{
+  margin-bottom:5px;
+}
+
+.millbrook-footer a{
+  color:var(--millbrook-light);
+  text-decoration:none;
+  transition:color .25s ease;
+}
+
+.millbrook-footer a:hover,
+.millbrook-footer a:focus{
+  color:var(--millbrook-green);
+}
+
+.footer-contact p{
+  white-space:pre-line;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+   ========================================================= */
+
+.footer-bottom{
+  width:100%;
+  max-width:1200px;
+  margin:40px auto 0;
+  padding:25px 0;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,.15);
+}
+
+.footer-legal{
+  margin-bottom:12px;
+}
+
+.footer-legal a{
+  color:var(--millbrook-light);
+  text-decoration:none;
+  margin:0 7px;
+  font-size:14px;
+}
+
+.footer-legal span{
+  color:rgba(255,255,255,.35);
+}
+
+.footer-compliance{
+  color:#b9d4db;
+  font-size:13px;
+  margin-bottom:12px;
+  line-height:1.6;
+}
+
+.footer-bottom p{
+  margin:0;
+  color:var(--millbrook-light);
+  font-size:14px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media(max-width:950px){
+
+  .millbrook-nav ul{
+    gap:14px;
+  }
+
+  .millbrook-nav a{
+    font-size:14px;
+  }
+
+  .footer-container{
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE CONTENT
+   ========================================================= */
+
+@media(max-width:768px){
+
+  .admissions-hero{
+    padding:55px 18px;
+  }
+
+  .admissions-hero p{
+    font-size:16px;
+  }
+
+  .admissions-intro{
+    padding:40px 18px 15px;
+  }
+
+  .admissions-intro p{
+    font-size:16px;
+  }
+
+  .admissions-content{
+    padding:15px 15px 55px;
+  }
+
+  .admission-section{
+    padding:26px 22px;
+    margin-bottom:20px;
+    border-radius:12px;
+  }
+
+  .admission-section h2{
+    font-size:22px;
+  }
+
+  .admission-section li{
+    padding-left:28px;
+  }
+
+  .admissions-cta{
+    padding:0 15px;
+    margin-bottom:55px;
+  }
+
+  .admissions-cta-box{
+    padding:35px 22px;
+  }
+
+  .admissions-cta-box h2{
+    font-size:26px;
+  }
+
+  .footer-container{
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+
+  .millbrook-footer{
+    padding-top:45px;
+  }
+
+  .footer-bottom{
+    margin-top:35px;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media(max-width:480px){
+
+  body{
+    font-size:15px;
+  }
+
+  .admissions-hero{
+    padding:45px 15px;
+  }
+
+  .admissions-hero h1{
+    font-size:34px;
+  }
+
+  .admissions-hero p{
+    font-size:15px;
+  }
+
+  .admissions-intro{
+    padding:35px 15px 10px;
+  }
+
+  .admissions-content{
+    padding:15px 10px 45px;
+  }
+
+  .admission-section{
+    padding:24px 18px;
+  }
+
+  .admission-section h2{
+    font-size:21px;
+  }
+
+  .admission-number{
+    width:44px;
+    height:44px;
+  }
+
+  .admissions-cta{
+    padding:0 10px;
+  }
+
+  .admissions-cta-box{
+    padding:30px 18px;
+  }
+
+  .footer-legal a{
+    display:inline-block;
+    margin:4px 5px;
+  }
+
+  .footer-legal span{
+    display:none;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+a:focus-visible{
+  outline:3px solid var(--millbrook-green);
+  outline-offset:3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+  html{
+    scroll-behavior:auto;
+  }
+
+  *,
+  *::before,
+  *::after{
+    transition:none !important;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     STICKY HEADER
+     ========================================================= -->
+
+<header class="millbrook-header">
+
+  <div class="header-container">
+
+
+<!-- Logo -->
+<a class="logo"
+   href="/"
+   aria-label="Millbrook Manor Nursing Home home">
+
+  <img
+    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+    alt="Millbrook Manor Nursing Home"
+  >
+
+</a>
+
+
+<!-- Navigation -->
+<nav class="millbrook-nav"
+     aria-label="Main navigation">
+
+  <ul>
+
+    <li>
+      <a href="/">Home</a>
+    </li>
+
+    <li>
+      <a href="https://millbrookmanor.eu/about-us.html">
+        About Us
+      </a>
+    </li>
+
+    <li>
+      <a href="https://millbrookmanor.eu/admissions.html">
+        Admissions
+      </a>
+    </li>
+
+    <li>
+      <a href="https://millbrookmanor.eu/contact.html">
+        Contact
+      </a>
+    </li>
+
+    <li>
+      <a href="https://millbrookmanor.eu/meet-the-team.html">
+        The Team
+      </a>
+    </li>
+
+  </ul>
+
+</nav>
+
+
+<!-- CTA -->
+<a class="header-btn"
+   href="https://millbrookmanor.eu/enquire-now.html">
+
+  Book a Visit
+
+</a>
+
+
+  </div>
+
+</header>
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section class="admissions-hero">
+
+  <div class="admissions-hero-inner">
+
+
+<span class="admissions-label">
+  Millbrook Manor Nursing Home
+</span>
+
+<h1>
+  Admissions
+</h1>
+
+<p>
+  A clear, supportive and respectful admissions journey
+  for residents and their families.
+</p>
+
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     INTRODUCTION
+     ========================================================= -->
+
+<section class="admissions-intro">
+
+  <p>
+    Choosing a nursing home is a big decision. At Millbrook Manor
+    Nursing Home, we aim to make the admissions process clear,
+    supportive and as stress-free as possible for residents and
+    their families.
+  </p>
+
+</section>
+
+<!-- =========================================================
+     ADMISSIONS CONTENT
+     ========================================================= -->
+
+<main class="admissions-content">
+
+  <!-- INTRODUCTION OPTIONS -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  ✓
+</div>
+
+<h2>
+  We Welcome Enquiries About
+</h2>
+
+<ul>
+
+  <li>Long-stay residential care</li>
+
+  <li>Respite (short-term) care</li>
+
+  <li>Dementia care</li>
+
+  <li>Convalescence (post-hospital) care</li>
+
+  <li>Palliative and end-of-life care</li>
+
+</ul>
+
+<p>
+  If you’re unsure which option is right, we will talk it
+  through with you.
+</p>
+
+
+  </section>
+
+  <!-- 1 -->
+
+  <section class="admission-section" id="first-contact">
+
+
+<div class="admission-number">
+  1
+</div>
+
+<h2>
+  First Contact
+</h2>
+
+<p>
+  Your first step is simply to get in touch.
+</p>
+
+<p>
+  You can contact us to:
+</p>
+
+<ul>
+
+  <li>
+    Ask questions about our home and care options
+  </li>
+
+  <li>
+    Discuss the needs of yourself or your loved one
+  </li>
+
+  <li>
+    Find out about current availability and fees
+  </li>
+
+</ul>
+
+<p>
+  <strong>Contact details</strong>
+</p>
+
+<p>
+  Email:
+  <a class="email-link"
+     href="mailto:care@millbrookmanor.eu">
+    care@millbrookmanor.eu
+  </a>
+</p>
+
+<p>
+  We encourage families, GPs, discharge coordinators and
+  other professionals to contact us on behalf of a potential
+  resident if that is easier.
+</p>
+
+
+  </section>
+
+  <!-- 2 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  2
+</div>
+
+<h2>
+  Information and Initial Guidance
+</h2>
+
+<p>
+  During your first conversation, we will:
+</p>
+
+<ul>
+
+  <li>
+    Listen to your situation and care needs
+  </li>
+
+  <li>
+    Explain the types of care we can provide
+  </li>
+
+  <li>
+    Give an indication of fees and possible funding options
+  </li>
+
+  <li>
+    Answer any immediate questions or concerns
+  </li>
+
+</ul>
+
+<p>
+  If it sounds like we may be a good fit, we will invite you
+  to visit the home.
+</p>
+
+
+  </section>
+
+  <!-- 3 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  3
+</div>
+
+<h2>
+  Visiting the Home
+</h2>
+
+<p>
+  We strongly encourage prospective residents and families
+  to visit before making any decisions.
+</p>
+
+<p>
+  During your visit, you can:
+</p>
+
+<ul>
+
+  <li>
+    Tour the home and see bedrooms, lounges, dining areas
+    and gardens
+  </li>
+
+  <li>
+    Meet staff and, where appropriate, talk to residents
+  </li>
+
+  <li>
+    Ask about daily routines, activities and meal times
+  </li>
+
+  <li>
+    Discuss any specific care needs or worries in person
+  </li>
+
+</ul>
+
+<p>
+  You are welcome to bring a family member, friend or
+  advocate with you. We can arrange more than one visit
+  if needed.
+</p>
+
+
+  </section>
+
+  <!-- 4 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  4
+</div>
+
+<h2>
+  Assessment of Care Needs
+</h2>
+
+<p>
+  If you wish to move forward after your visit, the next
+  step is a <strong>care needs assessment</strong>.
+</p>
+
+<p>
+  This is usually completed by a member of our nursing team
+  and may involve:
+</p>
+
+<ul>
+
+  <li>
+    Reviewing medical history and current diagnoses
+  </li>
+
+  <li>
+    Understanding mobility, personal care and support needs
+  </li>
+
+  <li>
+    Discussing medication, therapies and specialist input
+  </li>
+
+  <li>
+    Talking through preferences, routines, likes and dislikes
+  </li>
+
+  <li>
+    Considering emotional, social and spiritual needs
+  </li>
+
+</ul>
+
+<p>
+  The assessment helps us to:
+</p>
+
+<ul>
+
+  <li>
+    Confirm whether we can safely and appropriately meet
+    your needs
+  </li>
+
+  <li>
+    Recommend the most suitable type of care
+  </li>
+
+  <li>
+    Begin to plan an individualised care plan
+  </li>
+
+</ul>
+
+<p>
+  With your consent, we may also speak to your GP, hospital
+  team or other professionals involved in your care.
+</p>
+
+
+  </section>
+
+  <!-- 5 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  5
+</div>
+
+<h2>
+  Fees, Funding and Financial Arrangements
+</h2>
+
+<p>
+  Before admission, we will provide clear information about:
+</p>
+
+<ul>
+
+  <li>
+    Our fees for the type of care and room being offered
+  </li>
+
+  <li>
+    What is included in the weekly fee (e.g. accommodation,
+    nursing care, meals, basic activities)
+  </li>
+
+  <li>
+    Any additional or optional charges, if applicable
+  </li>
+
+</ul>
+
+<p>
+  If you are applying for, or already approved for, a state
+  or other funding scheme (for example the Fair Deal scheme
+  or similar), we will discuss how this interacts with our
+  fees. We cannot guarantee eligibility for any funding
+  scheme, but we will work with you and your advisors to
+  clarify what is needed.
+</p>
+
+<p>
+  All financial terms and conditions will be set out in a
+  <strong>Contract of Care (Service Agreement)</strong>
+  before admission.
+</p>
+
+
+  </section>
+
+  <!-- 6 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  6
+</div>
+
+<h2>
+  Offer of a Place
+</h2>
+
+<p>
+  If, following assessment, we are able to meet your needs
+  and you wish to proceed, we will:
+</p>
+
+<ul>
+
+  <li>
+    Confirm that a suitable room is available
+  </li>
+
+  <li>
+    Provide a written offer, including fees and key terms
+  </li>
+
+  <li>
+    Share a draft Contract of Care for you to read and
+    discuss
+  </li>
+
+</ul>
+
+<p>
+  We encourage you to:
+</p>
+
+<ul>
+
+  <li>
+    Review the contract carefully
+  </li>
+
+  <li>
+    Ask questions about anything you are unsure of
+  </li>
+
+  <li>
+    Seek independent advice if you wish (legal, financial
+    or advocacy support)
+  </li>
+
+</ul>
+
+
+  </section>
+
+  <!-- 7 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  7
+</div>
+
+<h2>
+  Completing the Contract of Care
+</h2>
+
+<p>
+  Admission can only proceed once the Contract of Care has
+  been:
+</p>
+
+<ul>
+
+  <li>
+    Agreed and signed by the resident and/or their legal
+    representative, and
+  </li>
+
+  <li>
+    Returned to us, along with any required documentation.
+  </li>
+
+</ul>
+
+<p>
+  The contract will include:
+</p>
+
+<ul>
+
+  <li>
+    Type of care and room type
+  </li>
+
+  <li>
+    Fees and payment arrangements
+  </li>
+
+  <li>
+    Notice periods and termination conditions
+  </li>
+
+  <li>
+    Rights and responsibilities of both the resident and
+    the nursing home
+  </li>
+
+</ul>
+
+<p>
+  We will provide a copy for your records.
+</p>
+
+
+  </section>
+
+  <!-- 8 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  8
+</div>
+
+<h2>
+  Preparing for Admission
+</h2>
+
+<p>
+  Once an admission date is agreed, we will help you
+  prepare for the move.
+</p>
+
+<p>
+  We will discuss:
+</p>
+
+<ul>
+
+  <li>
+    What to bring (clothing, toiletries, personal items,
+    important documents)
+  </li>
+
+  <li>
+    How medications will be managed on arrival
+  </li>
+
+  <li>
+    Any equipment or aids you currently use
+  </li>
+
+  <li>
+    Any special preferences (diet, routines, hobbies,
+    religious or cultural needs)
+  </li>
+
+</ul>
+
+<p>
+  We encourage families to:
+</p>
+
+<ul>
+
+  <li>
+    Bring photographs, ornaments and small familiar items
+    to make the room feel like home
+  </li>
+
+  <li>
+    Let us know about the resident’s life history,
+    interests and personality, so we can get to know them
+    as a person, not just a patient.
+  </li>
+
+</ul>
+
+
+  </section>
+
+  <!-- 9 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  9
+</div>
+
+<h2>
+  Your First Days with Us
+</h2>
+
+<p>
+  Moving into a nursing home is a major life change.
+  In the first days, our team will:
+</p>
+
+<ul>
+
+  <li>
+    Welcome you and your family and show you around
+  </li>
+
+  <li>
+    Introduce key staff and other residents
+  </li>
+
+  <li>
+    Go through your care plan and answer questions
+  </li>
+
+  <li>
+    Explain how to call for assistance and how daily
+    life works
+  </li>
+
+</ul>
+
+<p>
+  We will monitor how you are settling in and adjust your
+  care plan as needed, in consultation with you and your
+  family.
+</p>
+
+
+  </section>
+
+  <!-- 10 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  10
+</div>
+
+<h2>
+  Ongoing Reviews
+</h2>
+
+<p>
+  Care needs can change over time. We will:
+</p>
+
+<ul>
+
+  <li>
+    Regularly review your care plan
+  </li>
+
+  <li>
+    Discuss changes with you and your family or
+    representative
+  </li>
+
+  <li>
+    Keep you informed about any recommendations from
+    GPs or other professionals
+  </li>
+
+</ul>
+
+<p>
+  You, or your representative, can request a review of
+  your care plan at any stage if you feel your needs have
+  changed.
+</p>
+
+
+  </section>
+
+  <!-- 11 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  11
+</div>
+
+<h2>
+  Temporary Admissions and Respite
+</h2>
+
+<p>
+  For <strong>respite</strong> or
+  <strong>short-term stays</strong>:
+</p>
+
+<ul>
+
+  <li>
+    The admissions steps are similar, but dates and length
+    of stay will be clearly agreed in advance.
+  </li>
+
+  <li>
+    We will confirm what happens if you wish to extend
+    your stay (subject to availability).
+  </li>
+
+</ul>
+
+<p>
+  Respite stays can also be a helpful way to “try out”
+  residential care before considering a longer-term move.
+</p>
+
+
+  </section>
+
+  <!-- 12 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  12
+</div>
+
+<h2>
+  When Admission May Not Be Possible
+</h2>
+
+<p>
+  Following assessment, there may be cases where we
+  conclude that:
+</p>
+
+<ul>
+
+  <li>
+    A different type of service (e.g. specialist unit
+    or hospital) would be more appropriate, or
+  </li>
+
+  <li>
+    We do not have the facilities or staffing required
+    to safely meet your needs.
+  </li>
+
+</ul>
+
+<p>
+  In such cases, we will:
+</p>
+
+<ul>
+
+  <li>
+    Explain our reasons as clearly as possible
+  </li>
+
+  <li>
+    Provide any information we can to help you explore
+    other options
+  </li>
+
+</ul>
+
+
+  </section>
+
+  <!-- 13 -->
+
+  <section class="admission-section">
+
+
+<div class="admission-number">
+  13
+</div>
+
+<h2>
+  How to Get Started
+</h2>
+
+<p>
+  If you are considering care for yourself or a loved one,
+  we are here to help.
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <a class="email-link"
+     href="mailto:care@millbrookmanor.eu">
+    care@millbrookmanor.eu
+  </a>
+</p>
+
+<p>
+  Get in touch to:
+</p>
+
+<ul>
+
+  <li>
+    Ask questions or talk through your situation
+  </li>
+
+  <li>
+    Arrange a visit to the home
+  </li>
+
+  <li>
+    Begin the admissions and assessment process
+  </li>
+
+</ul>
+
+<p>
+  We understand that this can be an emotional and sometimes
+  urgent decision. Our team will do everything we can to
+  support you at each step.
+</p>
+
+
+  </section>
+
+</main>
+
+<!-- =========================================================
+     FINAL CTA
+     ========================================================= -->
+
+<section class="admissions-cta">
+
+  <div class="admissions-cta-box">
+
+
+<h2>
+  Ready to Talk to Us?
+</h2>
+
+<p>
+  If you have questions about admissions, care options,
+  availability or arranging a visit, please get in touch
+  with our team.
+</p>
+
+<a class="cta-email"
+   href="mailto:care@millbrookmanor.eu">
+
+  Contact Millbrook Manor
+
+</a>
+
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="millbrook-footer">
+
+  <div class="footer-container">
+
+
+<!-- ABOUT -->
+
+<div class="footer-about">
+
+  <a href="/">
+
+    <img
+      class="footer-logo"
+      alt="Millbrook Manor Nursing Home"
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+    >
+
+  </a>
+
+  <h3>
+    Millbrook Manor Nursing Home
+  </h3>
+
+  <p>
+    Providing compassionate, professional nursing care
+    in a safe, comfortable, and welcoming environment
+    where every resident is treated with dignity,
+    respect, and kindness.
+  </p>
+
+</div>
+
+
+<!-- QUICK LINKS -->
+
+<div class="footer-links">
+
+  <h4>
+    Quick Links
+  </h4>
+
+  <ul>
+
+    <li>
+      <a href="/">Home</a>
+    </li>
+
+    <li>
+      <a href="https://millbrookmanor.eu/about-us.html">
+        About Us
+      </a>
+    </li>
+
+    <li>
+      <a href="https://millbrookmanor.eu/admissions.html">
+        Admissions
+      </a>
+    </li>
+
+    <li>
+      <a href="https://millbrookmanor.eu/careers.html">
+        Careers
+      </a>
+    </li>
+
+    <li>
+      <a href="https://millbrookmanor.eu/enquire-now.html">
+        Request a Quote
+      </a>
+    </li>
+
+    <li>
+      <a href="https://millbrookmanor.eu/gallery.html">
+        Gallery
+      </a>
+    </li>
+
+    <li>
+      <a href="https://millbrookmanor.eu/care-pals-hepa-health-enhancing-physical-activities.html">
+        Activities
+      </a>
+    </li>
+
+    <li>
+      <a href="https://millbrookmanor.eu/contact.html">
+        Contact
+      </a>
+    </li>
+
+  </ul>
+
+</div>
+
+
+<!-- SERVICES -->
+
+<div class="footer-services">
+
+  <h4>
+    Our Services
+  </h4>
+
+  <ul>
+
+    <li>
+      Long Term Care
+    </li>
+
+    <li>
+      Residential Nursing Care
+    </li>
+
+    <li>
+      Adult Services (18+)
+    </li>
+
+    <li>
+      Palliative Care
+    </li>
+
+    <li>
+      Fair Deal Scheme Support
+    </li>
+
+  </ul>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div class="footer-contact">
+
+  <h4>
+    Contact Us
+  </h4>
+
+  <p>
+    📍 Millbrook Manor Nursing Home
+    Slade Road, Coolmines, Saggart, D24 A9RY
+    Dublin, Ireland
+  </p>
+
+  <p>
+    ✉
+    <a href="mailto:info@millbrookmanor.ie">
+      info@millbrookmanor.ie
+    </a>
+  </p>
+
+</div>
+
+
+  </div>
+
+  <!-- FOOTER BOTTOM -->
+
+  <div class="footer-bottom">
+
+
+<div class="footer-legal">
+
+  <a href="https://millbrookmanor.eu/privacy-policy.html">
+    Privacy Policy
+  </a>
+
+  <span>|</span>
+
+  <a href="https://millbrookmanor.eu/terms-conditions.html">
+    Terms &amp; Conditions
+  </a>
+
+  <span>|</span>
+
+  <a href="https://millbrookmanor.eu/cookie-policy.html">
+    Cookie Policy
+  </a>
+
+</div>
+
+
+<div class="footer-compliance">
+
+  Registered Nursing Home • Fair Deal Scheme Approved •
+  Professional &amp; Compassionate Care
+
+</div>
+
+
+<p>
+  © 2009 - 2026 Millbrook Manor Nursing Home.
+  All Rights Reserved.
+</p>
+
+
+  </div>
+
+</footer>
+
+<!-- =========================================================
+     MOBILE MENU SCRIPT
+     ========================================================= -->
+
+<script>
+
+(function(){
+
+  var header = document.querySelector('.millbrook-header');
+  var nav = document.querySelector('.millbrook-nav');
+
+  if(!header || !nav){
+    return;
+  }
+
+  /*
+     Mobile menu is activated by tapping
+     the header/navigation area.
+     
+     On desktop this does nothing.
+  */
+
+  function setupMobileMenu(){
+
+    if(window.innerWidth > 768){
+      header.classList.remove('menu-open');
+      return;
+    }
+
+    var links = nav.querySelectorAll('a');
+
+    /*
+       The existing Book a Visit button remains
+       visible on mobile.
+    */
+
+    /*
+       Create a small mobile menu trigger only
+       when needed.
+    */
+
+    if(!document.querySelector('.millbrook-mobile-toggle')){
+
+      var toggle = document.createElement('button');
+
+      toggle.type = 'button';
+      toggle.className = 'millbrook-mobile-toggle';
+
+      toggle.setAttribute(
+        'aria-label',
+        'Open navigation menu'
+      );
+
+      toggle.setAttribute(
+        'aria-expanded',
+        'false'
+      );
+
+      toggle.innerHTML = '☰';
+
+      toggle.style.cssText =
+        'display:none;' +
+        'background:transparent;' +
+        'border:0;' +
+        'color:#fff;' +
+        'font-size:27px;' +
+        'line-height:1;' +
+        'padding:6px;' +
+        'cursor:pointer;';
+
+      header.querySelector('.header-container')
+        .insertBefore(
+          toggle,
+          nav
+        );
+
+      toggle.addEventListener('click',function(e){
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        var open =
+          header.classList.toggle('menu-open');
+
+        toggle.setAttribute(
+          'aria-expanded',
+          open ? 'true' : 'false'
+        );
+
+        toggle.setAttribute(
+          'aria-label',
+          open
+            ? 'Close navigation menu'
+            : 'Open navigation menu'
+        );
+
+      });
+
+      links.forEach(function(link){
+
+        link.addEventListener('click',function(){
+
+          header.classList.remove('menu-open');
+
+          toggle.setAttribute(
+            'aria-expanded',
+            'false'
+          );
+
+        });
+
+      });
+
+    }
+
+    var mobileToggle =
+      document.querySelector(
+        '.millbrook-mobile-toggle'
+      );
+
+    if(mobileToggle){
+
+      mobileToggle.style.display =
+        window.innerWidth <= 768
+          ? 'block'
+          : 'none';
+
+    }
+
+  }
+
+  setupMobileMenu();
+
+  window.addEventListener(
+    'resize',
+    setupMobileMenu
+  );
+
+})();
+
+</script>
+
+</body>
+</html>

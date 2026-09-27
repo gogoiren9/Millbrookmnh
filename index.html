@@ -1,0 +1,2945 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Millbrook Manor Nursing Home</title>
+<meta name="description" content="A registered provider of residential and nursing care, delivering high-quality, person-centred support in a safe, comfortable, and well-maintained environment.
+">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+
+<!-- =========================================================
+     MILLBROOK MANOR NURSING HOME
+     COMPLETE REDESIGNED HOMEPAGE
+     READY TO PASTE
+========================================================= -->
+
+<div class="millbrook-homepage">
+
+<style>
+
+/* =========================================================
+   MILLBROOK MANOR — DESIGN SYSTEM
+========================================================= */
+
+.millbrook-homepage{
+  --mm-primary:#1f4e5f;
+  --mm-primary-dark:#163b49;
+  --mm-primary-light:#2d6d7d;
+  --mm-mint:#8fd3c1;
+  --mm-mint-light:#dff3ed;
+  --mm-white:#ffffff;
+  --mm-text:#26343a;
+  --mm-muted:#66777d;
+  --mm-light:#f5f9fa;
+  --mm-border:#e2ebee;
+  --mm-shadow:0 12px 35px rgba(20,55,65,.10);
+
+  width:100%;
+  max-width:100%;
+  margin:0;
+  padding:0;
+
+  color:var(--mm-text);
+  background:#fff;
+
+  font-family:
+    "Segoe UI",
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  line-height:1.7;
+  box-sizing:border-box;
+}
+
+.millbrook-homepage *,
+.millbrook-homepage *::before,
+.millbrook-homepage *::after{
+  box-sizing:border-box;
+}
+
+.millbrook-homepage img{
+  max-width:100%;
+}
+
+.millbrook-homepage a{
+  text-decoration:none;
+}
+
+.millbrook-homepage button,
+.millbrook-homepage a{
+  -webkit-tap-highlight-color:transparent;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.millbrook-homepage .mm-header{
+  position:sticky;
+  position:-webkit-sticky;
+  top:0;
+  z-index:99999;
+
+  width:100%;
+
+  background:rgba(31,78,95,.97);
+
+  border-bottom:1px solid rgba(255,255,255,.10);
+
+  box-shadow:0 4px 20px rgba(0,0,0,.10);
+
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+}
+
+.millbrook-homepage .mm-header-inner{
+  max-width:1240px;
+  min-height:82px;
+
+  margin:0 auto;
+  padding:10px 22px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:25px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.millbrook-homepage .mm-logo{
+  display:flex;
+  align-items:center;
+
+  flex-shrink:0;
+}
+
+.millbrook-homepage .mm-logo img{
+  display:block;
+
+  width:62px;
+  height:62px;
+
+  object-fit:contain;
+
+  border-radius:12px;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+.millbrook-homepage .mm-nav{
+  flex:1;
+
+  display:flex;
+  justify-content:center;
+}
+
+.millbrook-homepage .mm-nav-list{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:6px;
+
+  list-style:none;
+
+  margin:0;
+  padding:0;
+}
+
+.millbrook-homepage .mm-nav-list li{
+  margin:0;
+  padding:0;
+}
+
+.millbrook-homepage .mm-nav-list a{
+  display:block;
+
+  color:#e9f3f5;
+
+  font-size:14px;
+  font-weight:600;
+
+  padding:10px 13px;
+
+  border-radius:8px;
+
+  transition:
+    background .25s ease,
+    color .25s ease,
+    transform .25s ease;
+}
+
+.millbrook-homepage .mm-nav-list a:hover{
+  color:#fff;
+  background:rgba(255,255,255,.10);
+  transform:translateY(-1px);
+}
+
+
+/* =========================================================
+   HEADER CTA
+========================================================= */
+
+.millbrook-homepage .mm-header-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  min-height:44px;
+
+  padding:10px 18px;
+
+  border-radius:8px;
+
+  background:var(--mm-mint);
+  color:var(--mm-primary);
+
+  font-size:14px;
+  font-weight:800;
+
+  white-space:nowrap;
+
+  transition:
+    background .25s ease,
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.millbrook-homepage .mm-header-cta:hover{
+  background:#fff;
+
+  transform:translateY(-2px);
+
+  box-shadow:0 8px 20px rgba(0,0,0,.16);
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.millbrook-homepage .mm-menu-toggle{
+  display:none;
+
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+
+  min-height:44px;
+
+  padding:9px 14px;
+
+  border:1px solid rgba(255,255,255,.20);
+  border-radius:8px;
+
+  background:rgba(255,255,255,.07);
+
+  color:#fff;
+
+  cursor:pointer;
+
+  font-family:inherit;
+  font-size:14px;
+  font-weight:700;
+}
+
+.millbrook-homepage .mm-menu-icon{
+  width:20px;
+  height:16px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.millbrook-homepage .mm-menu-icon span{
+  display:block;
+
+  width:100%;
+  height:2px;
+
+  background:#fff;
+
+  border-radius:10px;
+
+  transition:.25s ease;
+}
+
+.millbrook-homepage .mm-header.menu-open
+.mm-menu-icon span:nth-child(1){
+  transform:translateY(7px) rotate(45deg);
+}
+
+.millbrook-homepage .mm-header.menu-open
+.mm-menu-icon span:nth-child(2){
+  opacity:0;
+}
+
+.millbrook-homepage .mm-header.menu-open
+.mm-menu-icon span:nth-child(3){
+  transform:translateY(-7px) rotate(-45deg);
+}
+
+
+/* =========================================================
+   MOBILE NAV
+========================================================= */
+
+.millbrook-homepage .mm-mobile-nav{
+  display:none;
+
+  width:100%;
+
+  background:var(--mm-primary-dark);
+
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.millbrook-homepage .mm-mobile-nav ul{
+  list-style:none;
+
+  margin:0 auto;
+  padding:8px 15px 15px;
+
+  max-width:600px;
+}
+
+.millbrook-homepage .mm-mobile-nav li{
+  margin:0;
+  padding:0;
+}
+
+.millbrook-homepage .mm-mobile-nav a{
+  display:block;
+
+  padding:13px 14px;
+
+  color:#fff;
+
+  font-size:15px;
+  font-weight:600;
+
+  border-bottom:1px solid rgba(255,255,255,.09);
+
+  border-radius:7px;
+
+  transition:.25s ease;
+}
+
+.millbrook-homepage .mm-mobile-nav a:hover{
+  background:rgba(255,255,255,.08);
+  color:var(--mm-mint);
+}
+
+.millbrook-homepage .mm-header.menu-open
+.mm-mobile-nav{
+  display:block;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.millbrook-homepage .mm-hero{
+  position:relative;
+
+  min-height:650px;
+
+  display:flex;
+  align-items:center;
+
+  overflow:hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(15,48,60,.94) 0%,
+      rgba(20,65,78,.83) 48%,
+      rgba(31,78,95,.48) 100%
+    ),
+    url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA1IkCz6PNr6kHWVJtJrhyphenhyphen6SNcuPvTOXlpYOFmLTYOPTJpxhW52iriSO4OPfPQMXzgSd41xTOmsQvUnBXOz4jhJY6CXHh1KSgLcmFabvQ8tqdfDRRDr96CeG-FqmWqmPrgbfRqI5LUhAYKHrh4iKqnf-CxQMp4mEBG7z9tcdlf0hVX4L72paJRhkzqBhSs/s2000/1.jpg");
+
+  background-size:cover;
+  background-position:center;
+
+  color:#fff;
+}
+
+.millbrook-homepage .mm-hero::after{
+  content:"";
+
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+
+  height:100px;
+
+  background:linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0,0,0,.08)
+  );
+
+  pointer-events:none;
+}
+
+.millbrook-homepage .mm-hero-inner{
+  position:relative;
+  z-index:2;
+
+  width:100%;
+  max-width:1240px;
+
+  margin:0 auto;
+  padding:95px 22px;
+
+  display:grid;
+  grid-template-columns:minmax(0,720px);
+}
+
+.millbrook-homepage .mm-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+
+  width:max-content;
+
+  margin-bottom:20px;
+  padding:7px 12px;
+
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:30px;
+
+  background:rgba(255,255,255,.08);
+
+  color:#eaf8f4;
+
+  font-size:12px;
+  font-weight:800;
+
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+}
+
+.millbrook-homepage .mm-eyebrow-dot{
+  width:7px;
+  height:7px;
+
+  border-radius:50%;
+
+  background:var(--mm-mint);
+}
+
+.millbrook-homepage .mm-hero h1{
+  margin:0 0 18px;
+
+  max-width:760px;
+
+  color:#fff;
+
+  font-size:clamp(40px,6vw,68px);
+
+  font-weight:800;
+
+  line-height:1.08;
+
+  letter-spacing:-1.5px;
+}
+
+.millbrook-homepage .mm-hero-text{
+  max-width:680px;
+
+  margin:0 0 30px;
+
+  color:#e5f0f2;
+
+  font-size:20px;
+
+  line-height:1.7;
+}
+
+.millbrook-homepage .mm-hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+
+  gap:12px;
+}
+
+.millbrook-homepage .mm-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+
+  min-height:50px;
+
+  padding:12px 22px;
+
+  border-radius:9px;
+
+  font-size:15px;
+  font-weight:800;
+
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    box-shadow .25s ease,
+    color .25s ease;
+}
+
+.millbrook-homepage .mm-btn-primary{
+  background:var(--mm-mint);
+  color:var(--mm-primary);
+
+  box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+
+.millbrook-homepage .mm-btn-primary:hover{
+  background:#fff;
+
+  transform:translateY(-3px);
+
+  box-shadow:0 15px 30px rgba(0,0,0,.22);
+}
+
+.millbrook-homepage .mm-btn-outline{
+  background:rgba(255,255,255,.06);
+
+  color:#fff;
+
+  border:1px solid rgba(255,255,255,.55);
+}
+
+.millbrook-homepage .mm-btn-outline:hover{
+  background:#fff;
+  color:var(--mm-primary);
+
+  transform:translateY(-3px);
+}
+
+
+/* =========================================================
+   HERO TRUST STRIP
+========================================================= */
+
+.millbrook-homepage .mm-hero-trust{
+  position:absolute;
+
+  left:50%;
+  bottom:28px;
+
+  z-index:3;
+
+  width:calc(100% - 44px);
+  max-width:1240px;
+
+  transform:translateX(-50%);
+
+  display:flex;
+  justify-content:flex-end;
+}
+
+.millbrook-homepage .mm-trust-box{
+  display:flex;
+  align-items:center;
+
+  gap:18px;
+
+  padding:13px 18px;
+
+  background:rgba(12,45,57,.72);
+
+  border:1px solid rgba(255,255,255,.16);
+
+  border-radius:12px;
+
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+
+  color:#fff;
+
+  font-size:13px;
+}
+
+.millbrook-homepage .mm-trust-box span{
+  display:flex;
+  align-items:center;
+  gap:7px;
+
+  white-space:nowrap;
+}
+
+.millbrook-homepage .mm-trust-box strong{
+  color:var(--mm-mint);
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+.millbrook-homepage .mm-section{
+  padding:90px 22px;
+}
+
+.millbrook-homepage .mm-container{
+  width:100%;
+  max-width:1180px;
+
+  margin:0 auto;
+}
+
+.millbrook-homepage .mm-section-heading{
+  max-width:750px;
+
+  margin:0 auto 48px;
+
+  text-align:center;
+}
+
+.millbrook-homepage .mm-kicker{
+  display:block;
+
+  margin-bottom:10px;
+
+  color:#5b9f94;
+
+  font-size:12px;
+  font-weight:800;
+
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+.millbrook-homepage .mm-section-heading h2{
+  margin:0 0 14px;
+
+  color:var(--mm-primary);
+
+  font-size:clamp(30px,4vw,42px);
+
+  line-height:1.2;
+
+  letter-spacing:-.6px;
+}
+
+.millbrook-homepage .mm-section-heading p{
+  margin:0;
+
+  color:var(--mm-muted);
+
+  font-size:16px;
+}
+
+
+/* =========================================================
+   WELCOME SECTION
+========================================================= */
+
+.millbrook-homepage .mm-welcome{
+  background:#fff;
+}
+
+.millbrook-homepage .mm-welcome-grid{
+  display:grid;
+
+  grid-template-columns:
+    minmax(0,1.05fr)
+    minmax(0,.95fr);
+
+  gap:60px;
+
+  align-items:center;
+}
+
+.millbrook-homepage .mm-welcome-image{
+  position:relative;
+}
+
+.millbrook-homepage .mm-welcome-image img{
+  display:block;
+
+  width:100%;
+  height:480px;
+
+  object-fit:cover;
+
+  border-radius:20px;
+
+  box-shadow:var(--mm-shadow);
+}
+
+.millbrook-homepage .mm-image-badge{
+  position:absolute;
+
+  left:25px;
+  bottom:25px;
+
+  max-width:260px;
+
+  padding:17px 20px;
+
+  background:#fff;
+
+  border-radius:13px;
+
+  box-shadow:0 15px 35px rgba(0,0,0,.16);
+}
+
+.millbrook-homepage .mm-image-badge strong{
+  display:block;
+
+  margin-bottom:3px;
+
+  color:var(--mm-primary);
+
+  font-size:15px;
+}
+
+.millbrook-homepage .mm-image-badge span{
+  color:var(--mm-muted);
+
+  font-size:13px;
+}
+
+.millbrook-homepage .mm-welcome-copy .mm-kicker{
+  margin-bottom:9px;
+}
+
+.millbrook-homepage .mm-welcome-copy h2{
+  margin:0 0 18px;
+
+  color:var(--mm-primary);
+
+  font-size:clamp(30px,4vw,44px);
+
+  line-height:1.2;
+}
+
+.millbrook-homepage .mm-welcome-copy p{
+  margin:0 0 20px;
+
+  color:var(--mm-muted);
+
+  font-size:16px;
+}
+
+.millbrook-homepage .mm-welcome-points{
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:13px;
+
+  margin-top:28px;
+}
+
+.millbrook-homepage .mm-welcome-point{
+  display:flex;
+  align-items:flex-start;
+
+  gap:10px;
+
+  padding:13px;
+
+  background:var(--mm-light);
+
+  border:1px solid var(--mm-border);
+
+  border-radius:10px;
+
+  color:var(--mm-text);
+
+  font-size:14px;
+  font-weight:600;
+}
+
+.millbrook-homepage .mm-check{
+  flex-shrink:0;
+
+  width:23px;
+  height:23px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  background:var(--mm-mint);
+
+  color:var(--mm-primary);
+
+  font-size:13px;
+  font-weight:900;
+}
+
+
+/* =========================================================
+   GALLERY FEATURE
+========================================================= */
+
+.millbrook-homepage .mm-gallery-section{
+  padding:90px 22px;
+
+  background:var(--mm-light);
+}
+
+.millbrook-homepage .mm-gallery-grid{
+  display:grid;
+
+  grid-template-columns:
+    minmax(0,1.45fr)
+    minmax(0,.8fr)
+    minmax(0,.8fr);
+
+  grid-template-rows:230px 230px;
+
+  gap:16px;
+}
+
+.millbrook-homepage .mm-gallery-item{
+  position:relative;
+
+  overflow:hidden;
+
+  min-height:180px;
+
+  border-radius:15px;
+
+  background:#dce9ec;
+
+  box-shadow:0 8px 25px rgba(25,70,80,.08);
+}
+
+.millbrook-homepage .mm-gallery-item:first-child{
+  grid-row:span 2;
+}
+
+.millbrook-homepage .mm-gallery-item img{
+  display:block;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  transition:transform .55s ease;
+}
+
+.millbrook-homepage .mm-gallery-item:hover img{
+  transform:scale(1.06);
+}
+
+.millbrook-homepage .mm-gallery-overlay{
+  position:absolute;
+
+  left:0;
+  right:0;
+  bottom:0;
+
+  padding:45px 18px 17px;
+
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,.60),
+    transparent
+  );
+
+  color:#fff;
+
+  font-size:14px;
+  font-weight:700;
+
+  opacity:0;
+
+  transform:translateY(8px);
+
+  transition:.35s ease;
+}
+
+.millbrook-homepage .mm-gallery-item:hover
+.mm-gallery-overlay{
+  opacity:1;
+  transform:translateY(0);
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.millbrook-homepage .mm-services{
+  background:#fff;
+}
+
+.millbrook-homepage .mm-services-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+  gap:22px;
+}
+
+.millbrook-homepage .mm-service-card{
+  position:relative;
+
+  padding:34px 28px 30px;
+
+  background:#fff;
+
+  border:1px solid var(--mm-border);
+
+  border-radius:16px;
+
+  box-shadow:0 6px 22px rgba(20,60,70,.05);
+
+  overflow:hidden;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease;
+}
+
+.millbrook-homepage .mm-service-card::before{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  top:0;
+
+  width:100%;
+  height:4px;
+
+  background:var(--mm-mint);
+
+  transform:scaleX(0);
+
+  transform-origin:left;
+
+  transition:.3s ease;
+}
+
+.millbrook-homepage .mm-service-card:hover{
+  transform:translateY(-7px);
+
+  border-color:#c9e4dd;
+
+  box-shadow:0 18px 40px rgba(20,60,70,.11);
+}
+
+.millbrook-homepage .mm-service-card:hover::before{
+  transform:scaleX(1);
+}
+
+.millbrook-homepage .mm-service-icon{
+  width:54px;
+  height:54px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:21px;
+
+  border-radius:14px;
+
+  background:var(--mm-mint-light);
+
+  color:var(--mm-primary);
+
+  font-size:25px;
+}
+
+.millbrook-homepage .mm-service-card h3{
+  margin:0 0 10px;
+
+  color:var(--mm-primary);
+
+  font-size:21px;
+
+  line-height:1.3;
+}
+
+.millbrook-homepage .mm-service-card p{
+  margin:0;
+
+  color:var(--mm-muted);
+
+  font-size:15px;
+}
+
+
+/* =========================================================
+   WHY FAMILIES SECTION
+========================================================= */
+
+.millbrook-homepage .mm-trust-section{
+  position:relative;
+
+  padding:95px 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #173f4d,
+      #235f70
+    );
+
+  color:#fff;
+
+  overflow:hidden;
+}
+
+.millbrook-homepage .mm-trust-section::before{
+  content:"";
+
+  position:absolute;
+
+  width:400px;
+  height:400px;
+
+  right:-180px;
+  top:-180px;
+
+  border-radius:50%;
+
+  border:1px solid rgba(255,255,255,.10);
+}
+
+.millbrook-homepage .mm-trust-grid{
+  position:relative;
+  z-index:2;
+
+  display:grid;
+
+  grid-template-columns:
+    minmax(0,.9fr)
+    minmax(0,1.1fr);
+
+  gap:70px;
+
+  align-items:center;
+}
+
+.millbrook-homepage .mm-trust-copy .mm-kicker{
+  color:var(--mm-mint);
+}
+
+.millbrook-homepage .mm-trust-copy h2{
+  margin:0 0 18px;
+
+  color:#fff;
+
+  font-size:clamp(31px,4vw,44px);
+
+  line-height:1.2;
+}
+
+.millbrook-homepage .mm-trust-copy p{
+  margin:0;
+
+  color:#d7e7ea;
+
+  font-size:16px;
+}
+
+.millbrook-homepage .mm-trust-list{
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:15px;
+}
+
+.millbrook-homepage .mm-trust-item{
+  display:flex;
+  align-items:flex-start;
+
+  gap:12px;
+
+  padding:18px;
+
+  background:rgba(255,255,255,.07);
+
+  border:1px solid rgba(255,255,255,.11);
+
+  border-radius:12px;
+}
+
+.millbrook-homepage .mm-trust-item-icon{
+  flex-shrink:0;
+
+  width:29px;
+  height:29px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  background:var(--mm-mint);
+
+  color:var(--mm-primary);
+
+  font-weight:900;
+}
+
+.millbrook-homepage .mm-trust-item strong{
+  display:block;
+
+  margin-bottom:3px;
+
+  color:#fff;
+
+  font-size:14px;
+}
+
+.millbrook-homepage .mm-trust-item span{
+  color:#c8dadd;
+
+  font-size:13px;
+  line-height:1.5;
+}
+
+
+/* =========================================================
+   SECOND GALLERY
+========================================================= */
+
+.millbrook-homepage .mm-gallery-two{
+  padding:90px 22px;
+
+  background:#fff;
+}
+
+.millbrook-homepage .mm-gallery-two-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+  gap:18px;
+}
+
+.millbrook-homepage .mm-gallery-two-item{
+  position:relative;
+
+  overflow:hidden;
+
+  height:330px;
+
+  border-radius:16px;
+
+  background:#e9f0f2;
+}
+
+.millbrook-homepage .mm-gallery-two-item img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  display:block;
+
+  transition:transform .5s ease;
+}
+
+.millbrook-homepage .mm-gallery-two-item:hover img{
+  transform:scale(1.06);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.millbrook-homepage .mm-cta{
+  position:relative;
+
+  padding:85px 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(31,78,95,.97),
+      rgba(45,111,127,.95)
+    );
+
+  color:#fff;
+
+  text-align:center;
+
+  overflow:hidden;
+}
+
+.millbrook-homepage .mm-cta::before{
+  content:"";
+
+  position:absolute;
+
+  width:360px;
+  height:360px;
+
+  left:-170px;
+  bottom:-190px;
+
+  border-radius:50%;
+
+  border:1px solid rgba(255,255,255,.12);
+}
+
+.millbrook-homepage .mm-cta-inner{
+  position:relative;
+  z-index:2;
+
+  max-width:800px;
+
+  margin:0 auto;
+}
+
+.millbrook-homepage .mm-cta h2{
+  margin:0 0 12px;
+
+  color:#fff;
+
+  font-size:clamp(30px,4vw,42px);
+
+  line-height:1.2;
+}
+
+.millbrook-homepage .mm-cta p{
+  max-width:650px;
+
+  margin:0 auto 26px;
+
+  color:#dcecef;
+
+  font-size:17px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.millbrook-homepage .mm-footer{
+  background:#102f3b;
+
+  color:#d6e5e8;
+}
+
+.millbrook-homepage .mm-footer-main{
+  max-width:1240px;
+
+  margin:0 auto;
+
+  padding:65px 22px 45px;
+
+  display:grid;
+
+  grid-template-columns:
+    1.4fr
+    1fr
+    1fr
+    1.2fr;
+
+  gap:45px;
+}
+
+.millbrook-homepage .mm-footer-brand img{
+  display:block;
+
+  width:90px;
+  height:90px;
+
+  object-fit:contain;
+
+  margin-bottom:20px;
+
+  border-radius:12px;
+}
+
+.millbrook-homepage .mm-footer-brand h3{
+  margin:0 0 12px;
+
+  color:#fff;
+
+  font-size:20px;
+}
+
+.millbrook-homepage .mm-footer-brand p{
+  margin:0;
+
+  max-width:330px;
+
+  color:#bcd0d5;
+
+  font-size:14px;
+  line-height:1.8;
+}
+
+.millbrook-homepage .mm-footer h4{
+  margin:0 0 18px;
+
+  color:#fff;
+
+  font-size:16px;
+}
+
+.millbrook-homepage .mm-footer ul{
+  list-style:none;
+
+  margin:0;
+  padding:0;
+}
+
+.millbrook-homepage .mm-footer li{
+  margin:0 0 9px;
+}
+
+.millbrook-homepage .mm-footer a{
+  color:#c8dade;
+
+  font-size:14px;
+
+  transition:.25s ease;
+}
+
+.millbrook-homepage .mm-footer a:hover{
+  color:var(--mm-mint);
+
+  padding-left:3px;
+}
+
+.millbrook-homepage .mm-footer-contact p{
+  margin:0 0 13px;
+
+  color:#c8dade;
+
+  font-size:14px;
+
+  line-height:1.75;
+}
+
+.millbrook-homepage .mm-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.10);
+
+  padding:24px 22px 27px;
+
+  text-align:center;
+}
+
+.millbrook-homepage .mm-footer-legal{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+
+  gap:8px 14px;
+
+  margin-bottom:13px;
+}
+
+.millbrook-homepage .mm-footer-legal span{
+  color:rgba(255,255,255,.28);
+}
+
+.millbrook-homepage .mm-footer-compliance{
+  margin-bottom:8px;
+
+  color:#9dbcc3;
+
+  font-size:12px;
+}
+
+.millbrook-homepage .mm-footer-copy{
+  margin:0;
+
+  color:#8faeb5;
+
+  font-size:12px;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.millbrook-homepage .mm-back-top{
+  position:fixed;
+
+  right:20px;
+  bottom:20px;
+
+  z-index:9990;
+
+  width:44px;
+  height:44px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:0;
+  border-radius:50%;
+
+  background:var(--mm-primary);
+
+  color:#fff;
+
+  cursor:pointer;
+
+  font-size:18px;
+
+  box-shadow:0 8px 25px rgba(0,0,0,.20);
+
+  opacity:0;
+  visibility:hidden;
+
+  transform:translateY(12px);
+
+  transition:.3s ease;
+}
+
+.millbrook-homepage .mm-back-top.visible{
+  opacity:1;
+  visibility:visible;
+
+  transform:translateY(0);
+}
+
+.millbrook-homepage .mm-back-top:hover{
+  background:var(--mm-mint);
+
+  color:var(--mm-primary);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media(max-width:1000px){
+
+  .millbrook-homepage .mm-header-inner{
+    min-height:74px;
+  }
+
+  .millbrook-homepage .mm-nav-list{
+    gap:1px;
+  }
+
+  .millbrook-homepage .mm-nav-list a{
+    padding:9px 8px;
+
+    font-size:13px;
+  }
+
+  .millbrook-homepage .mm-header-cta{
+    padding:9px 12px;
+
+    font-size:13px;
+  }
+
+  .millbrook-homepage .mm-welcome-grid{
+    gap:40px;
+  }
+
+  .millbrook-homepage .mm-footer-main{
+    grid-template-columns:
+      1fr 1fr;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+  .millbrook-homepage .mm-header-inner{
+    min-height:68px;
+
+    padding:9px 14px;
+
+    gap:10px;
+  }
+
+  .millbrook-homepage .mm-logo img{
+    width:50px;
+    height:50px;
+  }
+
+  .millbrook-homepage .mm-nav{
+    display:none;
+  }
+
+  .millbrook-homepage .mm-header-cta{
+    display:none;
+  }
+
+  .millbrook-homepage .mm-menu-toggle{
+    display:flex;
+    margin-left:auto;
+  }
+
+  .millbrook-homepage .mm-hero{
+    min-height:650px;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(15,48,60,.92),
+        rgba(20,65,78,.80)
+      ),
+      url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA1IkCz6PNr6kHWVJtJrhyphenhyphen6SNcuPvTOXlpYOFmLTYOPTJpxhW52iriSO4OPfPQMXzgSd41xTOmsQvUnBXOz4jhJY6CXHh1KSgLcmFabvQ8tqdfDRRDr96CeG-FqmWqmPrgbfRqI5LUhAYKHrh4iKqnf-CxQMp4mEBG7z9tcdlf0hVX4L72paJRhkzqBhSs/s2000/1.jpg");
+
+    background-size:cover;
+    background-position:center;
+  }
+
+  .millbrook-homepage .mm-hero-inner{
+    padding:80px 18px 155px;
+  }
+
+  .millbrook-homepage .mm-eyebrow{
+    font-size:10px;
+  }
+
+  .millbrook-homepage .mm-hero h1{
+    font-size:40px;
+
+    letter-spacing:-1px;
+  }
+
+  .millbrook-homepage .mm-hero-text{
+    font-size:17px;
+  }
+
+  .millbrook-homepage .mm-hero-buttons{
+    flex-direction:column;
+
+    align-items:stretch;
+
+    max-width:330px;
+  }
+
+  .millbrook-homepage .mm-btn{
+    width:100%;
+  }
+
+  .millbrook-homepage .mm-hero-trust{
+    bottom:20px;
+
+    width:calc(100% - 36px);
+
+    justify-content:center;
+  }
+
+  .millbrook-homepage .mm-trust-box{
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:7px 13px;
+
+    padding:12px;
+
+    font-size:11px;
+  }
+
+  .millbrook-homepage .mm-section,
+  .millbrook-homepage .mm-gallery-section,
+  .millbrook-homepage .mm-gallery-two{
+    padding:65px 16px;
+  }
+
+  .millbrook-homepage .mm-welcome-grid{
+    grid-template-columns:1fr;
+
+    gap:35px;
+  }
+
+  .millbrook-homepage .mm-welcome-image img{
+    height:350px;
+  }
+
+  .millbrook-homepage .mm-image-badge{
+    left:15px;
+    bottom:15px;
+  }
+
+  .millbrook-homepage .mm-welcome-points{
+    grid-template-columns:1fr;
+  }
+
+  .millbrook-homepage .mm-gallery-grid{
+    grid-template-columns:1fr 1fr;
+
+    grid-template-rows:
+      230px
+      180px
+      180px;
+  }
+
+  .millbrook-homepage .mm-gallery-item:first-child{
+    grid-column:span 2;
+    grid-row:auto;
+  }
+
+  .millbrook-homepage .mm-gallery-overlay{
+    opacity:1;
+    transform:none;
+  }
+
+  .millbrook-homepage .mm-services-grid{
+    grid-template-columns:1fr;
+  }
+
+  .millbrook-homepage .mm-trust-section{
+    padding:70px 16px;
+  }
+
+  .millbrook-homepage .mm-trust-grid{
+    grid-template-columns:1fr;
+
+    gap:38px;
+  }
+
+  .millbrook-homepage .mm-trust-list{
+    grid-template-columns:1fr;
+  }
+
+  .millbrook-homepage .mm-gallery-two-grid{
+    grid-template-columns:1fr;
+  }
+
+  .millbrook-homepage .mm-gallery-two-item{
+    height:280px;
+  }
+
+  .millbrook-homepage .mm-cta{
+    padding:70px 18px;
+  }
+
+  .millbrook-homepage .mm-footer-main{
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+    padding:50px 20px 35px;
+  }
+
+  .millbrook-homepage .mm-footer-brand p{
+    max-width:100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media(max-width:480px){
+
+  .millbrook-homepage .mm-logo img{
+    width:46px;
+    height:46px;
+  }
+
+  .millbrook-homepage .mm-menu-toggle{
+    padding:8px 11px;
+
+    font-size:13px;
+  }
+
+  .millbrook-homepage .mm-hero{
+    min-height:680px;
+  }
+
+  .millbrook-homepage .mm-hero-inner{
+    padding-top:65px;
+  }
+
+  .millbrook-homepage .mm-hero h1{
+    font-size:34px;
+  }
+
+  .millbrook-homepage .mm-hero-text{
+    font-size:16px;
+  }
+
+  .millbrook-homepage .mm-trust-box span{
+    white-space:normal;
+  }
+
+  .millbrook-homepage .mm-gallery-grid{
+    grid-template-rows:
+      220px
+      160px
+      160px;
+  }
+
+  .millbrook-homepage .mm-gallery-two-item{
+    height:240px;
+  }
+
+  .millbrook-homepage .mm-footer-legal{
+    gap:5px 10px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+  .millbrook-homepage *,
+  .millbrook-homepage *::before,
+  .millbrook-homepage *::after{
+    scroll-behavior:auto !important;
+    transition:none !important;
+    animation:none !important;
+  }
+
+}
+
+</style>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="mm-header" id="mmHeader">
+
+  <div class="mm-header-inner">
+
+    <!-- LOGO -->
+    <a class="mm-logo" href="/" aria-label="Millbrook Manor Nursing Home Home">
+
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+        alt="Millbrook Manor Nursing Home"
+      />
+
+    </a>
+
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="mm-nav" aria-label="Main navigation">
+
+      <ul class="mm-nav-list">
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/admissions.html">
+            Admissions
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/contact.html">
+            Contact
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/meet-the-team.html">
+            The Team
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+
+    <!-- DESKTOP CTA -->
+    <a
+      class="mm-header-cta"
+      href="https://millbrookmanor.eu/enquire-now.html"
+    >
+      Book a Visit
+    </a>
+
+
+    <!-- MOBILE MENU -->
+    <button
+      class="mm-menu-toggle"
+      id="mmMenuToggle"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+
+      <span class="mm-menu-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
+      <span>Menu</span>
+
+    </button>
+
+  </div>
+
+
+  <!-- MOBILE NAVIGATION -->
+  <nav
+    class="mm-mobile-nav"
+    id="mmMobileNav"
+    aria-label="Mobile navigation"
+  >
+
+    <ul>
+
+      <li>
+        <a href="/">Home</a>
+      </li>
+
+      <li>
+        <a href="https://millbrookmanor.eu/about-us.html">
+          About Us
+        </a>
+      </li>
+
+      <li>
+        <a href="https://millbrookmanor.eu/admissions.html">
+          Admissions
+        </a>
+      </li>
+
+      <li>
+        <a href="https://millbrookmanor.eu/contact.html">
+          Contact
+        </a>
+      </li>
+
+      <li>
+        <a href="https://millbrookmanor.eu/meet-the-team.html">
+          The Team
+        </a>
+      </li>
+
+      <li>
+        <a href="https://millbrookmanor.eu/enquire-now.html">
+          Book a Visit
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="mm-hero">
+
+  <div class="mm-hero-inner">
+
+    <div>
+
+      <div class="mm-eyebrow">
+        <span class="mm-eyebrow-dot"></span>
+        Compassionate • Professional • Person-Centred
+      </div>
+
+
+      <h1>
+        Millbrook Manor Nursing Home
+      </h1>
+
+
+      <p class="mm-hero-text">
+        Compassionate, professional care in a safe and homely environment,
+        where every resident is treated with dignity, respect and kindness.
+      </p>
+
+
+      <div class="mm-hero-buttons">
+
+        <a
+          class="mm-btn mm-btn-primary"
+          href="https://millbrookmanor.eu/enquire-now.html"
+        >
+          Enquire Now
+          <span aria-hidden="true">→</span>
+        </a>
+
+        <a
+          class="mm-btn mm-btn-outline"
+          href="https://millbrookmanor.eu/admissions.html"
+        >
+          Explore Admissions
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- TRUST STRIP -->
+
+  <div class="mm-hero-trust">
+
+    <div class="mm-trust-box">
+
+      <span>
+        <strong>✓</strong>
+        Person-centred care
+      </span>
+
+      <span>
+        <strong>✓</strong>
+        Safe environment
+      </span>
+
+      <span>
+        <strong>✓</strong>
+        Dignity &amp; respect
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     WELCOME
+========================================================= -->
+
+<section class="mm-section mm-welcome">
+
+  <div class="mm-container">
+
+    <div class="mm-welcome-grid">
+
+
+      <!-- IMAGE -->
+
+      <div class="mm-welcome-image">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA1IkCz6PNr6kHWVJtJrhyphenhyphen6SNcuPvTOXlpYOFmLTYOPTJpxhW52iriSO4OPfPQMXzgSd41xTOmsQvUnBXOz4jhJY6CXHh1KSgLcmFabvQ8tqdfDRRDr96CeG-FqmWqmPrgbfRqI5LUhAYKHrh4iKqnf-CxQMp4mEBG7z9tcdlf0hVX4L72paJRhkzqBhSs/s2000/1.jpg"
+          alt="Millbrook Manor Nursing Home"
+          loading="lazy"
+        />
+
+        <div class="mm-image-badge">
+
+          <strong>
+            A safe and welcoming environment
+          </strong>
+
+          <span>
+            Supporting residents with compassionate care.
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONTENT -->
+
+      <div class="mm-welcome-copy">
+
+        <span class="mm-kicker">
+          Welcome to Millbrook Manor
+        </span>
+
+        <h2>
+          Care that puts people first
+        </h2>
+
+        <p>
+          We are committed to delivering high-quality,
+          person-centred care that promotes dignity,
+          independence, and well-being.
+        </p>
+
+        <p>
+          Our home provides a safe and supportive environment
+          where residents are treated with respect and compassion
+          at all times.
+        </p>
+
+
+        <div class="mm-welcome-points">
+
+          <div class="mm-welcome-point">
+
+            <span class="mm-check">✓</span>
+
+            <span>
+              Respectful and compassionate support
+            </span>
+
+          </div>
+
+
+          <div class="mm-welcome-point">
+
+            <span class="mm-check">✓</span>
+
+            <span>
+              Person-centred approach to care
+            </span>
+
+          </div>
+
+
+          <div class="mm-welcome-point">
+
+            <span class="mm-check">✓</span>
+
+            <span>
+              Safe and supportive surroundings
+            </span>
+
+          </div>
+
+
+          <div class="mm-welcome-point">
+
+            <span class="mm-check">✓</span>
+
+            <span>
+              Focus on dignity and well-being
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     IMAGE GALLERY
+========================================================= -->
+
+<section class="mm-gallery-section">
+
+  <div class="mm-container">
+
+    <div class="mm-section-heading">
+
+      <span class="mm-kicker">
+        Our Environment
+      </span>
+
+      <h2>
+        A warm and welcoming home
+      </h2>
+
+      <p>
+        Take a glimpse at the environment where residents
+        receive care, support and companionship.
+      </p>
+
+    </div>
+
+
+    <div class="mm-gallery-grid">
+
+
+      <div class="mm-gallery-item">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA1IkCz6PNr6kHWVJtJrhyphenhyphen6SNcuPvTOXlpYOFmLTYOPTJpxhW52iriSO4OPfPQMXzgSd41xTOmsQvUnBXOz4jhJY6CXHh1KSgLcmFabvQ8tqdfDRRDr96CeG-FqmWqmPrgbfRqI5LUhAYKHrh4iKqnf-CxQMp4mEBG7z9tcdlf0hVX4L72paJRhkzqBhSs/s320/1.jpg"
+          alt="Millbrook Manor"
+          loading="lazy"
+        />
+
+        <div class="mm-gallery-overlay">
+          Millbrook Manor Nursing Home
+        </div>
+
+      </div>
+
+
+      <div class="mm-gallery-item">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNYwufd0NueAjXitb-TG1oPaJFDgHrgor5JntjTtCE0gwDEQjf1iY31Z5vHylOzQjUgGl8DsKd16m-Fu6jtu8V5m5hAXOmaS0kL0oVFUc53j6974h5kettsWeJoggg8vBF0Gb1fKvU8iE4-sfv1v3uj6gV0LIu6r3yeMexMYrW8q69FTGGypckB_H0KeRT/s320/2.jpg"
+          alt="Millbrook Manor care environment"
+          loading="lazy"
+        />
+
+        <div class="mm-gallery-overlay">
+          Comfortable surroundings
+        </div>
+
+      </div>
+
+
+      <div class="mm-gallery-item">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJYHgww1nwq6FH6mTG2zMpYZibxHoydjz2tt4J3KiXZo81tra4dXsvUoEb5w8oNhyGRUAqu6UNiAGzZg0e9-bkDTaJ9NcLdq9xyv72QYyHTGEHTdroLa3hA_vjyMR5G0Qq_9FWXMXeN_ZLrWqJbYtJaYGOzCknKGx8QErYopANt9vYek-PJrb0k_QI29YM/s320/6.jpg"
+          alt="Millbrook Manor facilities"
+          loading="lazy"
+        />
+
+        <div class="mm-gallery-overlay">
+          Welcoming spaces
+        </div>
+
+      </div>
+
+
+      <div class="mm-gallery-item">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEPacDlUDo9cQSvHJnOJKCQ0Uu5mAfTB9RvcgodH9t9j9Sc7OO6AlTq9uKs8oWGPx3rJNJqqKFW9ypZe7v9CIay18nzmkRr_W7_SjUTmBrC0IqWuFztvZlhd7YavliZSHoGXlcbDwoaqrE8HChR1-bcbz2bQ-y2gFE7EzKnETSFhtXsi1k_dl4MDjwxQp_/s320/7.jpg"
+          alt="Millbrook Manor surroundings"
+          loading="lazy"
+        />
+
+        <div class="mm-gallery-overlay">
+          Homely atmosphere
+        </div>
+
+      </div>
+
+
+      <div class="mm-gallery-item">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLUPQ_DvAZKnunH_LrCcYAIr-uRxYw_Ne_dR_IgQHkrJZBNXilK-AlrxkyK8hXzysls8W35T_a8LNf1NVjMQ2u8Hp77j1cOu-JC8jdNcGHMoJlrVCDCQObFfD-gBjOJ2Q3o-B93Cus9H8zJX0g7yEpgAUxah7qRvapYtASZySY6TNifNpKeQmAOoi1UzON/s320/81151_4294.jpg"
+          alt="Millbrook Manor"
+          loading="lazy"
+        />
+
+        <div class="mm-gallery-overlay">
+          Care and community
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section class="mm-section mm-services">
+
+  <div class="mm-container">
+
+    <div class="mm-section-heading">
+
+      <span class="mm-kicker">
+        What We Provide
+      </span>
+
+      <h2>
+        Our Care Services
+      </h2>
+
+      <p>
+        Our services are designed to provide appropriate,
+        respectful and compassionate support for residents
+        and their families.
+      </p>
+
+    </div>
+
+
+    <div class="mm-services-grid">
+
+
+      <!-- SERVICE 1 -->
+
+      <article class="mm-service-card">
+
+        <div class="mm-service-icon">
+          ♥
+        </div>
+
+        <h3>
+          Long Term Care
+        </h3>
+
+        <p>
+          Full support for residents requiring ongoing
+          assistance including dementia, frailty,
+          and complex needs.
+        </p>
+
+      </article>
+
+
+      <!-- SERVICE 2 -->
+
+      <article class="mm-service-card">
+
+        <div class="mm-service-icon">
+          ✚
+        </div>
+
+        <h3>
+          Residential Nursing Care
+        </h3>
+
+        <p>
+          Personalised care delivered in a homely environment
+          with 24/7 nursing support.
+        </p>
+
+      </article>
+
+
+      <!-- SERVICE 3 -->
+
+      <article class="mm-service-card">
+
+        <div class="mm-service-icon">
+          ♡
+        </div>
+
+        <h3>
+          Palliative Care
+        </h3>
+
+        <p>
+          Compassionate end-of-life care focused on dignity,
+          comfort, and emotional support for families.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY FAMILIES TRUST US
+========================================================= -->
+
+<section class="mm-trust-section">
+
+  <div class="mm-container">
+
+    <div class="mm-trust-grid">
+
+
+      <div class="mm-trust-copy">
+
+        <span class="mm-kicker">
+          Our Approach
+        </span>
+
+        <h2>
+          Why Families Trust Us
+        </h2>
+
+        <p>
+          Millbrook Manor Nursing Home is built on trust,
+          compassion, and professional care. We work closely
+          with families and healthcare professionals to ensure
+          each resident receives tailored, respectful support.
+        </p>
+
+      </div>
+
+
+      <div class="mm-trust-list">
+
+
+        <div class="mm-trust-item">
+
+          <div class="mm-trust-item-icon">
+            ✓
+          </div>
+
+          <div>
+
+            <strong>
+              Compassionate Care
+            </strong>
+
+            <span>
+              Residents are treated with dignity,
+              respect and kindness.
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="mm-trust-item">
+
+          <div class="mm-trust-item-icon">
+            ✓
+          </div>
+
+          <div>
+
+            <strong>
+              Person-Centred
+            </strong>
+
+            <span>
+              Care is shaped around individual needs
+              and circumstances.
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="mm-trust-item">
+
+          <div class="mm-trust-item-icon">
+            ✓
+          </div>
+
+          <div>
+
+            <strong>
+              Family Partnership
+            </strong>
+
+            <span>
+              We work closely with families and
+              healthcare professionals.
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="mm-trust-item">
+
+          <div class="mm-trust-item-icon">
+            ✓
+          </div>
+
+          <div>
+
+            <strong>
+              Safe Environment
+            </strong>
+
+            <span>
+              A supportive setting designed around
+              comfort and well-being.
+            </span>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     SECOND GALLERY
+========================================================= -->
+
+<section class="mm-gallery-two">
+
+  <div class="mm-container">
+
+    <div class="mm-section-heading">
+
+      <span class="mm-kicker">
+        Millbrook Manor
+      </span>
+
+      <h2>
+        A place to feel at home
+      </h2>
+
+      <p>
+        Our environment is designed to feel welcoming,
+        comfortable and supportive.
+      </p>
+
+    </div>
+
+
+    <div class="mm-gallery-two-grid">
+
+
+      <div class="mm-gallery-two-item">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLUPQ_DvAZKnunH_LrCcYAIr-uRxYw_Ne_dR_IgQHkrJZBNXilK-AlrxkyK8hXzysls8W35T_a8LNf1NVjMQ2u8Hp77j1cOu-JC8jdNcGHMoJlrVCDCQObFfD-gBjOJ2Q3o-B93Cus9H8zJX0g7yEpgAUxah7qRvapYtASZySY6TNifNpKeQmAOoi1UzON/s320/81151_4294.jpg"
+          alt="Millbrook Manor Nursing Home"
+          loading="lazy"
+        />
+
+      </div>
+
+
+      <div class="mm-gallery-two-item">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimYFAm4tDIXduM7u_OyQX9rFbeuPkan_I1ynUykvOCMJeMXbR337Jw8aVef5Dv5vQ95J5Z_flKmgG-a8ddT-onB6aSl9OHIlNIM6myX9rO3CEqkGpBsmww8AihBZVHaWYOm0sU0tKoV5bnhVKRfw7cldTXGJt6UnaS3oPi_XVreTTf3jsYhoGpuhg2Dgk6/s320/images%20(1).jfif"
+          alt="Millbrook Manor environment"
+          loading="lazy"
+        />
+
+      </div>
+
+
+      <div class="mm-gallery-two-item">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidiTOc-T8zJ8zMMEJ7ElbRdOUfIcro6WIZcQh_-dx-AZXhIvXzUL-TQNLYfnNSAcdvLmknRQykMhwNU30rRjZ_65xFaADCiDIAd-2Q5WubXWqWzYssL6ZVqEp5iuTv4Gh_MGxvfU-BU7XAfC2Os6_7gAypxcHGzNoQa17_kYhh0oxSRnk6ufqIYL1cLgXE/s320/images%20(2).jfif"
+          alt="Millbrook Manor care environment"
+          loading="lazy"
+        />
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CALL TO ACTION
+========================================================= -->
+
+<section class="mm-cta">
+
+  <div class="mm-cta-inner">
+
+    <h2>
+      Speak to Our Care Team Today
+    </h2>
+
+    <p>
+      We are here to support you with admissions,
+      assessments, and care planning.
+    </p>
+
+    <a
+      class="mm-btn mm-btn-primary"
+      href="https://millbrookmanor.eu/contact.html"
+    >
+      Contact Us
+      <span aria-hidden="true">→</span>
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="mm-footer">
+
+
+  <div class="mm-footer-main">
+
+
+    <!-- ABOUT -->
+
+    <div class="mm-footer-brand">
+
+      <a href="/">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+          alt="Millbrook Manor Nursing Home"
+        />
+
+      </a>
+
+      <h3>
+        Millbrook Manor Nursing Home
+      </h3>
+
+      <p>
+        Providing compassionate, professional nursing care
+        in a safe, comfortable, and welcoming environment
+        where every resident is treated with dignity,
+        respect, and kindness.
+      </p>
+
+    </div>
+
+
+    <!-- QUICK LINKS -->
+
+    <div>
+
+      <h4>
+        Quick Links
+      </h4>
+
+      <ul>
+
+        <li>
+          <a href="/">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/admissions.html">
+            Admissions
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/careers.html">
+            Careers
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/enquire-now.html">
+            Request a Quote
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/gallery.html">
+            Gallery
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/care-pals-hepa-health-enhancing-physical-activities.html">
+            Activities
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/contact.html">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- SERVICES -->
+
+    <div>
+
+      <h4>
+        Our Services
+      </h4>
+
+      <ul>
+
+        <li>
+          Long Term Care
+        </li>
+
+        <li>
+          Residential Nursing Care
+        </li>
+
+        <li>
+          Adult Services (18+)
+        </li>
+
+        <li>
+          Palliative Care
+        </li>
+
+        <li>
+          Fair Deal Scheme Support
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- CONTACT -->
+
+    <div class="mm-footer-contact">
+
+      <h4>
+        Contact Us
+      </h4>
+
+      <p>
+        📍 Millbrook Manor Nursing Home<br>
+        Slade Road, Coolmines, Saggart, D24 A9RY<br>
+        Dublin, Ireland
+      </p>
+
+      <p>
+        ✉ info@millbrookmanor.ie
+      </p>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- FOOTER BOTTOM -->
+
+  <div class="mm-footer-bottom">
+
+
+    <div class="mm-footer-legal">
+
+      <a href="https://millbrookmanor.eu/privacy-policy.html">
+        Privacy Policy
+      </a>
+
+      <span>|</span>
+
+      <a href="https://millbrookmanor.eu/terms-conditions.html">
+        Terms &amp; Conditions
+      </a>
+
+      <span>|</span>
+
+      <a href="https://millbrookmanor.eu/cookie-policy.html">
+        Cookie Policy
+      </a>
+
+    </div>
+
+
+    <div class="mm-footer-compliance">
+      Registered Nursing Home • Fair Deal Scheme Approved •
+      Professional &amp; Compassionate Care
+    </div>
+
+
+    <p class="mm-footer-copy">
+      © 2009 - 2026 Millbrook Manor Nursing Home.
+      All Rights Reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================= -->
+
+<button
+  class="mm-back-top"
+  id="mmBackTop"
+  type="button"
+  aria-label="Back to top"
+>
+  ↑
+</button>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+(function(){
+
+  var homepage = document.querySelector('.millbrook-homepage');
+
+  if(!homepage){
+    return;
+  }
+
+
+  /* =====================================================
+     MOBILE MENU
+  ===================================================== */
+
+  var header = homepage.querySelector('#mmHeader');
+  var menuButton = homepage.querySelector('#mmMenuToggle');
+  var mobileLinks = homepage.querySelectorAll('.mm-mobile-nav a');
+
+  if(menuButton && header){
+
+    menuButton.addEventListener('click', function(){
+
+      var isOpen = header.classList.toggle('menu-open');
+
+      menuButton.setAttribute(
+        'aria-expanded',
+        isOpen ? 'true' : 'false'
+      );
+
+      menuButton.setAttribute(
+        'aria-label',
+        isOpen ? 'Close menu' : 'Open menu'
+      );
+
+    });
+
+  }
+
+
+  /* =====================================================
+     CLOSE MOBILE MENU AFTER CLICK
+  ===================================================== */
+
+  mobileLinks.forEach(function(link){
+
+    link.addEventListener('click', function(){
+
+      if(header){
+
+        header.classList.remove('menu-open');
+
+      }
+
+      if(menuButton){
+
+        menuButton.setAttribute(
+          'aria-expanded',
+          'false'
+        );
+
+        menuButton.setAttribute(
+          'aria-label',
+          'Open menu'
+        );
+
+      }
+
+    });
+
+  });
+
+
+  /* =====================================================
+     CLOSE MENU WHEN CLICKING OUTSIDE
+  ===================================================== */
+
+  document.addEventListener('click', function(event){
+
+    if(!header || !menuButton){
+      return;
+    }
+
+    if(
+      header.classList.contains('menu-open') &&
+      !header.contains(event.target)
+    ){
+
+      header.classList.remove('menu-open');
+
+      menuButton.setAttribute(
+        'aria-expanded',
+        'false'
+      );
+
+      menuButton.setAttribute(
+        'aria-label',
+        'Open menu'
+      );
+
+    }
+
+  });
+
+
+  /* =====================================================
+     ESC KEY CLOSES MENU
+  ===================================================== */
+
+  document.addEventListener('keydown', function(event){
+
+    if(event.key === 'Escape'){
+
+      if(header){
+
+        header.classList.remove('menu-open');
+
+      }
+
+      if(menuButton){
+
+        menuButton.setAttribute(
+          'aria-expanded',
+          'false'
+        );
+
+        menuButton.setAttribute(
+          'aria-label',
+          'Open menu'
+        );
+
+      }
+
+    }
+
+  });
+
+
+  /* =====================================================
+     BACK TO TOP
+  ===================================================== */
+
+  var backTop = homepage.querySelector('#mmBackTop');
+
+  if(backTop){
+
+    window.addEventListener(
+      'scroll',
+      function(){
+
+        if(window.scrollY > 500){
+
+          backTop.classList.add('visible');
+
+        }else{
+
+          backTop.classList.remove('visible');
+
+        }
+
+      },
+      {passive:true}
+    );
+
+
+    backTop.addEventListener(
+      'click',
+      function(){
+
+        window.scrollTo({
+          top:0,
+          behavior:'smooth'
+        });
+
+      }
+    );
+
+  }
+
+
+  /* =====================================================
+     PREVENT MOBILE MENU STAYING OPEN AFTER RESIZE
+  ===================================================== */
+
+  window.addEventListener('resize', function(){
+
+    if(window.innerWidth > 768){
+
+      if(header){
+        header.classList.remove('menu-open');
+      }
+
+      if(menuButton){
+
+        menuButton.setAttribute(
+          'aria-expanded',
+          'false'
+        );
+
+        menuButton.setAttribute(
+          'aria-label',
+          'Open menu'
+        );
+
+      }
+
+    }
+
+  });
+
+
+})();
+</script>
+
+</div>
+
+</body>
+</html>

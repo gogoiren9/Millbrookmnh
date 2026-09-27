@@ -1,0 +1,1711 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Activities | Millbrook Manor Nursing Home</title>
+
+<meta name="description" content="Discover the wide range of activities at Millbrook Manor Nursing Home, including bingo, arts and crafts, music, gardening, reminiscence, outings, exercise, games and personalised activities.">
+
+<style>
+
+/* =========================================================
+   MILLBROOK MANOR ACTIVITIES PAGE
+   COMPLETE READY-TO-PASTE VERSION
+   ========================================================= */
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f5f8f9;
+  color:#26343a;
+  overflow-x:hidden;
+}
+
+a{
+  text-decoration:none;
+}
+
+
+/* =========================================================
+   STICKY HEADER
+   ========================================================= */
+
+.millbrook-header{
+  width:100%;
+  background:#1f4e5f;
+  position:sticky;
+  position:-webkit-sticky;
+  top:0;
+  z-index:99999;
+  padding:14px 20px;
+  box-shadow:0 3px 15px rgba(0,0,0,.12);
+}
+
+.header-container{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:20px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+}
+
+.logo img{
+  display:block;
+  width:60px;
+  height:auto;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+   ========================================================= */
+
+.millbrook-nav{
+  flex:1;
+}
+
+.millbrook-nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:22px;
+}
+
+.millbrook-nav li{
+  margin:0;
+  padding:0;
+}
+
+.millbrook-nav a{
+  color:#d9e8ed;
+  font-size:15px;
+  font-weight:600;
+  white-space:nowrap;
+
+  transition:all .25s ease;
+}
+
+.millbrook-nav a:hover{
+  color:#8fd3c1;
+}
+
+
+/* =========================================================
+   HEADER BUTTON
+   ========================================================= */
+
+.header-btn{
+  display:inline-block;
+
+  background:#8fd3c1;
+  color:#1f4e5f;
+
+  padding:11px 17px;
+  border-radius:7px;
+
+  font-size:14px;
+  font-weight:700;
+
+  white-space:nowrap;
+
+  transition:all .25s ease;
+}
+
+.header-btn:hover{
+  background:#fff;
+  color:#1f4e5f;
+}
+
+
+/* =========================================================
+   MOBILE HEADER
+   ========================================================= */
+
+@media(max-width:768px){
+
+  .millbrook-header{
+    padding:10px 15px;
+  }
+
+  .header-container{
+    gap:10px;
+  }
+
+  .logo img{
+    width:50px;
+  }
+
+  .millbrook-nav{
+    flex:0;
+  }
+
+  .millbrook-nav ul{
+    position:absolute;
+
+    top:100%;
+    right:10px;
+
+    width:230px;
+
+    display:none;
+
+    flex-direction:column;
+    align-items:stretch;
+
+    gap:0;
+
+    background:#1f4e5f;
+
+    padding:10px;
+
+    border-radius:0 0 10px 10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    z-index:100000;
+  }
+
+  /*
+     Mobile menu is visible when the header
+     receives the active class.
+  */
+  .millbrook-header.active .millbrook-nav ul{
+    display:flex;
+  }
+
+  .millbrook-nav li{
+    width:100%;
+  }
+
+  .millbrook-nav a{
+    display:block;
+    padding:13px 12px;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+
+  .millbrook-nav li:last-child a{
+    border-bottom:none;
+  }
+
+  /*
+     Mobile menu button
+  */
+  .mobile-menu-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:7px;
+
+    background:transparent;
+    border:1px solid rgba(255,255,255,.4);
+
+    color:#fff;
+
+    padding:9px 12px;
+
+    border-radius:6px;
+
+    font-size:14px;
+    font-weight:700;
+
+    cursor:pointer;
+  }
+
+  .header-btn{
+    padding:9px 11px;
+    font-size:12px;
+  }
+}
+
+
+/* Desktop: hide mobile toggle */
+
+.mobile-menu-toggle{
+  display:none;
+}
+
+@media(max-width:768px){
+
+  .mobile-menu-toggle{
+    display:flex;
+  }
+
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.activities-hero{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(31,78,95,.98),
+      rgba(31,78,95,.88)
+    );
+
+  padding:85px 20px;
+
+  text-align:center;
+
+  color:#fff;
+}
+
+.activities-hero-inner{
+  max-width:900px;
+  margin:auto;
+}
+
+.activities-hero h1{
+  margin:0 0 18px;
+
+  font-size:clamp(38px,6vw,64px);
+
+  line-height:1.1;
+  font-weight:800;
+}
+
+.activities-hero p{
+  max-width:760px;
+  margin:0 auto;
+
+  color:#d9e8ed;
+
+  font-size:18px;
+  line-height:1.8;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.activities-intro{
+  max-width:1000px;
+  margin:auto;
+  padding:65px 20px 30px;
+
+  text-align:center;
+}
+
+.activities-intro h2{
+  margin:0 0 15px;
+
+  color:#1f4e5f;
+
+  font-size:34px;
+}
+
+.activities-intro h2 span{
+  color:#8fd3c1;
+}
+
+.activities-intro p{
+  margin:0 auto;
+
+  max-width:850px;
+
+  color:#5d6b70;
+
+  font-size:17px;
+  line-height:1.85;
+}
+
+
+/* =========================================================
+   ACTIVITY GRID
+   ========================================================= */
+
+.activities-section{
+  max-width:1200px;
+
+  margin:0 auto;
+
+  padding:30px 20px 80px;
+}
+
+.activities-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0,1fr));
+
+  gap:24px;
+}
+
+
+/* =========================================================
+   ACTIVITY CARD
+   ========================================================= */
+
+.activity-card{
+  background:#fff;
+
+  border-radius:14px;
+
+  padding:28px 25px;
+
+  border:1px solid #e2eaed;
+
+  box-shadow:
+    0 5px 20px rgba(31,78,95,.07);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.activity-card:hover{
+  transform:translateY(-5px);
+
+  border-color:#8fd3c1;
+
+  box-shadow:
+    0 12px 30px rgba(31,78,95,.13);
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.activity-icon{
+  width:55px;
+  height:55px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:18px;
+
+  border-radius:12px;
+
+  background:#e9f6f3;
+
+  font-size:27px;
+}
+
+
+/* =========================================================
+   CARD TITLE
+   ========================================================= */
+
+.activity-card h3{
+  margin:0 0 12px;
+
+  color:#1f4e5f;
+
+  font-size:21px;
+  line-height:1.3;
+}
+
+.activity-card p{
+  margin:0;
+
+  color:#5d6b70;
+
+  font-size:15px;
+
+  line-height:1.75;
+}
+
+
+/* =========================================================
+   FEATURED ACTIVITY
+   ========================================================= */
+
+.activity-card.featured{
+  border-top:4px solid #8fd3c1;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.activities-cta{
+  background:#e9f4f2;
+
+  padding:65px 20px;
+
+  text-align:center;
+}
+
+.activities-cta-inner{
+  max-width:850px;
+  margin:auto;
+}
+
+.activities-cta h2{
+  margin:0 0 15px;
+
+  color:#1f4e5f;
+
+  font-size:32px;
+}
+
+.activities-cta p{
+  margin:0 auto 25px;
+
+  color:#53656b;
+
+  font-size:16px;
+  line-height:1.8;
+}
+
+.cta-button{
+  display:inline-block;
+
+  background:#1f4e5f;
+  color:#fff;
+
+  padding:13px 24px;
+
+  border-radius:7px;
+
+  font-weight:700;
+
+  transition:all .25s ease;
+}
+
+.cta-button:hover{
+  background:#8fd3c1;
+  color:#1f4e5f;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.millbrook-footer{
+  background:#1f4e5f;
+
+  color:#fff;
+
+  padding:60px 20px 0;
+}
+
+.footer-container{
+  max-width:1200px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,minmax(0,1fr));
+
+  gap:40px;
+}
+
+.footer-logo{
+  width:120px;
+  height:auto;
+
+  margin-bottom:18px;
+}
+
+.millbrook-footer h3,
+.millbrook-footer h4{
+  color:#fff;
+
+  margin:0 0 15px;
+}
+
+.millbrook-footer h3{
+  font-size:19px;
+}
+
+.millbrook-footer h4{
+  font-size:17px;
+}
+
+.millbrook-footer p,
+.millbrook-footer li{
+  color:#d9e8ed;
+
+  line-height:1.75;
+}
+
+.footer-about p{
+  font-size:14px;
+}
+
+.millbrook-footer ul{
+  list-style:none;
+
+  margin:0;
+  padding:0;
+}
+
+.millbrook-footer li{
+  margin-bottom:7px;
+}
+
+.millbrook-footer a{
+  color:#d9e8ed;
+
+  text-decoration:none;
+
+  transition:color .25s ease;
+}
+
+.millbrook-footer a:hover{
+  color:#8fd3c1;
+}
+
+.footer-contact p{
+  white-space:pre-line;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+   ========================================================= */
+
+.footer-bottom{
+  max-width:1200px;
+
+  margin:40px auto 0;
+
+  padding:25px 10px;
+
+  text-align:center;
+
+  border-top:1px solid rgba(255,255,255,.15);
+}
+
+.footer-legal{
+  margin-bottom:13px;
+}
+
+.footer-legal a{
+  display:inline-block;
+
+  margin:3px 7px;
+
+  font-size:13px;
+}
+
+.footer-legal span{
+  color:rgba(255,255,255,.35);
+}
+
+.footer-compliance{
+  color:#b9d4db;
+
+  font-size:13px;
+
+  margin-bottom:10px;
+
+  line-height:1.6;
+}
+
+.footer-bottom p{
+  margin:0;
+
+  color:#d9e8ed;
+
+  font-size:13px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media(max-width:1000px){
+
+  .activities-grid{
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+  .footer-container{
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:650px){
+
+  .activities-hero{
+    padding:60px 18px;
+  }
+
+  .activities-hero h1{
+    font-size:40px;
+  }
+
+  .activities-hero p{
+    font-size:16px;
+  }
+
+  .activities-intro{
+    padding:45px 18px 20px;
+  }
+
+  .activities-intro h2{
+    font-size:28px;
+  }
+
+  .activities-intro p{
+    font-size:15px;
+  }
+
+  .activities-section{
+    padding:20px 15px 55px;
+  }
+
+  .activities-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .activity-card{
+    padding:24px 21px;
+  }
+
+  .activities-cta{
+    padding:50px 18px;
+  }
+
+  .activities-cta h2{
+    font-size:27px;
+  }
+
+  .footer-container{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .millbrook-footer{
+    padding:45px 20px 0;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media(max-width:480px){
+
+  .header-container{
+    gap:7px;
+  }
+
+  .logo img{
+    width:45px;
+  }
+
+  .header-btn{
+    padding:8px 9px;
+    font-size:11px;
+  }
+
+  .mobile-menu-toggle{
+    padding:8px 9px;
+    font-size:13px;
+  }
+
+  .millbrook-nav ul{
+    right:5px;
+    width:calc(100vw - 20px);
+    max-width:230px;
+  }
+
+  .activities-hero h1{
+    font-size:34px;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.millbrook-nav a:focus,
+.header-btn:focus,
+.mobile-menu-toggle:focus,
+.cta-button:focus{
+  outline:3px solid rgba(143,211,193,.7);
+  outline-offset:3px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- =======================================================
+     STICKY HEADER
+     ======================================================= -->
+
+<header class="millbrook-header" id="millbrookHeader">
+
+  <div class="header-container">
+
+    <!-- Logo -->
+    <a class="logo" href="/" aria-label="Millbrook Manor Nursing Home Home">
+
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+        alt="Millbrook Manor Nursing Home"
+      >
+
+    </a>
+
+
+    <!-- Mobile Menu Toggle -->
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="millbrookNavigation"
+    >
+      ☰ <span>Menu</span>
+    </button>
+
+
+    <!-- Navigation -->
+    <nav
+      class="millbrook-nav"
+      id="millbrookNavigation"
+      aria-label="Main Navigation"
+    >
+
+      <ul>
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/admissions.html">
+            Admissions
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/contact.html">
+            Contact
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/meet-the-team.html">
+            The Team
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/care-pals-hepa-health-enhancing-physical-activities.html">
+            Activities
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+
+    <!-- Book a Visit -->
+    <a
+      class="header-btn"
+      href="https://millbrookmanor.eu/enquire-now.html"
+    >
+      Book a Visit
+    </a>
+
+  </div>
+
+</header>
+
+
+
+<!-- =======================================================
+     HERO
+     ======================================================= -->
+
+<section class="activities-hero">
+
+  <div class="activities-hero-inner">
+
+    <h1>Activities</h1>
+
+    <p>
+      Meaningful activities, social connection and opportunities
+      for residents to enjoy, participate and express themselves
+      in a welcoming community.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     INTRODUCTION
+     ======================================================= -->
+
+<section class="activities-intro">
+
+  <h2>
+    Life at Millbrook <span>Manor</span>
+  </h2>
+
+  <p>
+    At Millbrook Manor, we recognise that meaningful activity is
+    an important part of everyday life. Our activities programme
+    offers a wide variety of opportunities for residents to
+    socialise, stay active, enjoy familiar interests and discover
+    new experiences. Activities can be adapted to individual
+    preferences, abilities and levels of participation.
+  </p>
+
+</section>
+
+
+
+<!-- =======================================================
+     ACTIVITIES
+     ======================================================= -->
+
+<section class="activities-section">
+
+  <div class="activities-grid">
+
+
+    <!-- BINGO -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">🎯</div>
+
+      <h3>Bingo</h3>
+
+      <p>
+        Bingo is played weekly on specialised hard boards.
+        Games are played at a relaxed pace, with staff assistance
+        available when needed. Residents can enjoy the fun,
+        social interaction and, of course, the prizes.
+      </p>
+
+    </article>
+
+
+    <!-- CARE PALS -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">🏃</div>
+
+      <h3>Care Pals &amp; HEPA</h3>
+
+      <p>
+        Chair-based exercises are tailored to suit most residents,
+        using props such as foam batons, soft balls and hula hoops.
+        Exercises are often done to music, allowing everyone to
+        sing along while moving. Our facilitators are trained in
+        Care Pals and HEPA activities.
+      </p>
+
+    </article>
+
+
+    <!-- CARDS -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">🃏</div>
+
+      <h3>Cards Club &amp; Games</h3>
+
+      <p>
+        Residents can join group sessions or enjoy one-to-one
+        card games if they prefer something quieter. Other
+        activities include general knowledge quizzes, name-the-
+        sound games and classic board games.
+      </p>
+
+    </article>
+
+
+    <!-- RESIDENT MEETING -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">💬</div>
+
+      <h3>Resident Meeting</h3>
+
+      <p>
+        Our monthly Residents Meeting provides an opportunity
+        for residents to share thoughts, ideas and suggestions
+        about daily life in the home. Topics can include
+        activities, menu choices, events and other matters
+        residents wish to raise.
+      </p>
+
+    </article>
+
+
+    <!-- LIVE MUSIC -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">🎵</div>
+
+      <h3>Live Music &amp; Singalongs</h3>
+
+      <p>
+        Local musicians and choirs regularly provide entertainment.
+        Residents can enjoy singing, dancing and chair-based
+        dancing with staff support. Music can also encourage
+        reminiscence, movement and enjoyment.
+      </p>
+
+    </article>
+
+
+    <!-- RELIGIOUS -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">🕊️</div>
+
+      <h3>Religious Activities &amp; Pastoral Care</h3>
+
+      <p>
+        Weekly Mass is held in our Oratory for residents and
+        family members who wish to attend, with Holy Communion
+        also distributed weekly. Local ministers of different
+        faiths visit residents regularly. A weekly Rosary group
+        is also available for those interested.
+      </p>
+
+    </article>
+
+
+    <!-- ARTS -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">🎨</div>
+
+      <h3>Arts &amp; Crafts</h3>
+
+      <p>
+        Residents make cards and decorations for occasions such
+        as Valentine's Day, Easter and Christmas. Activities
+        include flower arranging and crocheting. Aqua painting
+        kits, sensory activities and art therapy classes can also
+        support residents with limited dexterity or dementia.
+        Artwork is displayed throughout the building.
+      </p>
+
+    </article>
+
+
+    <!-- NAMASTE -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">🌿</div>
+
+      <h3>Namaste Group</h3>
+
+      <p>
+        This sensory-based activity is designed for residents
+        with advanced dementia. It provides a relaxed setting
+        for communication and interaction through music, nature,
+        scents and other sensory experiences. Residents are also
+        encouraged to participate in simple activities such as
+        folding, rolling, sorting and polishing.
+      </p>
+
+    </article>
+
+
+    <!-- BAKING -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">🧁</div>
+
+      <h3>Baking Groups</h3>
+
+      <p>
+        Baking groups are held regularly, with recipes selected
+        so residents can participate in simple tasks such as
+        mixing, sieving and beating. These sessions encourage
+        active participation and provide opportunities to enjoy
+        familiar activities.
+      </p>
+
+    </article>
+
+
+    <!-- GARDENING -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">🌱</div>
+
+      <h3>Gardening</h3>
+
+      <p>
+        When weather permits, residents are encouraged to take
+        part in gardening activities such as weeding, planting
+        and watering flowers and plants. Residents may also
+        participate in other suitable outdoor tasks.
+      </p>
+
+    </article>
+
+
+    <!-- HAIRDRESSING -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">💇</div>
+
+      <h3>Hairdressing &amp; Beauty</h3>
+
+      <p>
+        Our in-house salon provides a welcoming space for
+        residents to enjoy hairdressing and personal grooming.
+        Fridays are often a lively time in the salon, giving
+        residents an opportunity to chat and socialise.
+      </p>
+
+    </article>
+
+
+    <!-- PAMPERING -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">💆</div>
+
+      <h3>Pampering</h3>
+
+      <p>
+        Staff provide nail and hand care, including hand massage,
+        manicures and foot spas. These activities can provide
+        comfort, relaxation and opportunities for residents to
+        enjoy some personal attention.
+      </p>
+
+    </article>
+
+
+    <!-- REMINISCENCE -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">📖</div>
+
+      <h3>Reminiscence</h3>
+
+      <p>
+        Reminiscence activities encourage residents to share
+        memories and stories. We use magazines, picture books,
+        poetry, DVDs and other familiar materials to encourage
+        conversation. Life histories help staff understand each
+        resident's individual interests and experiences.
+      </p>
+
+    </article>
+
+
+    <!-- NEWS -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">📰</div>
+
+      <h3>Local &amp; National News</h3>
+
+      <p>
+        Residents have access to daily newspapers, the weekly
+        local paper, Ireland's Own and other magazines. Daily
+        discussion groups provide opportunities to talk about
+        headlines and articles of interest.
+      </p>
+
+    </article>
+
+
+    <!-- HOUSEHOLD -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">🏠</div>
+
+      <h3>Household Activities</h3>
+
+      <p>
+        Residents can take part in suitable everyday household
+        activities that encourage participation and independence.
+        We also use Ciúnas, a programme from Engaging Dementia,
+        featuring familiar hymns, prayers and rosaries.
+      </p>
+
+    </article>
+
+
+    <!-- INTERGENERATIONAL -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">👨‍👩‍👧</div>
+
+      <h3>Intergenerational Programmes</h3>
+
+      <p>
+        Students from local schools visit regularly to provide
+        music, entertainment and conversation and to take part
+        in joint projects with residents. Residents also enjoy
+        visits from children of staff members.
+      </p>
+
+    </article>
+
+
+    <!-- IMAGINATION GYM -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">🧘</div>
+
+      <h3>Imagination Gym</h3>
+
+      <p>
+        Imagination Gym is a relaxation activity that provides
+        a calm space where residents can use their imagination
+        through a gentle approach to reminiscence. Sessions are
+        facilitated by trained activity therapists and guided by
+        audio, with Light Touch therapy also used.
+      </p>
+
+    </article>
+
+
+    <!-- SONAS -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">🎶</div>
+
+      <h3>Sonas Therapy</h3>
+
+      <p>
+        This programme uses music, rhythm and reminiscence to
+        encourage communication and self-expression. Repetition
+        and familiar approaches help residents interact and
+        express themselves in a safe environment. Sessions are
+        carried out by trained facilitators.
+      </p>
+
+    </article>
+
+
+    <!-- REFLEXOLOGY -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">🦶</div>
+
+      <h3>Reflexology</h3>
+
+      <p>
+        A monthly reflexology day is available by appointment
+        with a qualified reflexologist. Places are offered on
+        a rotating basis to residents who wish to participate.
+      </p>
+
+    </article>
+
+
+    <!-- EVENTS -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">🎉</div>
+
+      <h3>Events &amp; Celebrations</h3>
+
+      <p>
+        In-house events are organised throughout the year,
+        including seasonal celebrations, Valentine's Day,
+        St Patrick's Day, Mother's Day, Father's Day, BBQs,
+        afternoon teas, Halloween activities, fundraising
+        events, Christmas celebrations and educational events.
+      </p>
+
+    </article>
+
+
+    <!-- OUTINGS -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">🚌</div>
+
+      <h3>Outings</h3>
+
+      <p>
+        Outings can include lunches at local eateries, concerts,
+        GAA games and shopping trips. Residents may also visit
+        places of interest and local events. Family members can
+        accompany residents on organised outings where appropriate,
+        while one-to-one outings and walks may also take place.
+      </p>
+
+    </article>
+
+
+    <!-- LIBRARY -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">📚</div>
+
+      <h3>Mobile Library</h3>
+
+      <p>
+        The Mobile Library gives residents the opportunity to
+        borrow and exchange books without leaving the home.
+        The collection includes novels, biographies, large-print
+        books and magazines. Residents can request specific
+        titles or authors, with assistance available when needed.
+      </p>
+
+    </article>
+
+
+    <!-- PEG THERAPY -->
+
+    <article class="activity-card">
+
+      <div class="activity-icon">🧩</div>
+
+      <h3>Peg Therapy &amp; Doll Therapy</h3>
+
+      <p>
+        Peg Therapy involves sorting and placing colourful pegs,
+        supporting focus, coordination and hand strength in a
+        fun activity. Doll Therapy can provide comfort and
+        reassurance, particularly for residents living with
+        dementia. Both activities promote engagement and comfort.
+      </p>
+
+    </article>
+
+
+    <!-- PERSONAL ACTIVITY -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">❤️</div>
+
+      <h3>Personal Activity Sessions</h3>
+
+      <p>
+        One-to-one activity sessions are tailored to each
+        resident's preferences, needs and abilities. Sessions
+        may include arts and crafts, music, reading, conversation,
+        light exercise and movement. Activities are adjusted to
+        support participation, independence and well-being.
+      </p>
+
+    </article>
+
+
+    <!-- WHATSAPP -->
+
+    <article class="activity-card featured">
+
+      <div class="activity-icon">📱</div>
+
+      <h3>WhatsApp Video Calls</h3>
+
+      <p>
+        Residents can stay connected with family and friends
+        through WhatsApp video calls using the home's tablet or
+        mobile device. Staff can assist with setting up calls,
+        helping residents enjoy regular face-to-face contact
+        with loved ones wherever they are.
+      </p>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     CTA
+     ======================================================= -->
+
+<section class="activities-cta">
+
+  <div class="activities-cta-inner">
+
+    <h2>Discover Life at Millbrook Manor</h2>
+
+    <p>
+      Our activities programme is designed to provide residents
+      with opportunities for enjoyment, connection, creativity,
+      movement and meaningful participation in everyday life.
+    </p>
+
+    <a
+      class="cta-button"
+      href="https://millbrookmanor.eu/enquire-now.html"
+    >
+      Make an Enquiry
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     FOOTER
+     ======================================================= -->
+
+<footer class="millbrook-footer">
+
+  <div class="footer-container">
+
+
+    <!-- ABOUT -->
+
+    <div class="footer-about">
+
+      <a href="/">
+
+        <img
+          class="footer-logo"
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+          alt="Millbrook Manor Nursing Home"
+        >
+
+      </a>
+
+      <h3>Millbrook Manor Nursing Home</h3>
+
+      <p>
+        Providing compassionate, professional nursing care in a
+        safe, comfortable and welcoming environment where every
+        resident is treated with dignity, respect and kindness.
+      </p>
+
+    </div>
+
+
+    <!-- QUICK LINKS -->
+
+    <div class="footer-links">
+
+      <h4>Quick Links</h4>
+
+      <ul>
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/admissions.html">
+            Admissions
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/careers.html">
+            Careers
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/enquire-now.html">
+            Request a Quote
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/gallery.html">
+            Gallery
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/care-pals-hepa-health-enhancing-physical-activities.html">
+            Activities
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/contact.html">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- SERVICES -->
+
+    <div class="footer-services">
+
+      <h4>Our Services</h4>
+
+      <ul>
+
+        <li>Long-Term Care</li>
+
+        <li>Residential Nursing Care</li>
+
+        <li>Adult Services (18+)</li>
+
+        <li>Palliative Care</li>
+
+        <li>Fair Deal Scheme Support</li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- CONTACT -->
+
+    <div class="footer-contact">
+
+      <h4>Contact Us</h4>
+
+      <p>
+📍 Millbrook Manor Nursing Home
+Slade Road, Coolmines, Saggart, D24 A9RY
+Dublin, Ireland
+      </p>
+
+      <p>
+✉ care@millbrookmanor.ie
+      </p>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- FOOTER BOTTOM -->
+
+  <div class="footer-bottom">
+
+    <div class="footer-legal">
+
+      <a href="https://millbrookmanor.eu/privacy-policy.html">
+        Privacy Policy
+      </a>
+
+      <span>|</span>
+
+      <a href="https://millbrookmanor.eu/terms-conditions.html">
+        Terms &amp; Conditions
+      </a>
+
+      <span>|</span>
+
+      <a href="https://millbrookmanor.eu/cookie-policy.html">
+        Cookie Policy
+      </a>
+
+    </div>
+
+
+    <div class="footer-compliance">
+      Registered Nursing Home • Professional &amp; Compassionate Care
+    </div>
+
+
+    <p>
+      © 2009 - 2026 Millbrook Manor Nursing Home.
+      All Rights Reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- =======================================================
+     MOBILE MENU JAVASCRIPT
+     ======================================================= -->
+
+<script>
+
+(function(){
+
+  const header =
+    document.getElementById("millbrookHeader");
+
+  const toggle =
+    document.getElementById("mobileMenuToggle");
+
+  const navigation =
+    document.getElementById("millbrookNavigation");
+
+
+  if(!header || !toggle || !navigation){
+    return;
+  }
+
+
+  /* OPEN / CLOSE MENU */
+
+  toggle.addEventListener("click", function(){
+
+    const isOpen =
+      header.classList.toggle("active");
+
+    toggle.setAttribute(
+      "aria-expanded",
+      isOpen ? "true" : "false"
+    );
+
+  });
+
+
+  /* CLOSE AFTER CLICKING A LINK */
+
+  navigation.querySelectorAll("a").forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+      header.classList.remove("active");
+
+      toggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    });
+
+  });
+
+
+  /* CLOSE WHEN CLICKING OUTSIDE */
+
+  document.addEventListener("click", function(event){
+
+    if(
+      !header.contains(event.target)
+    ){
+
+      header.classList.remove("active");
+
+      toggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    }
+
+  });
+
+
+  /* RESET MENU WHEN RETURNING TO DESKTOP */
+
+  window.addEventListener("resize", function(){
+
+    if(window.innerWidth > 768){
+
+      header.classList.remove("active");
+
+      toggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    }
+
+  });
+
+})();
+
+</script>
+
+
+</body>
+</html>
+

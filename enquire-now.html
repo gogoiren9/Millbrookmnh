@@ -1,0 +1,1288 @@
+<!-- =========================================================
+     MILLBROOK MANOR NURSING HOME
+     ENQUIRE NOW PAGE
+     Admissions / Care Enquiry / Visit Request
+     Blogger Ready-to-Paste
+     ========================================================= -->
+
+<style>
+/* =========================================================
+   PAGE RESET
+   ========================================================= */
+
+.millbrook-enquiry-page,
+.millbrook-enquiry-page *{
+  box-sizing:border-box;
+}
+
+.millbrook-enquiry-page{
+  width:100%;
+  margin:0;
+  padding:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#263238;
+  background:#f4f6f9;
+}
+
+/* =========================================================
+   STICKY HEADER
+   ========================================================= */
+
+.millbrook-header{
+  position:sticky;
+  top:0;
+  z-index:99999;
+  width:100%;
+  background:#1f4e5f;
+  box-shadow:0 3px 12px rgba(0,0,0,.18);
+}
+
+.millbrook-header-inner{
+  max-width:1200px;
+  margin:auto;
+  min-height:78px;
+  padding:10px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+
+.millbrook-logo{
+  display:flex;
+  align-items:center;
+  text-decoration:none;
+  flex-shrink:0;
+}
+
+.millbrook-logo img{
+  width:58px;
+  height:58px;
+  object-fit:contain;
+  display:block;
+}
+
+.millbrook-nav{
+  flex:1;
+}
+
+.millbrook-nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+  margin:0;
+  padding:0;
+}
+
+.millbrook-nav li{
+  margin:0;
+  padding:0;
+}
+
+.millbrook-nav a{
+  color:#d9e8ed;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:600;
+  transition:.25s ease;
+  white-space:nowrap;
+}
+
+.millbrook-nav a:hover{
+  color:#8fd3c1;
+}
+
+.millbrook-header-btn{
+  display:inline-block;
+  background:#8fd3c1;
+  color:#1f4e5f !important;
+  text-decoration:none;
+  padding:11px 18px;
+  border-radius:7px;
+  font-weight:700;
+  white-space:nowrap;
+  transition:.25s ease;
+}
+
+.millbrook-header-btn:hover{
+  background:#fff;
+}
+
+/* =========================================================
+   MOBILE HEADER
+   ========================================================= */
+
+.millbrook-mobile-toggle{
+  display:none;
+  border:0;
+  background:#8fd3c1;
+  color:#1f4e5f;
+  padding:10px 14px;
+  border-radius:6px;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  width:auto;
+  margin:0;
+}
+
+@media(max-width:768px){
+
+  .millbrook-header-inner{
+    min-height:70px;
+    padding:8px 15px;
+    position:relative;
+  }
+
+  .millbrook-logo img{
+    width:52px;
+    height:52px;
+  }
+
+  .millbrook-mobile-toggle{
+    display:block;
+  }
+
+  .millbrook-nav{
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    top:70px;
+    background:#1f4e5f;
+    padding:12px 15px 18px;
+    box-shadow:0 8px 15px rgba(0,0,0,.18);
+  }
+
+  .millbrook-nav.active{
+    display:block;
+  }
+
+  .millbrook-nav ul{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+  }
+
+  .millbrook-nav li{
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+
+  .millbrook-nav a{
+    display:block;
+    padding:13px 8px;
+    font-size:16px;
+  }
+
+  .millbrook-header-btn{
+    display:none;
+  }
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.millbrook-enquiry-hero{
+  background:
+    linear-gradient(
+      rgba(31,78,95,.93),
+      rgba(31,78,95,.93)
+    );
+  color:#fff;
+  text-align:center;
+  padding:65px 20px;
+}
+
+.millbrook-enquiry-hero-inner{
+  max-width:900px;
+  margin:auto;
+}
+
+.millbrook-enquiry-hero h1{
+  margin:0 0 15px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:44px;
+  line-height:1.2;
+  color:#fff;
+}
+
+.millbrook-enquiry-hero p{
+  max-width:750px;
+  margin:0 auto;
+  font-size:18px;
+  line-height:1.7;
+  color:#e5f0f3;
+}
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.millbrook-introduction{
+  max-width:1050px;
+  margin:40px auto 0;
+  padding:0 20px;
+}
+
+.millbrook-intro-card{
+  background:#fff;
+  border-radius:12px;
+  padding:35px;
+  box-shadow:0 4px 18px rgba(0,0,0,.08);
+}
+
+.millbrook-intro-card h2{
+  margin:0 0 15px;
+  color:#1f4e5f;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:30px;
+}
+
+.millbrook-intro-card p{
+  margin:0 0 15px;
+  font-size:16px;
+  line-height:1.8;
+  color:#46545a;
+}
+
+.millbrook-intro-card p:last-child{
+  margin-bottom:0;
+}
+
+/* =========================================================
+   INFORMATION CARDS
+   ========================================================= */
+
+.millbrook-info-grid{
+  max-width:1050px;
+  margin:25px auto 0;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.millbrook-info-card{
+  background:#fff;
+  border-radius:10px;
+  padding:25px 22px;
+  border-top:4px solid #8fd3c1;
+  box-shadow:0 3px 12px rgba(0,0,0,.07);
+}
+
+.millbrook-info-card h3{
+  margin:0 0 10px;
+  color:#1f4e5f;
+  font-size:20px;
+}
+
+.millbrook-info-card p{
+  margin:0;
+  color:#5b666b;
+  line-height:1.65;
+  font-size:15px;
+}
+
+/* =========================================================
+   MAIN ENQUIRY AREA
+   ========================================================= */
+
+.millbrook-enquiry-section{
+  max-width:1050px;
+  margin:35px auto 50px;
+  padding:0 20px;
+}
+
+.millbrook-enquiry-grid{
+  display:grid;
+  grid-template-columns:1fr 1.45fr;
+  gap:25px;
+  align-items:start;
+}
+
+/* =========================================================
+   CONTACT SIDE
+   ========================================================= */
+
+.millbrook-contact-card{
+  background:#1f4e5f;
+  color:#fff;
+  border-radius:12px;
+  padding:32px;
+  box-shadow:0 4px 18px rgba(0,0,0,.12);
+}
+
+.millbrook-contact-card h2{
+  margin:0 0 15px;
+  color:#fff;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:28px;
+}
+
+.millbrook-contact-card > p{
+  color:#d9e8ed;
+  line-height:1.7;
+  font-size:15px;
+}
+
+.millbrook-contact-item{
+  margin-top:22px;
+}
+
+.millbrook-contact-item strong{
+  display:block;
+  color:#8fd3c1;
+  margin-bottom:5px;
+}
+
+.millbrook-contact-item span,
+.millbrook-contact-item a{
+  color:#fff;
+  line-height:1.6;
+  text-decoration:none;
+}
+
+.millbrook-contact-item a:hover{
+  color:#8fd3c1;
+}
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.millbrook-form-card{
+  background:#fff;
+  border-radius:12px;
+  padding:32px;
+  box-shadow:0 4px 18px rgba(0,0,0,.08);
+}
+
+.millbrook-form-card h2{
+  margin:0 0 8px;
+  color:#1f4e5f;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:30px;
+}
+
+.millbrook-form-intro{
+  margin:0 0 25px;
+  color:#68747a;
+  line-height:1.6;
+  font-size:15px;
+}
+
+.millbrook-form-group{
+  margin-bottom:18px;
+}
+
+.millbrook-form-group label{
+  display:block;
+  margin-bottom:7px;
+  color:#263238;
+  font-weight:700;
+  font-size:14px;
+}
+
+.millbrook-form-group input,
+.millbrook-form-group select,
+.millbrook-form-group textarea{
+  width:100%;
+  border:1px solid #d5dde0;
+  border-radius:7px;
+  background:#fff;
+  color:#263238;
+  padding:12px 13px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:15px;
+  outline:none;
+  transition:.2s ease;
+}
+
+.millbrook-form-group input:focus,
+.millbrook-form-group select:focus,
+.millbrook-form-group textarea:focus{
+  border-color:#1f4e5f;
+  box-shadow:0 0 0 2px rgba(31,78,95,.08);
+}
+
+.millbrook-form-group textarea{
+  min-height:130px;
+  resize:vertical;
+}
+
+.millbrook-two-columns{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.millbrook-submit{
+  width:100%;
+  border:0;
+  border-radius:7px;
+  padding:14px 20px;
+  margin-top:5px;
+  background:#1f4e5f;
+  color:#fff;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.25s ease;
+}
+
+.millbrook-submit:hover{
+  background:#163b48;
+}
+
+.millbrook-privacy-note{
+  margin:15px 0 0;
+  color:#777;
+  font-size:12px;
+  line-height:1.6;
+  text-align:center;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.millbrook-footer{
+  background:#1f4e5f;
+  color:#fff;
+  padding:55px 20px 0;
+}
+
+.millbrook-footer-container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1.2fr;
+  gap:40px;
+}
+
+.millbrook-footer-logo{
+  width:100px;
+  height:auto;
+  margin-bottom:15px;
+}
+
+.millbrook-footer h3,
+.millbrook-footer h4{
+  margin:0 0 15px;
+  color:#fff;
+}
+
+.millbrook-footer p,
+.millbrook-footer li{
+  color:#d9e8ed;
+  line-height:1.7;
+  font-size:14px;
+}
+
+.millbrook-footer ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.millbrook-footer li{
+  margin-bottom:8px;
+}
+
+.millbrook-footer a{
+  color:#d9e8ed;
+  text-decoration:none;
+  transition:.2s ease;
+}
+
+.millbrook-footer a:hover{
+  color:#8fd3c1;
+}
+
+.millbrook-footer-bottom{
+  max-width:1200px;
+  margin:40px auto 0;
+  padding:22px 0;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,.15);
+}
+
+.millbrook-footer-bottom p{
+  margin:7px 0;
+  font-size:13px;
+}
+
+.millbrook-footer-legal a{
+  margin:0 7px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:900px){
+
+  .millbrook-info-grid{
+    grid-template-columns:1fr;
+  }
+
+  .millbrook-enquiry-grid{
+    grid-template-columns:1fr;
+  }
+
+  .millbrook-footer-container{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:600px){
+
+  .millbrook-enquiry-hero{
+    padding:45px 18px;
+  }
+
+  .millbrook-enquiry-hero h1{
+    font-size:32px;
+  }
+
+  .millbrook-enquiry-hero p{
+    font-size:16px;
+  }
+
+  .millbrook-intro-card,
+  .millbrook-form-card,
+  .millbrook-contact-card{
+    padding:24px 20px;
+  }
+
+  .millbrook-intro-card h2,
+  .millbrook-form-card h2{
+    font-size:25px;
+  }
+
+  .millbrook-two-columns{
+    grid-template-columns:1fr;
+    gap:0;
+  }
+
+  .millbrook-footer-container{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .millbrook-footer-legal a{
+    display:inline-block;
+    margin:4px 5px;
+  }
+}
+</style>
+
+
+<div class="millbrook-enquiry-page">
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
+  <header class="millbrook-header">
+
+    <div class="millbrook-header-inner">
+
+      <a href="/" class="millbrook-logo">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+          alt="Millbrook Manor Nursing Home">
+      </a>
+
+      <button
+        type="button"
+        class="millbrook-mobile-toggle"
+        aria-label="Open menu"
+        onclick="millbrookToggleMenu()">
+        ☰ Menu
+      </button>
+
+      <nav class="millbrook-nav" id="millbrookNavigation">
+
+        <ul>
+          <li><a href="/">Home</a></li>
+
+          <li>
+            <a href="https://millbrookmanor.eu/about-us.html">
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a href="https://millbrookmanor.eu/admissions.html">
+              Admissions
+            </a>
+          </li>
+
+          <li>
+            <a href="https://millbrookmanor.eu/contact.html">
+              Contact
+            </a>
+          </li>
+
+          <li>
+            <a href="https://millbrookmanor.eu/meet-the-team.html">
+              The Team
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <a
+        href="https://millbrookmanor.eu/enquire-now.html"
+        class="millbrook-header-btn">
+        Enquire Now
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+
+  <section class="millbrook-enquiry-hero">
+
+    <div class="millbrook-enquiry-hero-inner">
+
+      <h1>Enquire Now</h1>
+
+      <p>
+        We would be delighted to hear from you. Whether you are
+        looking for residential nursing care, support for a loved
+        one, information about admissions, or would like to arrange
+        a visit, our team is here to help.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       INTRODUCTION
+       ===================================================== -->
+
+  <section class="millbrook-introduction">
+
+    <div class="millbrook-intro-card">
+
+      <h2>Welcome to Millbrook Manor Nursing Home</h2>
+
+      <p>
+        Millbrook Manor Nursing Home is a private residential care
+        facility in the peaceful surroundings of Saggart, County Dublin.
+        We are dedicated to providing a safe, warm and welcoming
+        environment where residents can receive compassionate,
+        person-centred care.
+      </p>
+
+      <p>
+        Our approach is centred on dignity, respect and individual
+        wellbeing. We take the time to understand each resident's
+        needs, preferences and personal circumstances so that their
+        care can be tailored appropriately.
+      </p>
+
+      <p>
+        If you are considering care for yourself or a family member,
+        please complete the enquiry form below. A member of our team
+        can then respond to your enquiry and discuss your requirements.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       INFORMATION CARDS
+       ===================================================== -->
+
+  <section class="millbrook-info-grid">
+
+    <div class="millbrook-info-card">
+
+      <h3>🏠 Residential Care</h3>
+
+      <p>
+        Enquire about residential and nursing care options and
+        discuss the level of support required.
+      </p>
+
+    </div>
+
+
+    <div class="millbrook-info-card">
+
+      <h3>👩‍⚕️ Person-Centred Care</h3>
+
+      <p>
+        Our approach focuses on dignity, respect, wellbeing and
+        the individual needs of every resident.
+      </p>
+
+    </div>
+
+
+    <div class="millbrook-info-card">
+
+      <h3>📅 Arrange a Visit</h3>
+
+      <p>
+        Contact us to discuss your requirements and enquire about
+        arranging a visit to Millbrook Manor.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       ENQUIRY SECTION
+       ===================================================== -->
+
+  <section class="millbrook-enquiry-section">
+
+    <div class="millbrook-enquiry-grid">
+
+
+      <!-- CONTACT INFORMATION -->
+
+      <div class="millbrook-contact-card">
+
+        <h2>How Can We Help?</h2>
+
+        <p>
+          Please provide as much information as you feel comfortable
+          sharing. This will help our team understand your enquiry
+          and respond appropriately.
+        </p>
+
+
+        <div class="millbrook-contact-item">
+
+          <strong>📍 Our Location</strong>
+
+          <span>
+            Millbrook Manor Nursing Home<br>
+            Slade Road, Coolmines, Saggart<br>
+            D24 A9RY<br>
+            Dublin, Ireland
+          </span>
+
+        </div>
+
+
+        <div class="millbrook-contact-item">
+
+          <strong>✉ Email</strong>
+
+          <a href="mailto:care@millbrookmanor.eu">
+            care@millbrookmanor.eu
+          </a>
+
+        </div>
+
+
+        <div class="millbrook-contact-item">
+
+          <strong>💬 Enquiries</strong>
+
+          <span>
+            Admissions<br>
+            Residential Care<br>
+            Nursing Care<br>
+            Family &amp; General Enquiries<br>
+            Visit Requests
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- FORM -->
+
+      <div class="millbrook-form-card">
+
+        <h2>Send Us an Enquiry</h2>
+
+        <p class="millbrook-form-intro">
+          Complete the form below and a member of our team will
+          review your enquiry.
+        </p>
+
+
+        <form
+          action="https://formsubmit.co/care@millbrookmanor.eu"
+          method="POST">
+
+
+          <!-- FORM SETTINGS -->
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Enquiry - Millbrook Manor Nursing Home">
+
+          <input
+            type="hidden"
+            name="_template"
+            value="table">
+
+          <input
+            type="hidden"
+            name="_captcha"
+            value="false">
+
+          <input
+            type="hidden"
+            name="_next"
+            value="https://millbrookmanor.eu/enquire-now">
+
+
+          <!-- NAME + EMAIL -->
+
+          <div class="millbrook-two-columns">
+
+            <div class="millbrook-form-group">
+
+              <label for="millbrook-name">
+                Full Name *
+              </label>
+
+              <input
+                id="millbrook-name"
+                type="text"
+                name="Full Name"
+                placeholder="Your full name"
+                required>
+
+            </div>
+
+
+            <div class="millbrook-form-group">
+
+              <label for="millbrook-email">
+                Email Address *
+              </label>
+
+              <input
+                id="millbrook-email"
+                type="email"
+                name="Email Address"
+                placeholder="Your email address"
+                required>
+
+            </div>
+
+          </div>
+
+
+          <!-- PHONE + RELATIONSHIP -->
+
+          <div class="millbrook-two-columns">
+
+            <div class="millbrook-form-group">
+
+              <label for="millbrook-phone">
+                Phone Number
+              </label>
+
+              <input
+                id="millbrook-phone"
+                type="tel"
+                name="Phone Number"
+                placeholder="Your phone number">
+
+            </div>
+
+
+            <div class="millbrook-form-group">
+
+              <label for="millbrook-relationship">
+                Your Relationship
+              </label>
+
+              <select
+                id="millbrook-relationship"
+                name="Relationship">
+
+                <option value="">
+                  -- Please Select --
+                </option>
+
+                <option>
+                  Self
+                </option>
+
+                <option>
+                  Son / Daughter
+                </option>
+
+                <option>
+                  Spouse / Partner
+                </option>
+
+                <option>
+                  Parent / Relative
+                </option>
+
+                <option>
+                  Healthcare Professional
+                </option>
+
+                <option>
+                  Other
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+          <!-- ENQUIRY TYPE -->
+
+          <div class="millbrook-form-group">
+
+            <label for="millbrook-enquiry-type">
+              What Are You Enquiring About? *
+            </label>
+
+            <select
+              id="millbrook-enquiry-type"
+              name="Enquiry Type"
+              required>
+
+              <option value="">
+                -- Please Select --
+              </option>
+
+              <option>
+                Residential Care
+              </option>
+
+              <option>
+                Nursing Care
+              </option>
+
+              <option>
+                Long-Term Care
+              </option>
+
+              <option>
+                Palliative Care
+              </option>
+
+              <option>
+                Admissions
+              </option>
+
+              <option>
+                Arrange a Visit
+              </option>
+
+              <option>
+                Availability
+              </option>
+
+              <option>
+                General Enquiry
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- PREFERRED CONTACT -->
+
+          <div class="millbrook-form-group">
+
+            <label for="millbrook-contact-method">
+              Preferred Contact Method
+            </label>
+
+            <select
+              id="millbrook-contact-method"
+              name="Preferred Contact Method">
+
+              <option value="">
+                -- Please Select --
+              </option>
+
+              <option>
+                Email
+              </option>
+
+              <option>
+                Phone
+              </option>
+
+              <option>
+                Either Email or Phone
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- MESSAGE -->
+
+          <div class="millbrook-form-group">
+
+            <label for="millbrook-message">
+              Your Enquiry *
+            </label>
+
+            <textarea
+              id="millbrook-message"
+              name="Message"
+              placeholder="Please tell us how we can help, including any questions about care, admissions, availability or arranging a visit."
+              required></textarea>
+
+          </div>
+
+
+          <!-- HONEYPOT -->
+
+          <input
+            type="text"
+            name="_honey"
+            style="display:none">
+
+
+          <!-- SUBMIT -->
+
+          <button
+            type="submit"
+            class="millbrook-submit">
+
+            SEND ENQUIRY
+
+          </button>
+
+
+          <p class="millbrook-privacy-note">
+            By submitting this enquiry, you are providing your
+            contact information so that Millbrook Manor Nursing Home
+            can respond to your request.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="millbrook-footer">
+
+    <div class="millbrook-footer-container">
+
+
+      <div>
+
+        <a href="/">
+
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+            alt="Millbrook Manor Nursing Home"
+            class="millbrook-footer-logo">
+
+        </a>
+
+        <h3>
+          Millbrook Manor Nursing Home
+        </h3>
+
+        <p>
+          Providing compassionate, professional nursing care in a
+          safe, comfortable and welcoming environment where every
+          resident is treated with dignity, respect and kindness.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>Quick Links</h4>
+
+        <ul>
+
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          <li>
+            <a href="https://millbrookmanor.eu/about-us">
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a href="https://millbrookmanor.eu/admissions">
+              Admissions
+            </a>
+          </li>
+
+          <li>
+            <a href="https://millbrookmanor.eu/enquire-now">
+              Enquire Now
+            </a>
+          </li>
+
+          <li>
+            <a href="https://millbrookmanor.eu/contact">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h4>Our Services</h4>
+
+        <ul>
+
+          <li>Long-Term Care</li>
+          <li>Residential Nursing Care</li>
+          <li>Adult Services (18+)</li>
+          <li>Palliative Care</li>
+          <li>Admissions Support</li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h4>Contact Us</h4>
+
+        <p>
+          📍 Millbrook Manor Nursing Home<br>
+          Slade Road, Coolmines, Saggart<br>
+          D24 A9RY<br>
+          Dublin, Ireland
+        </p>
+
+        <p>
+          ✉
+          <a href="mailto:care@millbrookmanor.eu">
+            care@millbrookmanor.eu
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="millbrook-footer-bottom">
+
+      <div class="millbrook-footer-legal">
+
+        <a href="https://millbrookmanor.eu/privacy-policy.html">
+          Privacy Policy
+        </a>
+
+        <span>|</span>
+
+        <a href="https://millbrookmanor.eu/terms-conditions.html">
+          Terms &amp; Conditions
+        </a>
+
+        <span>|</span>
+
+        <a href="https://millbrookmanor.eu/cookie-policy.html">
+          Cookie Policy
+        </a>
+
+      </div>
+
+      <p>
+        Registered Nursing Home • Professional &amp; Compassionate Care
+      </p>
+
+      <p>
+        © 2009 - 2026 Millbrook Manor Nursing Home.
+        All Rights Reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+</div>
+
+
+<script>
+function millbrookToggleMenu(){
+
+  var menu =
+    document.getElementById("millbrookNavigation");
+
+  if(menu){
+    menu.classList.toggle("active");
+  }
+
+}
+
+
+/* Close mobile menu after clicking a link */
+
+document.addEventListener("DOMContentLoaded",function(){
+
+  var links =
+    document.querySelectorAll(
+      ".millbrook-nav a"
+    );
+
+  links.forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+      var menu =
+        document.getElementById(
+          "millbrookNavigation"
+        );
+
+      if(menu){
+        menu.classList.remove("active");
+      }
+
+    });
+
+  });
+
+});
+</script>

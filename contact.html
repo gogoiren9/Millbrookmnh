@@ -1,0 +1,1169 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Get in Touch - Millbrook Manor Nursing Home</title>
+
+  <meta
+    name="description"
+    content="Get in touch with Millbrook Manor Nursing Home for enquiries about care, admissions, visits and our nursing care services in Saggart, Dublin, Ireland."
+  >
+
+  <style>
+
+    /* =========================================================
+       MILLBROOK MANOR
+       GET IN TOUCH PAGE
+       ========================================================= */
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      padding:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f7fafb;
+      color:#26343a;
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+
+    a{
+      text-decoration:none;
+    }
+
+
+    /* =========================================================
+       STICKY HEADER
+       ========================================================= */
+
+    .millbrook-header{
+      width:100%;
+      background:#1f4e5f;
+      position:sticky;
+      position:-webkit-sticky;
+      top:0;
+      z-index:99999;
+      padding:12px 20px;
+      box-shadow:0 3px 12px rgba(0,0,0,.15);
+    }
+
+    .header-container{
+      width:100%;
+      max-width:1200px;
+      margin:auto;
+
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+
+      gap:20px;
+    }
+
+
+    /* =========================================================
+       LOGO
+       ========================================================= */
+
+    .logo{
+      display:flex;
+      align-items:center;
+      flex-shrink:0;
+    }
+
+    .logo img{
+      display:block;
+      width:60px;
+      height:60px;
+      object-fit:contain;
+    }
+
+
+    /* =========================================================
+       NAVIGATION
+       ========================================================= */
+
+    .millbrook-nav{
+      flex:1;
+    }
+
+    .millbrook-nav ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      gap:25px;
+    }
+
+    .millbrook-nav li{
+      margin:0;
+      padding:0;
+    }
+
+    .millbrook-nav a{
+      color:#e6f1f4;
+      font-size:15px;
+      font-weight:600;
+      white-space:nowrap;
+
+      transition:.3s ease;
+    }
+
+    .millbrook-nav a:hover{
+      color:#8fd3c1;
+    }
+
+
+    /* =========================================================
+       HEADER BUTTON
+       ========================================================= */
+
+    .header-btn{
+      display:inline-block;
+
+      background:#8fd3c1;
+      color:#1f4e5f;
+
+      padding:11px 18px;
+      border-radius:7px;
+
+      font-size:14px;
+      font-weight:700;
+
+      white-space:nowrap;
+
+      transition:.3s ease;
+    }
+
+    .header-btn:hover{
+      background:#fff;
+      color:#1f4e5f;
+    }
+
+
+    /* =========================================================
+       PAGE HERO
+       ========================================================= */
+
+    .contact-hero{
+      background:
+        linear-gradient(
+          rgba(31,78,95,.94),
+          rgba(31,78,95,.94)
+        );
+
+      color:#fff;
+
+      padding:80px 20px;
+
+      text-align:center;
+    }
+
+    .contact-hero-inner{
+      max-width:850px;
+      margin:auto;
+    }
+
+    .contact-hero h1{
+      margin:0 0 18px;
+
+      font-size:46px;
+      line-height:1.2;
+
+      font-weight:700;
+    }
+
+    .contact-hero p{
+      max-width:700px;
+      margin:0 auto;
+
+      color:#e2eef1;
+
+      font-size:19px;
+      line-height:1.7;
+    }
+
+
+    /* =========================================================
+       MAIN CONTACT AREA
+       ========================================================= */
+
+    .contact-main{
+      max-width:1200px;
+      margin:0 auto;
+
+      padding:70px 20px;
+    }
+
+    .contact-intro{
+      max-width:750px;
+      margin:0 auto 50px;
+
+      text-align:center;
+    }
+
+    .contact-intro h2{
+      margin:0 0 15px;
+
+      color:#1f4e5f;
+
+      font-size:32px;
+    }
+
+    .contact-intro p{
+      margin:0;
+
+      color:#5c6b71;
+      font-size:17px;
+    }
+
+
+    /* =========================================================
+       CONTACT GRID
+       ========================================================= */
+
+    .contact-grid{
+      display:grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0,1fr));
+
+      gap:30px;
+    }
+
+
+    /* =========================================================
+       CONTACT CARD
+       ========================================================= */
+
+    .contact-card{
+      background:#fff;
+
+      border-radius:14px;
+
+      padding:35px;
+
+      box-shadow:
+        0 8px 30px rgba(31,78,95,.09);
+
+      border:1px solid #e5edef;
+    }
+
+    .contact-card-icon{
+      width:58px;
+      height:58px;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      background:#e8f5f2;
+      color:#1f4e5f;
+
+      border-radius:50%;
+
+      font-size:25px;
+
+      margin-bottom:20px;
+    }
+
+    .contact-card h3{
+      margin:0 0 15px;
+
+      color:#1f4e5f;
+
+      font-size:23px;
+    }
+
+    .contact-card p{
+      margin:0 0 15px;
+
+      color:#5b696e;
+    }
+
+    .contact-card p:last-child{
+      margin-bottom:0;
+    }
+
+    .contact-card strong{
+      color:#26343a;
+    }
+
+    .contact-card a{
+      color:#1f4e5f;
+      font-weight:600;
+      word-break:break-word;
+    }
+
+    .contact-card a:hover{
+      color:#6ab8a5;
+    }
+
+
+    /* =========================================================
+       VISIT CARD
+       ========================================================= */
+
+    .visit-card{
+      grid-column:1 / -1;
+
+      background:#1f4e5f;
+      color:#fff;
+
+      border-radius:14px;
+
+      padding:40px;
+
+      text-align:center;
+
+      box-shadow:
+        0 10px 30px rgba(31,78,95,.16);
+    }
+
+    .visit-card h3{
+      margin:0 0 12px;
+
+      font-size:28px;
+      color:#fff;
+    }
+
+    .visit-card p{
+      max-width:700px;
+      margin:0 auto 25px;
+
+      color:#dcebee;
+      font-size:16px;
+    }
+
+    .visit-button{
+      display:inline-block;
+
+      background:#8fd3c1;
+      color:#1f4e5f;
+
+      padding:12px 22px;
+
+      border-radius:7px;
+
+      font-weight:700;
+
+      transition:.3s ease;
+    }
+
+    .visit-button:hover{
+      background:#fff;
+    }
+
+
+    /* =========================================================
+       IMPORTANT NOTE
+       ========================================================= */
+
+    .contact-note{
+      max-width:850px;
+      margin:45px auto 0;
+
+      padding:18px 22px;
+
+      background:#fff8e8;
+
+      border-left:4px solid #d5a84b;
+
+      border-radius:6px;
+
+      color:#66562e;
+
+      font-size:14px;
+    }
+
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    .millbrook-footer{
+      background:#1f4e5f;
+      color:#fff;
+
+      padding:60px 20px 0;
+    }
+
+    .footer-container{
+      max-width:1200px;
+      margin:auto;
+
+      display:grid;
+
+      grid-template-columns:
+        1.4fr
+        1fr
+        1fr
+        1.2fr;
+
+      gap:45px;
+    }
+
+    .footer-logo{
+      width:105px;
+      height:auto;
+
+      display:block;
+
+      margin-bottom:18px;
+    }
+
+    .millbrook-footer h3,
+    .millbrook-footer h4{
+      color:#fff;
+
+      margin:0 0 17px;
+
+      line-height:1.3;
+    }
+
+    .millbrook-footer h3{
+      font-size:20px;
+    }
+
+    .millbrook-footer h4{
+      font-size:17px;
+    }
+
+    .millbrook-footer p{
+      margin:0;
+
+      color:#d9e8ed;
+
+      line-height:1.8;
+      font-size:14px;
+    }
+
+    .millbrook-footer ul{
+      list-style:none;
+
+      margin:0;
+      padding:0;
+    }
+
+    .millbrook-footer li{
+      margin:0 0 9px;
+    }
+
+    .millbrook-footer li,
+    .millbrook-footer a{
+      color:#d9e8ed;
+
+      font-size:14px;
+
+      line-height:1.7;
+    }
+
+    .millbrook-footer a{
+      transition:.3s ease;
+    }
+
+    .millbrook-footer a:hover{
+      color:#8fd3c1;
+    }
+
+
+    /* =========================================================
+       FOOTER BOTTOM
+       ========================================================= */
+
+    .footer-bottom{
+      max-width:1200px;
+
+      margin:45px auto 0;
+
+      padding:25px 0;
+
+      text-align:center;
+
+      border-top:1px solid rgba(255,255,255,.16);
+    }
+
+    .footer-legal{
+      display:flex;
+
+      align-items:center;
+      justify-content:center;
+
+      flex-wrap:wrap;
+
+      gap:8px;
+
+      margin-bottom:14px;
+    }
+
+    .footer-legal a{
+      color:#d9e8ed;
+      font-size:13px;
+    }
+
+    .footer-separator{
+      color:rgba(255,255,255,.35);
+    }
+
+    .footer-compliance{
+      color:#b9d4db;
+
+      font-size:12px;
+
+      line-height:1.6;
+
+      margin-bottom:10px;
+    }
+
+    .footer-copyright{
+      color:#d9e8ed;
+
+      font-size:13px;
+
+      margin:0;
+    }
+
+
+    /* =========================================================
+       MOBILE HEADER
+       ========================================================= */
+
+    @media(max-width:768px){
+
+      .millbrook-header{
+        padding:9px 12px;
+      }
+
+      .header-container{
+        gap:8px;
+      }
+
+      .logo img{
+        width:48px;
+        height:48px;
+      }
+
+      .millbrook-nav{
+        flex:0 0 auto;
+      }
+
+      .millbrook-nav ul{
+        position:absolute;
+
+        top:100%;
+        left:10px;
+        right:10px;
+
+        width:auto;
+
+        display:none;
+
+        flex-direction:column;
+        align-items:stretch;
+
+        gap:0;
+
+        background:#1f4e5f;
+
+        padding:10px;
+
+        border-radius:0 0 10px 10px;
+
+        box-shadow:
+          0 10px 25px rgba(0,0,0,.25);
+      }
+
+      .millbrook-header:hover .millbrook-nav ul{
+        display:flex;
+      }
+
+      .millbrook-nav li{
+        width:100%;
+      }
+
+      .millbrook-nav a{
+        display:block;
+
+        padding:12px 10px;
+
+        border-bottom:
+          1px solid rgba(255,255,255,.12);
+      }
+
+      .millbrook-nav li:last-child a{
+        border-bottom:none;
+      }
+
+      .header-btn{
+        padding:9px 11px;
+        font-size:12px;
+      }
+
+
+      /* HERO */
+
+      .contact-hero{
+        padding:60px 18px;
+      }
+
+      .contact-hero h1{
+        font-size:34px;
+      }
+
+      .contact-hero p{
+        font-size:16px;
+      }
+
+
+      /* CONTACT */
+
+      .contact-main{
+        padding:50px 16px;
+      }
+
+      .contact-intro{
+        margin-bottom:35px;
+      }
+
+      .contact-intro h2{
+        font-size:27px;
+      }
+
+      .contact-intro p{
+        font-size:15px;
+      }
+
+      .contact-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+      }
+
+      .contact-card{
+        padding:27px;
+      }
+
+      .visit-card{
+        grid-column:auto;
+
+        padding:30px 22px;
+      }
+
+      .visit-card h3{
+        font-size:24px;
+      }
+
+
+      /* FOOTER */
+
+      .millbrook-footer{
+        padding:45px 20px 0;
+      }
+
+      .footer-container{
+        grid-template-columns:1fr;
+        gap:32px;
+      }
+
+      .footer-bottom{
+        margin-top:35px;
+      }
+
+      .footer-legal{
+        gap:6px 10px;
+      }
+
+    }
+
+
+    /* =========================================================
+       SMALL PHONES
+       ========================================================= */
+
+    @media(max-width:480px){
+
+      .logo img{
+        width:43px;
+        height:43px;
+      }
+
+      .header-btn{
+        padding:8px 9px;
+        font-size:11px;
+      }
+
+      .contact-hero{
+        padding:50px 15px;
+      }
+
+      .contact-hero h1{
+        font-size:30px;
+      }
+
+      .contact-main{
+        padding:40px 14px;
+      }
+
+      .contact-card{
+        padding:23px;
+      }
+
+      .contact-card h3{
+        font-size:21px;
+      }
+
+      .contact-note{
+        font-size:13px;
+      }
+
+    }
+
+
+    /* =========================================================
+       STICKY HEADER SAFETY
+       ========================================================= */
+
+    html,
+    body{
+      overflow-x:hidden;
+    }
+
+    .job-form-container,
+    .cv-section{
+      overflow:visible !important;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+<!-- =========================================================
+     STICKY HEADER
+     ========================================================= -->
+
+<header class="millbrook-header">
+
+  <div class="header-container">
+
+    <!-- LOGO -->
+    <a class="logo" href="/">
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+        alt="Millbrook Manor Nursing Home"
+      >
+    </a>
+
+
+    <!-- NAVIGATION -->
+    <nav class="millbrook-nav">
+
+      <ul>
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/admissions.html">
+            Admissions
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/contact.html">
+            Contact
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/meet-the-team.html">
+            The Team
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+
+    <!-- HEADER CTA -->
+    <a
+      class="header-btn"
+      href="https://millbrookmanor.eu/enquire-now.html"
+    >
+      Book a Visit
+    </a>
+
+  </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section class="contact-hero">
+
+  <div class="contact-hero-inner">
+
+    <h1>Get in Touch</h1>
+
+    <p>
+      We are here to help with enquiries about care,
+      admissions, visiting Millbrook Manor Nursing Home,
+      and the services we provide.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT CONTENT
+     ========================================================= -->
+
+<main class="contact-main">
+
+
+  <div class="contact-intro">
+
+    <h2>How Can We Help?</h2>
+
+    <p>
+      Whether you are looking for information about care
+      for yourself or a loved one, our team is here to
+      provide information and assist with your enquiry.
+    </p>
+
+  </div>
+
+
+
+  <div class="contact-grid">
+
+
+    <!-- ADDRESS -->
+
+    <div class="contact-card">
+
+      <div class="contact-card-icon">
+        📍
+      </div>
+
+      <h3>Visit Us</h3>
+
+      <p>
+        <strong>Millbrook Manor Nursing Home</strong><br>
+        Slade Road, Coolmines, Saggart, D24 A9RY<br>
+        Dublin, Ireland
+      </p>
+
+      <p>
+        We welcome enquiries about visiting our nursing
+        home and learning more about our care environment.
+      </p>
+
+    </div>
+
+
+
+    <!-- EMAIL -->
+
+    <div class="contact-card">
+
+      <div class="contact-card-icon">
+        ✉️
+      </div>
+
+      <h3>Email Us</h3>
+
+      <p>
+        For general enquiries, please contact our team by
+        email.
+      </p>
+
+      <p>
+        <strong>Email:</strong><br>
+
+        <a href="mailto:care@millbrookmanor.ie">
+          care@millbrookmanor.ie
+        </a>
+      </p>
+
+    </div>
+
+
+
+    <!-- ENQUIRY / VISIT -->
+
+    <div class="visit-card">
+
+      <h3>Interested in Millbrook Manor?</h3>
+
+      <p>
+        If you would like to enquire about care,
+        admissions or arrange a visit, please contact
+        our team or submit an enquiry through our
+        website.
+      </p>
+
+      <a
+        class="visit-button"
+        href="https://millbrookmanor.eu/enquire-now.html"
+      >
+        Make an Enquiry
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- IMPORTANT NOTE -->
+
+  <div class="contact-note">
+
+    <strong>Important:</strong>
+    For urgent medical concerns or emergencies,
+    please contact your GP or the appropriate emergency
+    services directly.
+
+  </div>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="millbrook-footer">
+
+  <div class="footer-container">
+
+
+    <!-- ABOUT -->
+
+    <div class="footer-about">
+
+      <a href="/">
+
+        <img
+          class="footer-logo"
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+          alt="Millbrook Manor Nursing Home"
+        >
+
+      </a>
+
+      <h3>
+        Millbrook Manor Nursing Home
+      </h3>
+
+      <p>
+        Providing compassionate, professional nursing care
+        in a safe, comfortable and welcoming environment
+        where every resident is treated with dignity,
+        respect and kindness.
+      </p>
+
+    </div>
+
+
+
+    <!-- QUICK LINKS -->
+
+    <div class="footer-links">
+
+      <h4>Quick Links</h4>
+
+      <ul>
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/admissions.html">
+            Admissions
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/careers.html">
+            Careers
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/enquire-now.html">
+            Request a Quote
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/gallery.html">
+            Gallery
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/care-pals-hepa-health-enhancing-physical-activities.html">
+            Activities
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/contact.html">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- SERVICES -->
+
+    <div class="footer-services">
+
+      <h4>Our Services</h4>
+
+      <ul>
+
+        <li>Long-Term Care</li>
+
+        <li>Residential Nursing Care</li>
+
+        <li>Adult Services (18+)</li>
+
+        <li>Palliative Care</li>
+
+        <li>Fair Deal Scheme Support</li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- CONTACT -->
+
+    <div class="footer-contact">
+
+      <h4>Contact Us</h4>
+
+      <p>
+
+        📍 Millbrook Manor Nursing Home<br>
+
+        Slade Road, Coolmines, Saggart,
+        D24 A9RY<br>
+
+        Dublin, Ireland
+
+      </p>
+
+      <br>
+
+      <p>
+
+        ✉️
+        <a href="mailto:care@millbrookmanor.ie">
+          care@millbrookmanor.ie
+        </a>
+
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =======================================================
+       FOOTER BOTTOM
+       ======================================================= -->
+
+  <div class="footer-bottom">
+
+
+    <div class="footer-legal">
+
+      <a href="https://millbrookmanor.eu/privacy-policy.html">
+        Privacy Policy
+      </a>
+
+      <span class="footer-separator">|</span>
+
+      <a href="https://millbrookmanor.eu/terms-conditions.html">
+        Terms &amp; Conditions
+      </a>
+
+      <span class="footer-separator">|</span>
+
+      <a href="https://millbrookmanor.eu/cookie-policy.html">
+        Cookie Policy
+      </a>
+
+    </div>
+
+
+    <div class="footer-compliance">
+
+      Registered Nursing Home • Fair Deal Scheme Support •
+      Professional &amp; Compassionate Care
+
+    </div>
+
+
+    <p class="footer-copyright">
+
+      © 2009 - 2026 Millbrook Manor Nursing Home.
+      All Rights Reserved.
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
+```

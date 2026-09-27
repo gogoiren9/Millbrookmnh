@@ -1,0 +1,1496 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Meet The Team - Millbrook Manor Nursing Home</title>
+
+  <meta
+    name="description"
+    content="Meet the team at Millbrook Manor Nursing Home. Our dedicated management, nursing, healthcare and support teams work together to provide compassionate care."
+  >
+
+  <style>
+
+    /* =========================================================
+       MILLBROOK MANOR
+       MEET THE TEAM PAGE
+       ========================================================= */
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      padding:0;
+
+      font-family:Arial, Helvetica, sans-serif;
+
+      background:#f7fafb;
+      color:#26343a;
+
+      line-height:1.7;
+
+      overflow-x:hidden;
+    }
+
+    a{
+      text-decoration:none;
+    }
+
+
+    /* =========================================================
+       STICKY HEADER
+       ========================================================= */
+
+    .millbrook-header{
+      width:100%;
+
+      background:#1f4e5f;
+
+      position:sticky;
+      position:-webkit-sticky;
+
+      top:0;
+
+      z-index:99999;
+
+      padding:12px 20px;
+
+      box-shadow:
+        0 3px 12px rgba(0,0,0,.15);
+
+      isolation:isolate;
+    }
+
+
+    /* =========================================================
+       HEADER CONTAINER
+       ========================================================= */
+
+    .header-container{
+      width:100%;
+      max-width:1200px;
+
+      margin:0 auto;
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:space-between;
+
+      gap:20px;
+    }
+
+
+    /* =========================================================
+       LOGO
+       ========================================================= */
+
+    .logo{
+      display:flex;
+
+      align-items:center;
+
+      flex-shrink:0;
+    }
+
+    .logo img{
+      display:block;
+
+      width:60px;
+      height:60px;
+
+      object-fit:contain;
+    }
+
+
+    /* =========================================================
+       NAVIGATION
+       ========================================================= */
+
+    .millbrook-nav{
+      flex:1;
+    }
+
+    .millbrook-nav ul{
+      list-style:none;
+
+      margin:0;
+      padding:0;
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      gap:25px;
+    }
+
+    .millbrook-nav li{
+      margin:0;
+      padding:0;
+    }
+
+    .millbrook-nav a{
+      color:#e6f1f4;
+
+      font-size:15px;
+
+      font-weight:600;
+
+      white-space:nowrap;
+
+      transition:.3s ease;
+    }
+
+    .millbrook-nav a:hover{
+      color:#8fd3c1;
+    }
+
+
+    /* =========================================================
+       HEADER CTA
+       ========================================================= */
+
+    .header-btn{
+      display:inline-block;
+
+      background:#8fd3c1;
+
+      color:#1f4e5f;
+
+      padding:11px 18px;
+
+      border-radius:7px;
+
+      font-size:14px;
+
+      font-weight:700;
+
+      white-space:nowrap;
+
+      transition:.3s ease;
+    }
+
+    .header-btn:hover{
+      background:#fff;
+
+      color:#1f4e5f;
+    }
+
+
+    /* =========================================================
+       TEAM HERO
+       ========================================================= */
+
+    .team-hero{
+      background:#1f4e5f;
+
+      color:#fff;
+
+      text-align:center;
+
+      padding:80px 20px;
+    }
+
+    .team-hero-inner{
+      max-width:850px;
+
+      margin:0 auto;
+    }
+
+    .team-hero h1{
+      margin:0 0 18px;
+
+      color:#fff;
+
+      font-size:46px;
+
+      line-height:1.2;
+
+      font-weight:700;
+    }
+
+    .team-hero p{
+      max-width:720px;
+
+      margin:0 auto;
+
+      color:#e0edef;
+
+      font-size:18px;
+
+      line-height:1.7;
+    }
+
+
+    /* =========================================================
+       TEAM INTRO
+       ========================================================= */
+
+    .team-main{
+      max-width:1200px;
+
+      margin:0 auto;
+
+      padding:70px 20px;
+    }
+
+    .team-intro{
+      max-width:850px;
+
+      margin:0 auto 55px;
+
+      text-align:center;
+    }
+
+    .team-intro h2{
+      margin:0 0 15px;
+
+      color:#1f4e5f;
+
+      font-size:32px;
+    }
+
+    .team-intro .subtitle{
+      color:#438f83;
+
+      font-size:17px;
+
+      font-weight:700;
+
+      margin-bottom:15px;
+    }
+
+    .team-intro p{
+      color:#5c6b71;
+
+      font-size:16px;
+
+      margin:0 auto;
+    }
+
+
+    /* =========================================================
+       TEAM MEMBERS GRID
+       ========================================================= */
+
+    .team-members{
+      display:grid;
+
+      grid-template-columns:
+        repeat(3, minmax(0,1fr));
+
+      gap:28px;
+
+      max-width:1050px;
+
+      margin:0 auto;
+    }
+
+
+    /* =========================================================
+       MEMBER CARD
+       ========================================================= */
+
+    .member-card{
+      background:#fff;
+
+      border:1px solid #e3ebed;
+
+      border-radius:16px;
+
+      padding:30px 22px;
+
+      text-align:center;
+
+      box-shadow:
+        0 8px 28px rgba(31,78,95,.08);
+
+      transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+    }
+
+    .member-card:hover{
+      transform:translateY(-5px);
+
+      box-shadow:
+        0 14px 35px rgba(31,78,95,.13);
+    }
+
+
+    /* =========================================================
+       MEMBER PHOTO
+       ========================================================= */
+
+    .member-photo{
+      width:130px;
+      height:130px;
+
+      margin:0 auto 20px;
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      overflow:hidden;
+
+      border-radius:50%;
+
+      background:#eaf4f2;
+
+      border:5px solid #e8f3f1;
+
+      box-shadow:
+        0 4px 14px rgba(0,0,0,.08);
+    }
+
+    .member-photo img{
+      display:block;
+
+      width:100%;
+      height:100%;
+
+      object-fit:cover;
+    }
+
+
+    /* =========================================================
+       TEAM MEMBER INFORMATION
+       ========================================================= */
+
+    .member-card h3{
+      margin:0 0 6px;
+
+      color:#1f4e5f;
+
+      font-size:21px;
+
+      line-height:1.3;
+    }
+
+    .member-role{
+      margin:0;
+
+      color:#438f83;
+
+      font-size:15px;
+
+      font-weight:700;
+    }
+
+
+    /* =========================================================
+       TEAM ROLES SECTION
+       ========================================================= */
+
+    .team-roles{
+      max-width:1000px;
+
+      margin:65px auto 0;
+
+      padding:40px;
+
+      background:#fff;
+
+      border-radius:16px;
+
+      border:1px solid #e3ebed;
+
+      box-shadow:
+        0 8px 28px rgba(31,78,95,.06);
+    }
+
+    .team-roles h2{
+      margin:0 0 15px;
+
+      text-align:center;
+
+      color:#1f4e5f;
+
+      font-size:28px;
+    }
+
+    .team-roles > p{
+      max-width:750px;
+
+      margin:0 auto 30px;
+
+      text-align:center;
+
+      color:#5c6b71;
+    }
+
+    .roles-grid{
+      display:grid;
+
+      grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+      gap:14px 35px;
+
+      margin:0;
+
+      padding:0;
+
+      list-style:none;
+    }
+
+    .roles-grid li{
+      position:relative;
+
+      padding:13px 15px 13px 38px;
+
+      background:#f4f9f8;
+
+      border-radius:8px;
+
+      color:#3d4e54;
+
+      font-size:14px;
+    }
+
+    .roles-grid li::before{
+      content:"✓";
+
+      position:absolute;
+
+      left:14px;
+
+      top:12px;
+
+      color:#438f83;
+
+      font-weight:bold;
+
+      font-size:16px;
+    }
+
+
+    /* =========================================================
+       CARE MESSAGE
+       ========================================================= */
+
+    .team-message{
+      max-width:900px;
+
+      margin:55px auto 0;
+
+      padding:35px 30px;
+
+      text-align:center;
+
+      background:#eaf5f2;
+
+      border-radius:14px;
+    }
+
+    .team-message h2{
+      margin:0 0 12px;
+
+      color:#1f4e5f;
+
+      font-size:26px;
+    }
+
+    .team-message p{
+      margin:0;
+
+      color:#506269;
+
+      font-size:16px;
+    }
+
+
+    /* =========================================================
+       CTA
+       ========================================================= */
+
+    .team-cta{
+      margin-top:60px;
+
+      padding:45px 25px;
+
+      background:#1f4e5f;
+
+      border-radius:16px;
+
+      text-align:center;
+
+      color:#fff;
+    }
+
+    .team-cta h2{
+      margin:0 0 12px;
+
+      color:#fff;
+
+      font-size:28px;
+    }
+
+    .team-cta p{
+      max-width:700px;
+
+      margin:0 auto 25px;
+
+      color:#dcebee;
+    }
+
+    .team-cta-button{
+      display:inline-block;
+
+      padding:12px 24px;
+
+      background:#8fd3c1;
+
+      color:#1f4e5f;
+
+      border-radius:7px;
+
+      font-weight:700;
+
+      transition:.3s ease;
+    }
+
+    .team-cta-button:hover{
+      background:#fff;
+
+      color:#1f4e5f;
+    }
+
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    .millbrook-footer{
+      background:#1f4e5f;
+
+      color:#fff;
+
+      padding:60px 20px 0;
+    }
+
+    .footer-container{
+      max-width:1200px;
+
+      margin:auto;
+
+      display:grid;
+
+      grid-template-columns:
+        1.4fr
+        1fr
+        1fr
+        1.2fr;
+
+      gap:45px;
+    }
+
+    .footer-logo{
+      width:105px;
+
+      height:auto;
+
+      display:block;
+
+      margin-bottom:18px;
+    }
+
+    .millbrook-footer h3,
+    .millbrook-footer h4{
+      color:#fff;
+
+      margin:0 0 17px;
+
+      line-height:1.3;
+    }
+
+    .millbrook-footer h3{
+      font-size:20px;
+    }
+
+    .millbrook-footer h4{
+      font-size:17px;
+    }
+
+    .millbrook-footer p{
+      margin:0;
+
+      color:#d9e8ed;
+
+      font-size:14px;
+
+      line-height:1.8;
+    }
+
+    .millbrook-footer ul{
+      list-style:none;
+
+      margin:0;
+
+      padding:0;
+    }
+
+    .millbrook-footer li{
+      margin:0 0 9px;
+    }
+
+    .millbrook-footer li,
+    .millbrook-footer a{
+      color:#d9e8ed;
+
+      font-size:14px;
+
+      line-height:1.7;
+    }
+
+    .millbrook-footer a{
+      transition:.3s ease;
+    }
+
+    .millbrook-footer a:hover{
+      color:#8fd3c1;
+    }
+
+
+    /* =========================================================
+       FOOTER BOTTOM
+       ========================================================= */
+
+    .footer-bottom{
+      max-width:1200px;
+
+      margin:45px auto 0;
+
+      padding:25px 0;
+
+      text-align:center;
+
+      border-top:1px solid rgba(255,255,255,.16);
+    }
+
+    .footer-legal{
+      display:flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      flex-wrap:wrap;
+
+      gap:8px;
+
+      margin-bottom:14px;
+    }
+
+    .footer-legal a{
+      color:#d9e8ed;
+
+      font-size:13px;
+    }
+
+    .footer-separator{
+      color:rgba(255,255,255,.35);
+    }
+
+    .footer-compliance{
+      color:#b9d4db;
+
+      font-size:12px;
+
+      line-height:1.6;
+
+      margin-bottom:10px;
+    }
+
+    .footer-copyright{
+      color:#d9e8ed;
+
+      font-size:13px;
+
+      margin:0;
+    }
+
+
+    /* =========================================================
+       MOBILE
+       ========================================================= */
+
+    @media(max-width:900px){
+
+      .team-members{
+        grid-template-columns:
+          repeat(2,minmax(0,1fr));
+
+        max-width:750px;
+      }
+
+      .footer-container{
+        grid-template-columns:
+          repeat(2,minmax(0,1fr));
+      }
+
+    }
+
+
+    @media(max-width:768px){
+
+      .millbrook-header{
+        padding:9px 12px;
+      }
+
+      .header-container{
+        gap:8px;
+      }
+
+      .logo img{
+        width:48px;
+        height:48px;
+      }
+
+      .millbrook-nav{
+        flex:0 0 auto;
+      }
+
+      .millbrook-nav ul{
+        position:absolute;
+
+        top:100%;
+
+        left:10px;
+        right:10px;
+
+        width:auto;
+
+        display:none;
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:0;
+
+        background:#1f4e5f;
+
+        padding:10px;
+
+        border-radius:0 0 10px 10px;
+
+        box-shadow:
+          0 10px 25px rgba(0,0,0,.25);
+      }
+
+      /*
+         Keeps the mobile menu available while
+         the pointer/finger is over the header.
+      */
+
+      .millbrook-header:hover .millbrook-nav ul{
+        display:flex;
+      }
+
+      .millbrook-nav li{
+        width:100%;
+      }
+
+      .millbrook-nav a{
+        display:block;
+
+        padding:12px 10px;
+
+        border-bottom:
+          1px solid rgba(255,255,255,.12);
+      }
+
+      .millbrook-nav li:last-child a{
+        border-bottom:none;
+      }
+
+      .header-btn{
+        padding:9px 11px;
+
+        font-size:12px;
+      }
+
+
+      /* HERO */
+
+      .team-hero{
+        padding:60px 18px;
+      }
+
+      .team-hero h1{
+        font-size:35px;
+      }
+
+      .team-hero p{
+        font-size:16px;
+      }
+
+
+      /* MAIN */
+
+      .team-main{
+        padding:50px 16px;
+      }
+
+      .team-intro{
+        margin-bottom:35px;
+      }
+
+      .team-intro h2{
+        font-size:28px;
+      }
+
+
+      /* TEAM */
+
+      .team-members{
+        grid-template-columns:1fr;
+
+        max-width:430px;
+      }
+
+      .member-card{
+        padding:30px 22px;
+      }
+
+
+      /* ROLES */
+
+      .team-roles{
+        padding:30px 20px;
+      }
+
+      .roles-grid{
+        grid-template-columns:1fr;
+      }
+
+
+      /* CTA */
+
+      .team-cta{
+        padding:35px 20px;
+      }
+
+
+      /* FOOTER */
+
+      .millbrook-footer{
+        padding:45px 20px 0;
+      }
+
+      .footer-container{
+        grid-template-columns:1fr;
+
+        gap:32px;
+      }
+
+      .footer-bottom{
+        margin-top:35px;
+      }
+
+    }
+
+
+    /* =========================================================
+       SMALL PHONES
+       ========================================================= */
+
+    @media(max-width:480px){
+
+      .logo img{
+        width:43px;
+        height:43px;
+      }
+
+      .header-btn{
+        padding:8px 9px;
+
+        font-size:11px;
+      }
+
+      .team-hero{
+        padding:50px 15px;
+      }
+
+      .team-hero h1{
+        font-size:30px;
+      }
+
+      .team-main{
+        padding:40px 14px;
+      }
+
+      .team-intro h2{
+        font-size:25px;
+      }
+
+      .team-roles{
+        padding:25px 16px;
+      }
+
+      .team-message{
+        padding:30px 20px;
+      }
+
+      .team-cta h2{
+        font-size:24px;
+      }
+
+      .footer-legal{
+        gap:5px 9px;
+      }
+
+    }
+
+
+    /* =========================================================
+       STICKY SAFETY
+       ========================================================= */
+
+    html,
+    body{
+      overflow-x:hidden;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+<!-- =========================================================
+     STICKY HEADER
+     ========================================================= -->
+
+<header class="millbrook-header">
+
+  <div class="header-container">
+
+
+    <!-- LOGO -->
+
+    <a class="logo" href="/">
+
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+        alt="Millbrook Manor Nursing Home"
+      >
+
+    </a>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="millbrook-nav">
+
+      <ul>
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/admissions.html">
+            Admissions
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/contact.html">
+            Contact
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/meet-the-team.html">
+            The Team
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+
+    <!-- CTA -->
+
+    <a
+      class="header-btn"
+      href="https://millbrookmanor.eu/enquire-now.html"
+    >
+      Book a Visit
+    </a>
+
+  </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section class="team-hero">
+
+  <div class="team-hero-inner">
+
+    <h1>Meet The Team</h1>
+
+    <p>
+      Dedicated people working together to provide
+      compassionate, respectful and person-centred care
+      at Millbrook Manor Nursing Home.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MAIN TEAM CONTENT
+     ========================================================= -->
+
+<main class="team-main">
+
+
+  <!-- INTRODUCTION -->
+
+  <section class="team-intro">
+
+    <h2>Dedicated to Excellence in Care</h2>
+
+    <p class="subtitle">
+      A Team Committed to Our Residents
+    </p>
+
+    <p>
+      Our multidisciplinary team works together to support
+      the individual needs, comfort, dignity and wellbeing
+      of every resident. We value teamwork, communication,
+      respect and continuous learning in the delivery of
+      care and support.
+    </p>
+
+  </section>
+
+
+
+  <!-- =======================================================
+       TEAM MEMBERS
+       ======================================================= -->
+
+  <section class="team-members" aria-label="Millbrook Manor team">
+
+
+    <!-- GERRY GALLEN -->
+
+    <article class="member-card">
+
+      <div class="member-photo">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0aHxKQqZnItEMrSSutMoVjNPDy2FNCWbqgo7B7fhGq1E1pWEryp8Sgq1WFFFT8vRIuRo9noQy6VngCUelWtgBqinp1R8L6tpOGY-jxl_YaL7bpiktZaOOsDdWi6L8-msIuuCrOQZv1vFt8D0FFqpT5deQdJhSlJauM21EFXFCkoGvP1YM7voUlpgKoYg/w60-h89/images.png"
+          alt="Gerry Gallen"
+        >
+
+      </div>
+
+      <h3>
+        Gerry Gallen
+      </h3>
+
+      <p class="member-role">
+        Director
+      </p>
+
+    </article>
+
+
+
+    <!-- LIVIU MINZAT -->
+
+    <article class="member-card">
+
+      <div class="member-photo">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh88Y6ng2bzTtMhD45DVh8T2EDMvE8L3PZb2LP3mAMti3B5bWyK6Q1BuJ-2z6kUXVXp3Tq0u9HccZwWz9SNUQg048WOpXUfS1MC96uV1J4bXGm8CRfubsKVgJEM8WkNF3LChFPsDcGXStg32Bd5GAjtr45cAtbRIAluOFlqJR0quyZKIXvI7qre4sJM_sU/w59-h79/images.png"
+          alt="Liviu Minzat"
+        >
+
+      </div>
+
+      <h3>
+        Liviu Minzat
+      </h3>
+
+      <p class="member-role">
+        Accounting Head
+      </p>
+
+    </article>
+
+
+
+    <!-- KATE TUZ -->
+
+    <article class="member-card">
+
+      <div class="member-photo">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzZzfcjyoYfkVPaW6iMCPWBziZtjEq9EIB2oiVfXXoPmsqWMbEip_CXUhJrPqwh4VwXfbC_f_YJRZlcI5uWRfwKFqWUHPOGWPtJULSU7sFP3LDhTFUOg2AgTMb1iq0ycJGn86dW15R6T9zBFaKWLfQrHrAmUXucJgNOqM026-KfydLWCIw3py6Ygznyf4/w64-h104/images.png"
+          alt="Kate Tuz"
+        >
+
+      </div>
+
+      <h3>
+        Kate Tuz
+      </h3>
+
+      <p class="member-role">
+        Person-in-Charge
+      </p>
+
+    </article>
+
+  </section>
+
+
+
+  <!-- =======================================================
+       OUR TEAM INCLUDES
+       ======================================================= -->
+
+  <section class="team-roles">
+
+    <h2>Our Team Includes</h2>
+
+    <p>
+      Different roles contribute to the safe, comfortable
+      and supportive environment we aim to provide for
+      residents.
+    </p>
+
+
+    <ul class="roles-grid">
+
+      <li>
+        Registered Nurses and Healthcare Assistants
+      </li>
+
+      <li>
+        General Practitioners and Specialist Consultants
+      </li>
+
+      <li>
+        Physiotherapists, Occupational Therapists
+        &amp; Chiropodists
+      </li>
+
+      <li>
+        Activity Coordinators &amp; Pastoral Support
+      </li>
+
+      <li>
+        Housekeeping, Catering &amp; Maintenance Staff
+      </li>
+
+      <li>
+        Administrative and Management Support
+      </li>
+
+    </ul>
+
+  </section>
+
+
+
+  <!-- =======================================================
+       CARE MESSAGE
+       ======================================================= -->
+
+  <section class="team-message">
+
+    <h2>Working Together for Better Care</h2>
+
+    <p>
+      Our team approach helps us work collaboratively
+      around the needs of each resident. We value
+      communication, respect and ongoing professional
+      development as part of our commitment to providing
+      quality care and support.
+
+    </p>
+
+  </section>
+
+
+
+  <!-- =======================================================
+       CTA
+       ======================================================= -->
+
+  <section class="team-cta">
+
+    <h2>Would You Like to Learn More?</h2>
+
+    <p>
+      If you would like to learn more about Millbrook Manor,
+      our care services or arrange a visit, please get in
+      touch with our team.
+    </p>
+
+    <a
+      class="team-cta-button"
+      href="https://millbrookmanor.eu/enquire-now.html"
+    >
+      Make an Enquiry
+    </a>
+
+  </section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="millbrook-footer">
+
+
+  <div class="footer-container">
+
+
+    <!-- ABOUT -->
+
+    <div class="footer-about">
+
+      <a href="/">
+
+        <img
+          class="footer-logo"
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggkAXGxKo3aSTvMeNAm7AZSwxvusKJo9oxObpttllmE4ZtNuYtDu-44kjxwpbpsVSP2RH90jn5Vdq782rvP0hwtdNbzbyhWfXJWnOoRyaNieXrFJvXjrDAp1mInzGGx7r6wdRDfZ0h2BtkwfNylvRciIIji1RDQwRKBvUDkB4pNdugYlW_5xLhmOdxCB75/w200-h200/llll.png"
+          alt="Millbrook Manor Nursing Home"
+        >
+
+      </a>
+
+      <h3>
+        Millbrook Manor Nursing Home
+      </h3>
+
+      <p>
+        Providing compassionate, professional nursing care
+        in a safe, comfortable and welcoming environment
+        where every resident is treated with dignity,
+        respect and kindness.
+      </p>
+
+    </div>
+
+
+
+    <!-- QUICK LINKS -->
+
+    <div class="footer-links">
+
+      <h4>Quick Links</h4>
+
+      <ul>
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/about-us.html">
+            About Us
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/admissions.html">
+            Admissions
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/careers.html">
+            Careers
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/enquire-now.html">
+            Request a Quote
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/gallery.html">
+            Gallery
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/care-pals-hepa-health-enhancing-physical-activities.html">
+            Activities
+          </a>
+        </li>
+
+        <li>
+          <a href="https://millbrookmanor.eu/contact.html">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- SERVICES -->
+
+    <div class="footer-services">
+
+      <h4>Our Services</h4>
+
+      <ul>
+
+        <li>Long-Term Care</li>
+
+        <li>Residential Nursing Care</li>
+
+        <li>Adult Services (18+)</li>
+
+        <li>Palliative Care</li>
+
+        <li>Fair Deal Scheme Support</li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- CONTACT -->
+
+    <div class="footer-contact">
+
+      <h4>Contact Us</h4>
+
+      <p>
+
+        📍 Millbrook Manor Nursing Home<br>
+
+        Slade Road, Coolmines, Saggart,
+        D24 A9RY<br>
+
+        Dublin, Ireland
+
+      </p>
+
+      <br>
+
+      <p>
+
+        ✉️
+        <a href="mailto:care@millbrookmanor.ie">
+          care@millbrookmanor.ie
+        </a>
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- =======================================================
+       FOOTER BOTTOM
+       ======================================================= -->
+
+  <div class="footer-bottom">
+
+
+    <div class="footer-legal">
+
+      <a href="https://millbrookmanor.eu/privacy-policy.html">
+        Privacy Policy
+      </a>
+
+      <span class="footer-separator">|</span>
+
+      <a href="https://millbrookmanor.eu/terms-conditions.html">
+        Terms &amp; Conditions
+      </a>
+
+      <span class="footer-separator">|</span>
+
+      <a href="https://millbrookmanor.eu/cookie-policy.html">
+        Cookie Policy
+      </a>
+
+    </div>
+
+
+    <div class="footer-compliance">
+
+      Registered Nursing Home • Fair Deal Scheme Support •
+      Professional &amp; Compassionate Care
+
+    </div>
+
+
+    <p class="footer-copyright">
+
+      © 2009 - 2026 Millbrook Manor Nursing Home.
+      All Rights Reserved.
+
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+</body>
+</html>
+```
